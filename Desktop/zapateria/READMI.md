@@ -28,3 +28,5 @@ REFERENTES DEL MERCADO (inspiraciones):
 - www.solodeportes.com.ar
 - www.dafiti.com.ar
 - www.adidas.com.ar
+    * Las páginas antes mencionadas, fueron elegidas por ser las lideres en Argentina en la venta online de calzado e indumentaria principalemte deportiva. 
+    Lo que notamos al analizarlas, es que todas comparten una estructura casi identica, sencilla, con un inicio que te permite apreciar tanto los lanzamientos, como las mejores ofertas y que al navegar por las páginas puedas encontrar con relativa facilidad lo que estás buscando.
