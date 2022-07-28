@@ -34,3 +34,11 @@ REFERENTES DEL MERCADO (inspiraciones):
 LINK TRELLO:
 - https://trello.com/b/MIQlSChx/grupo-5
 
+COLORES A UTILIZAR:
+- #156C4A
+- #000000
+- #DEF3EB
+- FFFFFF
+
+TIPOGRAFIA: 
+ - POPPINS
