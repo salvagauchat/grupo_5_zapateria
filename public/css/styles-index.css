@@ -46,13 +46,14 @@ header ul {
 .lista-menu {
     display: none;
 }
-
-
-
 /********** MAIN **********/
 main{
     width: 90%;
     margin: auto;
+}
+.lo-mas-vendido{
+    display: flex;
+    flex-wrap: wrap;
 }
 .producto{
     max-width: 400px;
@@ -69,9 +70,6 @@ main{
     text-align: left;
     margin-bottom: 5%;
     background-color: white;
-}
-.info-producto i{
-
 }
 .precio{
     margin: 0;
