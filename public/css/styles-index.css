@@ -13,7 +13,9 @@ main{
     width: 90%;
     margin: auto;
 }
-
+.producto{
+    max-width: 400px;
+}
 .imagen-producto img{
     width: 90%;
     margin: auto;
