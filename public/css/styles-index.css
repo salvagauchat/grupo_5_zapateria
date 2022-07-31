@@ -11,6 +11,75 @@ header {
     width:100%
 }
 
+header ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+.cabecera {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo-principal {
+    display: none;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i{
+    padding: 15px;
+    margin: 20px 10px; 
+    color: #156C4A;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.lista-menu {
+    display: none;
+}
+/********** MAIN **********/
+main{
+    width: 90%;
+    margin: auto;
+}
+.lo-mas-vendido{
+    display: flex;
+    flex-wrap: wrap;
+}
+.producto{
+    max-width: 400px;
+}
+.imagen-producto img{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+}
+.info-producto{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 5%;
+    background-color: white;
+}
+.precio{
+    margin: 0;
+}
+.descuento{
+    margin: 0;
+}
+.descripcion h4{
+    margin: 0;
+}
    
  header .logo-mobile{
  display: block;
