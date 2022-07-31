@@ -7,6 +7,47 @@ body{
 }
 
 /********** HEADER **********/
+header {
+    background-color: #156C4A;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 5px 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+.cabecera {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.logo-principal {
+    display: none;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i{
+    padding: 15px;
+    margin: 20px 10px; 
+    color: #156C4A;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.lista-menu {
+    display: none;
+}
+
+
 
 /********** MAIN **********/
 main{
