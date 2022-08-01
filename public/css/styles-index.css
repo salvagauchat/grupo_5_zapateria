@@ -178,6 +178,53 @@ main{
  }
  
  /********** FOOTER **********/
+
+ footer {
+    background-color: #DEF3EB;
+    padding: 15px 20px 10px 0px;
+ }
+
+ .help {
+    display: none;
+ }
+ .red {
+    display: none;
+ }
+ .contact {
+    display: none;
+ }
+
+ footer h3 {
+    color: #ffffff;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #156C4A;
+    align-items: center;
+ }
+
+.flecha-inicio {
+    color: #156C4A;
+    text-align: center;
+    font-size: 30px;
+}
+
+ /********** FOOTER VERSION ESCRITORIO ********** /*
+
+footer {
+    background-color: #DEF3EB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #000;
+} */
+
+
     
 
