@@ -8,13 +8,19 @@ body{
 /********** HEADER **********/
 header {
     background-color: #156C4A;
-    width:100%
+    width:100%;
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    flex-wrap: nowrap;
 }
 
 header ul li a{
     text-decoration: none;
     color: white;
     margin: 5px 10px;
+    
 }
 
 header ul {
