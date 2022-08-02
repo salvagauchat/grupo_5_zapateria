@@ -24,7 +24,10 @@ header ul {
 .cabecera {
     box-sizing: border-box;
     display: flex;
-    
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10% 0;  
+    text-align: center;  
 }
 
 .logo-principal {
@@ -201,6 +204,7 @@ main{
     margin-top: 20px;
     background-color: #156C4A;
     align-items: center;
+    border-radius: 10px;
  }
 
 .flecha-inicio {
