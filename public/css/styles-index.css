@@ -9,17 +9,15 @@ body{
 header {
     background-color: #156C4A;
     width:100%;
-    padding: 2px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 100;
     flex-wrap: nowrap;
 }
 
 header ul li a{
     text-decoration: none;
     color: white;
-    margin: 5px 10px;
+    margin: 5px;
     
 }
 
