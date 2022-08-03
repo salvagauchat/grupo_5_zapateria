@@ -9,15 +9,17 @@ body{
 header {
     background-color: #156C4A;
     width:100%;
+    padding: 2px;
     position: sticky;
     top: 0;
+    z-index: 100;
     flex-wrap: nowrap;
 }
 
 header ul li a{
     text-decoration: none;
     color: white;
-    margin: 5px;
+    margin: 5px 10px;
     
 }
 
@@ -141,6 +143,7 @@ main{
      background-color: #ffffff;
      border-radius: 5px;
      font-size: 20px;
+    
  }
  
  .lista-menu {
@@ -202,15 +205,21 @@ main{
     color: #ffffff;
     box-sizing: border-box;
     text-align: center;
+    margin: auto;
+    width: 25%;
     margin-top: 20px;
     background-color: #156C4A;
+    padding-left: 2px;
     align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 0px 10px #939393;
  }
 
 .flecha-inicio {
     color: #156C4A;
     text-align: center;
     font-size: 30px;
+    
 }
 
  /********** FOOTER VERSION ESCRITORIO ********** /*
