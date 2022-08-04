@@ -37,6 +37,33 @@ header ul {
 header img {
     width: 200px;
 }
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ input{
+    display:flex;
+    width : 300%;
+    height: 20%;
+    position: relative;
+    margin: 5% 10%;
+    border-radius: 10px;
+    opacity: 0,4;
+ }
+ 
+ button.lupa{
+        position: absolute;
+        width: auto;
+        height: auto;
+        right: 10%;
+        opacity: 0.6;
+        border: none;
+        background: none;
+        
+        
+ }
 .burger-menu {
     text-align: center;
 }
