@@ -1,42 +1,84 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 body{
     background-color: gray;
     margin: 0;
 }
+
 /********** HEADER **********/
 header {
+<<<<<<< HEAD
     background-color: #156C4A;
     width:100%;
     padding: 2px;
     position: sticky;
     top: 0;
     z-index: 100;
+=======
+    background-color: #DEF3EB;
+    padding: 2px;
+}
+
+.header-mobile {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+>>>>>>> 57370106075f17f14c7aa468b9580632033b407f
     flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 2em;
+    color: #156C4A;
 }
 
 header ul li a{
     text-decoration: none;
+<<<<<<< HEAD
     color: white;
     margin: 5px 10px;
     
+=======
+    color: #156C4A;
+    margin: 5px 10px;  
+    justify-content: space-around;  
+>>>>>>> 57370106075f17f14c7aa468b9580632033b407f
 }
 
 header ul {
     list-style: none;
     display: flex;
 }
-.cabecera {
-    box-sizing: border-box;
+header img {
+    width: 200px;
+}
+.buscar{
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-
-.logo-principal {
-    display: none;
-}
-
+ input{
+    display:flex;
+    width : 300%;
+    height: 20%;
+    position: relative;
+    margin: 5% 10%;
+    border-radius: 10px;
+    opacity: 0,4;
+ }
+ 
+ button.lupa{
+        position: absolute;
+        width: auto;
+        height: auto;
+        right: 10%;
+        opacity: 0.6;
+        border: none;
+        background: none;
+        
+        
+ }
 .burger-menu {
     text-align: center;
 }
@@ -45,9 +87,9 @@ header ul {
     padding: 15px;
     margin: 20px 10px; 
     color: #156C4A;
-    background-color: #ffffff;
+    background-color: #DEF3EB;
     border-radius: 5px;
-    font-size: 20px;
+    width: 20%;
 }
 
 .lista-menu {
@@ -88,12 +130,8 @@ main{
     margin: 0;
 }
    
- header .logo-mobile{
- display: block;
- height: auto;
- 
- }
     
+<<<<<<< HEAD
  header ul li a{
      text-decoration: none;
      color: white;
@@ -152,6 +190,8 @@ main{
  
  
  
+=======
+>>>>>>> 57370106075f17f14c7aa468b9580632033b407f
  /********** MAIN **********/
  main{
      width: 90%;
@@ -211,8 +251,12 @@ main{
     background-color: #156C4A;
     padding-left: 2px;
     align-items: center;
+<<<<<<< HEAD
     border-radius: 20px 20px 20px 20px;
     box-shadow: 5px 0px 10px #939393;
+=======
+    border-radius: 10px;
+>>>>>>> 57370106075f17f14c7aa468b9580632033b407f
  }
 
 .flecha-inicio {
@@ -224,7 +268,7 @@ main{
 
  /********** FOOTER VERSION ESCRITORIO ********** /*
 
-footer {
+/*footer {
     background-color: #DEF3EB;
     box-sizing: border-box;
     display: flex;
@@ -236,8 +280,4 @@ footer {
 footer ul li a{
     text-decoration: none;
     color: #000;
-} */
-
-
-    
-
+} /*
