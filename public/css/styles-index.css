@@ -9,14 +9,6 @@ body{
 
 /********** HEADER **********/
 header {
-<<<<<<< HEAD
-    background-color: #156C4A;
-    width:100%;
-    padding: 2px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-=======
     background-color: #DEF3EB;
     padding: 2px;
 }
@@ -25,7 +17,6 @@ header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
->>>>>>> 57370106075f17f14c7aa468b9580632033b407f
     flex-wrap: nowrap;
     justify-content: space-around;
     font-size: 2em;
@@ -34,15 +25,9 @@ header {
 
 header ul li a{
     text-decoration: none;
-<<<<<<< HEAD
-    color: white;
-    margin: 5px 10px;
-    
-=======
     color: #156C4A;
     margin: 5px 10px;  
     justify-content: space-around;  
->>>>>>> 57370106075f17f14c7aa468b9580632033b407f
 }
 
 header ul {
@@ -131,67 +116,6 @@ main{
 }
    
     
-<<<<<<< HEAD
- header ul li a{
-     text-decoration: none;
-     color: white;
-     margin: 5px 10px;
- }
- 
- header ul {
-     list-style: none;
-     display: flex;
- }
- .cabecera {
-     box-sizing: border-box;
-     display: flex;
-     width: 100%;
-    }
-
- .logos  {
-    margin: 4% auto;
-    position: relative;
-    z-index: 5;
-    display: flex;
-}
-.logos img{
-    width: 50px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fa {
-  position:absolute;
-  padding: 11px;
-  right: 1px;
-}
- .logo-principal {
-     display: none;
- }
- 
- .burger-menu {
-     text-align: center;
- }
- 
- .burger-menu i{
-     padding: 15px;
-     margin: 20px 10px; 
-     color: #156C4A;
-     background-color: #ffffff;
-     border-radius: 5px;
-     font-size: 20px;
-    
- }
- 
- .lista-menu {
-     display: none;
- }
- 
- 
- 
-=======
->>>>>>> 57370106075f17f14c7aa468b9580632033b407f
  /********** MAIN **********/
  main{
      width: 90%;
@@ -245,25 +169,16 @@ main{
     color: #ffffff;
     box-sizing: border-box;
     text-align: center;
-    margin: auto;
-    width: 25%;
     margin-top: 20px;
     background-color: #156C4A;
-    padding-left: 2px;
     align-items: center;
-<<<<<<< HEAD
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 5px 0px 10px #939393;
-=======
     border-radius: 10px;
->>>>>>> 57370106075f17f14c7aa468b9580632033b407f
  }
 
 .flecha-inicio {
     color: #156C4A;
     text-align: center;
     font-size: 30px;
-    
 }
 
  /********** FOOTER VERSION ESCRITORIO ********** /*
