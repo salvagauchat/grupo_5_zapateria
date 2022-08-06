@@ -176,6 +176,8 @@ main{
  }
 
 .flecha-inicio {
+    position: relative;
+    left: 90%;
     color: #156C4A;
     text-align: center;
     font-size: 30px;
