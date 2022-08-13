@@ -19,6 +19,7 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+
 .header-mobile {
     display: flex;
     align-items: center;
@@ -105,6 +106,20 @@ main ul li a{
     padding: 10px;
 }
 
+h3 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.sub-titulo {
+    color: #156C4A;
+}
+
 .inicio-carrito {
     display: flex;
     font-size: 12px;
@@ -115,6 +130,10 @@ main ul li a{
     margin: 10px 5px; 
     color: #156C4A;
     font-size: 20px;
+    position: absolute;
+    right: 16%;
+    top: 47%;
+    border: 1px solid #156C4A;
 }
 
 .confirmar-compra {  
@@ -129,6 +148,9 @@ main ul li a{
 }
 .resumen-compra {
     border-bottom: solid #000 1px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .detalle-producto-venta {
     display: block;
@@ -137,25 +159,60 @@ main ul li a{
     text-align: center;
 }
 .product {
-    width: 45%;
+    width: 40%;
     border: #000 solid 1px;
     margin: 5px;
+    position: relative;
 }
 .producto-compra {
     align-items: center;
     display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #ffffff;
+    justify-content: space-around;
+    padding-right: 10px;
+    align-self: center;
 }
 
-main form button {
-    border-radius: 10px;
-    padding: auto;
+main button {
+    padding: 10px 15px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
     margin-bottom: 5px;
-    background-color: #156C4A;
-    color: #ffffff;
-    font-weight: bolder;
+}
+
+main button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+main button:hover {
+    color: #e8e8e8;
+}
+
+main button:hover::before {
+    width: 100%;
 }
 
 /********** FOOTER **********/
