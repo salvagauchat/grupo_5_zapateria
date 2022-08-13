@@ -13,6 +13,7 @@ body {
 }
 
 /********** HEADER **********/
+
 header {
     background-color: #24262b;
     padding: 10px 2px 20px 2px;
@@ -119,13 +120,11 @@ header img {
     width: 100%;
     font-size: small;
     margin: 0;
-
 }
 
 .control-form label {
     margin-bottom: 15px;
     display: block;
-
 }
 
 .control {
@@ -194,9 +193,8 @@ main button:hover::before {
     width: 100%;
 }
 
-
-
 /********** FOOTER **********/
+
 footer {
     background-color: #24262b;
     padding: auto;
