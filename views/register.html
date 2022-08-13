@@ -9,23 +9,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/css/styles-register.css">
 </head>
 
 <body>
     <!-- ********** HEADER *********** -->
     <header>
-        
+        <div class="cabecera">
+
+            <div class="header-mobile">
+
+                <div class="iconos"><i class="fas fa-bars"></i></div>
+                <div class="iconos">
+                    <a class="logo-principal" href="/"><img src="/images/logo.jpg" alt="logo"></a>
+                    <!-- <a class="logo-mobile" href="/index.html"><img src="/images/logo-mobile.jpg" alt="logo-mobile"> --></a>
+                </div>
+                <div class="iconos">
+                    <a href="/register"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="iconos">
+                    <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Niño</a></li>
+                    <li><a href="#">Niña</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="buscar-div">
+            <label for=""></label>
+            <input type="text" placeholder=" Buscar productos, marcas y más" required class="buscar">
+            <i class="fas fa-search"></i>
+        </div>
     </header>
+
 
     <!-- ********** MAIN *********** -->
     <main>
+        <h2 class="titulo-main">Formulario de Registro</h2>
+        <form id="formulario" action="/" post="get" class="creacion-formulario">
+            <div class="control-form">
+                <label for="nombre"></label>
+                <input type="text" name="name" id="nombre" class="control" placeholder="Nombre y apellido">
+            </div>
 
+            <div class="control-form">
+                <label for=""></label>
+                <input type="text" name="nameUser" id="nombre-usuario" class="control" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="control-form">
+                <label for="fecha" class="titulos-form">Fecha de nacimiento</label>
+                <input type="date" name="fechaNaci" id="fecha" class="control">
+            </div>
+
+            <div class="control-form">
+                <label for="domicilio"></label>
+                <input type="text" name="domic" id="domicilio" class="control" placeholder="Domicilio">
+            </div>
+
+            <div class="control-form">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" class="control" placeholder="Email">
+            </div>
+            
+            <div class="control-form">
+                <label for="contraseña"></label>
+                <input type="password" name="" id="contraseña" class="control" placeholder="Contraseña">
+            </div>
+            <div class="control-form">
+                <label for="confirpass"></label>
+                <input type="password" name="" id="confircontra" class="control" placeholder="Confirmar contraseña">
+            </div>
+
+            <div class="botones">
+                <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Crear
+                    usuario</button>
+                <button type="reset" class="boton-formulario">Borrar</button>
+            </div>
+
+        </form>
     </main>
+
 
     <!-- ********** FOOTER *********** -->
     <footer>
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">AYUDA <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                    <li><a href="">¿Cómo comprar?</a></li>
+                    <li><a href="">Entregas</a></li>
+                    <li><a href="">Cambios</a></li>
+            </ul>
+        </div>
 
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">REDES SOCIALES <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                    <li><a href="">Instagram <i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="">Facebook <i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="">Twitter <i class="fa-brands fa-square-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">ATENCION AL CLIENTE <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                <li><a href="">Lunes a viernes de 9 a 20hs</a></li>
+                <li><a href="">Sábado de 9 a 17hs</a></li>
+                <li><a href="">fivegroup@gmail.com</a></li>
+                <li><a href="">0800-FIVEGROUP</a></li>
+            </ul>
+        </div>
+        <div class="flecha-div">
+            <span class="flecha-inicio"><i href="#" class="fa-solid fa-circle-up"></i></span>
+        </div>
+        
     </footer>
 </body>
 
