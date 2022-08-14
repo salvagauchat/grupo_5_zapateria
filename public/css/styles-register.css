@@ -47,7 +47,10 @@ header {
 .iconos i:hover{
     color: #DEF3EB;
 }
-
+.iconos2{
+    display: flex;
+    
+}
 header ul li a {
     text-decoration: none;
     color: #156C4A;
@@ -257,5 +260,36 @@ footer h3 {
     .contactos li a:hover {
         color: #ffffff;
         padding-left: 8px;
+    }
+}
+@media (min-width: 770px){
+    .hambur{
+        display: none;
+    }
+    .iconos2{
+        display: flex;
+        text-align: right;
+        padding-left: 50px;
+    }
+    .header-mobile{
+        justify-content: space-between;
+    }
+    .lista-menu{
+        display: block;
+    }
+    .lista-menu li{
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+    .lista-menu li a{
+        display: block;
+        padding: 0.5vw 1vw;
+        font-weight: bold;
+        transition: all 350ms linear;
+        border-radius: 5px;
+
+    }
+    .lista-menu li a:hover{
+        background-color: #4a4a4a;
     }
 }
