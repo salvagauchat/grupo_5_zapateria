@@ -21,19 +21,23 @@
     <!-- ********** HEADER *********** -->
     <header>
         <div class="cabecera">
+
             <div class="header-mobile">
-                <div class="burger-menu"><i class="fas fa-bars"></i></div>
-                <div class="logos">
+
+                <div class="iconos hambur"><i class="fas fa-bars"></i></div>
+                <div class="iconos">
                     <a class="logo-principal" href="/"><img src="/images/logo.jpg" alt="logo"></a>
                     <!-- <a class="logo-mobile" href="/index.html"><img src="/images/logo-mobile.jpg" alt="logo-mobile"> --></a>
                 </div>
-                    <div class="icono-login">
-                    <i class="fa-solid fa-user"></i>
+                <div class="iconos2">
+                    <div class="iconos">
+                        <a href="/register"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="iconos">
+                        <a href="/product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-                <div class="icono-carrito">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                
+
             </div>
 
             <nav class="menu">
@@ -49,164 +53,153 @@
             </nav>
         </div>
 
-        <div class="buscar">
-            <input type="text" placeholder="Buscar productos, marcas" required>
-            <button type="submit" class="lupa"><i class="fas fa-search"></i></button>
+        <div class="buscar-div">
+            <label for=""></label>
+            <input type="text" placeholder=" Buscar productos, marcas y más" required class="buscar">
+            <i class="fas fa-search"></i>
         </div>
     </header>
 
+
     <!-- ********** MAIN *********** -->
     <main>
-        <h3>Lo mas vendido</h3>
-        <section class="lo-mas-vendido">
-            <div class="lo-mas-vendido-1">
-                <article class="producto">
-                    <a class="imagen-producto" href="/productDetail"><img
-                            src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 1.jpg"></a>
-                    <div">
-                        <div class="info-producto">
-                            <i class="fas fa-truck"></i>
-                            <p class="precio">$16.599</p>
-                            <p class="descuento">10% off</p>
-                            <div class="descripcion">
-                                <h4>Nike Revolution 6NN</h4>
-                            </div>
-                        </div>
-            </div>
+        <h3>Lo mas vendido <i class="fa-solid fa-fire" style="color: red;"></i></h3>
+        <section>
+
+            <article class="producto">
+                <a class="imagen-producto" href="/productDetail"><img
+                        src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 1.jpg"></a>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Nike Revolution 6NN</h4>
+                    </div>
+                    <p class="precio">$16.599</p>
+                </div>
             </article>
+
+
             <article class="producto">
                 <a class="imagen-producto" href="/productDetail"><img
                         src="/images/Calzado deportivo/Hombre/New Balance Running Fresh Foam Arishi V3 1.jpg"></a>
-                <div">
-                    <div class="info-producto">
-                        <i class="fas fa-truck"></i>
-                        <p class="precio">$9.000</p>
-                        <p class="descuento">10% off</p>
-                        <div class="descripcion">
-                            <h4>New Balance Running Fresh Foam Greem Leaf</h4>
-                        </div>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>New Balance Running Fresh Foam Greem Leaf</h4>
                     </div>
+                    <p class="precio">$9.000</p>
+                </div>
+            </article>
+
+            <article class="producto">
+                <a class="imagen-producto" href="/productDetail"><img
+                        src="/images/Calzado deportivo/Mujer/Asics Trail Running Fuji Lite 2 1.jpg"></a>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Asics Trail Running Fuji Lite 2</h4>
                     </div>
+                    <p class="precio">$11.700</p>
+                </div>
             </article>
-            </div>
-            <div class="lo-mas-vendido-2">
-                <article class="producto">
-                    <a class="imagen-producto" href="/productDetail"><img
-                            src="/images/Calzado deportivo/Mujer/Asics Trail Running Fuji Lite 2 1.jpg"></a>
-                    <div">
-                        <div class="info-producto">
-                            <i class="fas fa-truck"></i>
-                            <p class="precio">$11.700</p>
-                            <p class="descuento">10% off</p>
-                            <div class="descripcion">
-                                <h4>Asics Trail Running Fuji Lite 2</h4>
-                            </div>
-                        </div>
-            </div>
-            </article>
+
             <article class="producto">
                 <a class="imagen-producto" href="/productDetail"><img
                         src="/images/Calzado deportivo/Mujer/Reebok Royal Gilde Ripple CLP 1.jpg"></a>
-                <div">
-                    <div class="info-producto">
-                        <i class="fas fa-truck"></i>
-                        <p class="precio">$7.400</p>
-                        <p class="descuento">25% off</p>
-                        <div class="descripcion">
-                            <h4>Reebok Royal Gilde Ripple CLP</h4>
-                        </div>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Reebok Royal Gilde Ripple CLP</h4>
                     </div>
-                    </div>
+                    <p class="precio">$7.400</p>
+                </div>
             </article>
-            </div>
         </section>
 
-        <h3>Ofertas relampago</h3>
-        <section class="ofertas-relampago">
+        <h3>Ofertas relámpago <i class="fa-solid fa-bolt" style="color:#d5d834;"></i></h3>
+        <section>
             <article class="producto">
                 <a class="imagen-producto" href="/productDetail"><img
-                        src="/images/Calzado deportivo/Hombre/Nike Court Vision Mid 1.jpg"></a>
-                <div">
-                    <div class="info-producto">
-                        <i class="fas fa-truck"></i>
+                    src="/images/Calzado deportivo/Hombre/Nike Court Vision Mid 1.jpg"></a>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Nike Court Vision Mid</h4>
+                    </div>
+                    <div class="pago">
                         <p class="precio">$12.230</p>
                         <p class="descuento">10% off</p>
-                        <div class="descripcion">
-                            <h4>Nike Court Vision Mid</h4>
-                            <h4 class="envio-gratis">Envío gratis</h4>
-                        </div>
                     </div>
-                    </div>
-            </article>
-            <article class="producto">
-                <a class="imagen-producto" href="/productDetail"><img
-                        src="/images/Calzado deportivo/Mujer/Adidas 60S 2.0 1.jpg"></a>
-                <div">
-                    <div class="info-producto">
-                        <i class="fas fa-truck"></i>
-                        <p class="precio">$6.662</p>
-                        <p class="descuento">20% off</p>
-                        <div class="descripcion">
-                            <h4>Adidas 60S 2.0</h4>
-                            <h4 class="envio-gratis">Envío gratis</h4>
-                        </div>
-                    </div>
-                    </div>
-            </article>
-            <article class="producto">
-                <a class="imagen-producto" href="/productDetail"><img
-                        src="/images/Calzado deportivo/Niña/Adidas Running Racer TR21 1.jpg"></a>
-                <div">
-                    <div class="info-producto">
-                        <i class="fas fa-truck"></i>
-                        <p class="precio">$6.662</p>
-                        <p class="descuento">20% off</p>
-                        <div class="descripcion">
-                            <h4>Adidas 60S 2.0</h4>
-                            <h4 class="envio-gratis">Envío gratis</h4>
-                        </div>
-                    </div>
-                    </div>
+                </div>
             </article>
 
+            <article class="producto">
+                <a class="imagen-producto" href="/productDetail"><img
+                    src="/images/Calzado deportivo/Mujer/Adidas 60S 2.0 1.jpg"></a>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Adidas 60S 2.0</h4>
+                    </div>
+                    <div class="pago">
+                        <p class="precio">$9.200</p>
+                        <p class="descuento">20% off</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="producto">
+                <a class="imagen-producto" href="/productDetail"><img
+                    src="/images/Calzado deportivo/Niña/Adidas Running Racer TR21 1.jpg"></a>
+                <div class="info-producto">
+                    <i class="fas fa-truck"></i>
+                    <div class="descripcion">
+                        <h4>Adidas Racer TR21 Niño</h4>
+                    </div>
+                    <div class="pago">
+                        <p class="precio">$6.662</p>
+                        <p class="descuento">20% off</p>
+                    </div>
+                </div>
+            </article>
         </section>
-
     </main>
 
     <!-- ********** FOOTER *********** -->
     <footer>
-        <ul class="ayuda-clientes">
-            <h3 class="ayuda">AYUDA <i class="fa-solid fa-angle-down"></i></h3>
-            <div class="help">
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">AYUDA <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
                 <li><a href="">Preguntas Frecuentes</a></li>
                 <li><a href="">¿Cómo comprar?</a></li>
                 <li><a href="">Entregas</a></li>
                 <li><a href="">Cambios</a></li>
-            </div>
-        </ul>
+            </ul>
+        </div>
 
-        <ul class="redes">
-            <h3 class="redes-sociales">REDES SOCIALES <i class="fa-solid fa-angle-down"></i></h3>
-            <div class="red">
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">REDES SOCIALES <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
                 <li><a href="">Instagram <i class="fa-brands fa-square-instagram"></i></a></li>
                 <li><a href="">Facebook <i class="fa-brands fa-square-facebook"></i></a></li>
                 <li><a href="">Twitter <i class="fa-brands fa-square-twitter"></i></a></li>
-            </div>
-        </ul>
+            </ul>
+        </div>
 
-        <ul class="contactos">
+        <div class="ayuda-clientes">
             <h3 class="atencion-clientes">ATENCION AL CLIENTE <i class="fa-solid fa-angle-down"></i></h3>
-            <div class="contact">
+            <ul class="contactos">
                 <li><a href="">Lunes a viernes de 9 a 20hs</a></li>
                 <li><a href="">Sábado de 9 a 17hs</a></li>
                 <li><a href="">fivegroup@gmail.com</a></li>
                 <li><a href="">0800-FIVEGROUP</a></li>
-            </div>
-        </ul>
+            </ul>
+        </div>
+        <div class="flecha-div">
+            <span class="flecha-inicio"><i href="#" class="fa-solid fa-circle-up"></i></span>
+        </div>
 
-        <span class="flecha-inicio"><i href="#" class="fa-solid fa-circle-up"></i></span>
     </footer>
-
 </body>
 
 </html>
