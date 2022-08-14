@@ -6,26 +6,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Shores - Carrito de Compras</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/css/styles-productCart.css">
 </head>
 
 <body>
     <!-- ********** HEADER *********** -->
     <header>
+        <div class="cabecera">
 
+            <div class="header-mobile">
+
+                <div class="iconos"><i class="fas fa-bars"></i></div>
+                <div class="iconos">
+                    <a class="logo-principal" href="/"><img src="/images/logo.jpg" alt="logo"></a>
+                    <!-- <a class="logo-mobile" href="/index.html"><img src="/images/logo-mobile.jpg" alt="logo-mobile"> --></a>
+                </div>
+                <div class="iconos">
+                    <a href="/register"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="iconos">
+                    <a href="/product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul class="lista-menu">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Niño</a></li>
+                    <li><a href="#">Niña</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="buscar-div">
+            <label for=""></label>
+            <input type="text" placeholder=" Buscar productos, marcas y más" required class="buscar">
+            <i class="fas fa-search"></i>
+        </div>
     </header>
 
     <!-- ********** MAIN *********** -->
     <main>
+        <nav class="inicio-carrito">
+            <ul class="main-topbar">
+                <li><a href="/">Inicio</a></li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <li><a href="/product-cart">Carrito de Compras</a></li>
+            </ul>
+        </nav>
 
+        <h2 class="sub-titulo">CARRITO DE COMPRAS</h2>
+
+        <article class="producto-compra">
+            
+                <img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 1.jpg" alt="product"
+                    class="product">
+       
+            <div class="detalle-producto-venta">
+                <h3>Nike Revolution 6NN</h3>
+                <h4>TALLE 43</h4>
+                <h4>TOTAL $8.488</h4>
+                <h5>SUBPRECIO $8.488</h5>
+            </div>
+            <div class="eliminar-producto">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <i class="fa-solid fa-trash-can"></i>
+            </div>
+        </article>
+
+        <div class="confirmar-compra">
+            <h4 class="resumen-compra">RESUMEN DE COMPRA</h4>
+            <h4 class="subtotal">SUBTOTAL $8.488</h4>
+            <h3 class="total">TOTAL $8.488</h3>
+            <form>
+                <button type="submit" class="boton-pago">INICIAR PAGO ></button>
+            </form>
+        </div>
     </main>
 
     <!-- ********** FOOTER *********** -->
     <footer>
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">AYUDA <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                    <li><a href="">Preguntas Frecuentes</a></li>
+                    <li><a href="">¿Cómo comprar?</a></li>
+                    <li><a href="">Entregas</a></li>
+                    <li><a href="">Cambios</a></li>
+            </ul>
+        </div>
 
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">REDES SOCIALES <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                    <li><a href="">Instagram <i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="">Facebook <i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="">Twitter <i class="fa-brands fa-square-twitter"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="ayuda-clientes">
+            <h3 class="atencion-clientes">ATENCION AL CLIENTE <i class="fa-solid fa-angle-down"></i></h3>
+            <ul class="contactos">
+                <li><a href="">Lunes a viernes de 9 a 20hs</a></li>
+                <li><a href="">Sábado de 9 a 17hs</a></li>
+                <li><a href="">fivegroup@gmail.com</a></li>
+                <li><a href="">0800-FIVEGROUP</a></li>
+            </ul>
+        </div>
+        <div class="flecha-div">
+            <span class="flecha-inicio"><i href="#" class="fa-solid fa-circle-up"></i></span>
+        </div>
+        
     </footer>
 </body>
 

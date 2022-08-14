@@ -62,7 +62,12 @@ header img {
         right: 10%;
         opacity: 0.6;
         border: none;
+<<<<<<< HEAD
         background: none;     
+=======
+        background: none;
+        
+>>>>>>> 15a05b54d6a030baa78eb2cf118e695019478be7
  }
 
 .burger-menu {
@@ -95,7 +100,14 @@ header img {
  .imagen-producto img{
      width: 90%;
      margin: auto;
+<<<<<<< HEAD
      display: flex;   
+=======
+     display: flex;     
+ }
+ .product {
+    width: 20%;
+>>>>>>> 15a05b54d6a030baa78eb2cf118e695019478be7
  }
 
  .info-producto{
