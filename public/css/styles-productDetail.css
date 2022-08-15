@@ -113,11 +113,11 @@ main {
     padding-top: 15px;
 }
 h1 {
+    order: -1;
     text-align: center;
     margin: 10px 0;
-    font-size: 33px;
+    font-size: 22px;
     padding-top: 15px;
-    color: black;
 }
 
 .slider-frame {
@@ -168,27 +168,36 @@ h1 {
         margin-left: -200%;
     }
 }
-
+.info-completa {
+    background-color: #ffffff;
+    margin: 5%
+}
 .precio {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     align-items: flex-end;
     transition: all 500ms;
     padding-right: 3px;
 }
 
 .descuento {
-    background-color: white;
-    font-size: 20px;
+    font-size: 18px;
     color: limegreen;
-    width: 45%;
     font-weight: bold;
     padding: 10px;
 }
+.precio-descuento {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.h2 {
+    font-size: 22px;
+}
 
 .descripcionTexto {
-margin-left: auto;
-margin-right: auto;
+margin: 5%;
 }
 
 .descripcion-zapa {
@@ -227,21 +236,15 @@ button {
     background-size: contain;
 }
 
-.info-completa {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center ;
-    margin: 0 10%;
-    background-color: #ffffff;
-}
-
 .talle-cantidad-botones {
     display: block;
+    align-items: center;
+    text-align: center;
+    margin: 5%
 }
 
 .característicasLista {
-    margin-left: 10%;
+    padding: 0 0 5% 10%;
 }
 
 main button {
@@ -356,6 +359,14 @@ footer h3 {
     .contactos li a:hover {
         color: #ffffff;
         padding-left: 8px;
+    }
+    .info-completa {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+        margin: 0 5%;
+        background-color: #ffffff;
     }
 }
 
