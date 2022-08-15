@@ -26,7 +26,8 @@ header {
     font-size: 2em;
     color: #156C4A;
 }
-.header-mobile img{
+
+.header-mobile img {
     display: flex;
     width: 100%;
     max-width: 200px;
@@ -34,20 +35,28 @@ header {
     align-items: center;
     margin-bottom: 10px;
 }
-.iconos{
+
+.iconos {
     padding: 0 2vw;
 }
-.iconos i{
+
+.iconos i {
     color: #156C4A;
     transition: all 350ms;
 }
-.iconos i:hover{
+
+.iconos i:hover {
     color: #DEF3EB;
+}
+
+.iconos2 {
+    display: flex;
+
 }
 
 header ul li a {
     text-decoration: none;
-    color: #156C4A;
+    color: #ecf1effa;
     margin: 5px 10px;
     justify-content: space-around;
 }
@@ -70,12 +79,12 @@ header img {
     background: none;
     border-radius: 5px;
 }
+
 .buscar-div {
     width: 80%;
     margin: auto;
     display: block;
     position: relative;
-    max-width: 800px;
 }
 
 .buscar {
@@ -90,6 +99,7 @@ header img {
     left: 90%;
     top: 11px;
 }
+
 .lista-menu {
     display: none;
 }
@@ -130,10 +140,11 @@ h4 {
     margin: 10px 5px; 
     color: #156C4A;
     font-size: 20px;
-    position: absolute;
+    /* position: absolute; */
     right: 16%;
-    top: 47%;
+    top: 60%;
     border: 1px solid #156C4A;
+    border-radius: 5px;
 }
 
 .confirmar-compra {  
@@ -223,6 +234,8 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+
 }
 
 .atencion-clientes {
@@ -260,12 +273,15 @@ footer h3 {
     display: none;
 }
 
+
+/*++++++++++++++ MEDIAS ++++++++++++++*/
+
 @media (min-width: 570px) {
     .contactos {
         display: block;
     }
 
-    .contactos li a{
+    .contactos li a {
         font-size: 16px;
         text-transform: capitalize;
         color: #ffffff;
@@ -279,5 +295,43 @@ footer h3 {
     .contactos li a:hover {
         color: #ffffff;
         padding-left: 8px;
+    }
+}
+
+@media (min-width: 770px) {
+    .hambur {
+        display: none;
+    }
+
+    .iconos2 {
+        display: flex;
+        text-align: right;
+        padding-left: 50px;
+    }
+
+    .header-mobile {
+        justify-content: space-between;
+    }
+
+    .lista-menu {
+        display: block;
+    }
+
+    .lista-menu li {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .lista-menu li a {
+        display: block;
+        padding: 0.5vw 1vw;
+        font-weight: bold;
+        transition: all 350ms linear;
+        border-radius: 5px;
+
+    }
+
+    .lista-menu li a:hover {
+        background-color: #4a4a4a;
     }
 }
