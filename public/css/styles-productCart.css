@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #DEF3EB;
     margin: 0;
     padding: 0%;
 }
@@ -142,7 +142,7 @@ h4 {
 
 .confirmar-compra {  
     box-sizing: border-box;
-    background-color: #DEF3EB;
+    background-color: #ffffff;
     text-align: center;
     width: 50%;
     align-items: center;
@@ -190,7 +190,7 @@ h4 {
     display: flex;
     margin-left: 15%;
     margin-right: 15%;
-    background-color: #DEF3EB;
+    background-color: #ffffff;
     justify-content: space-around;
     padding-right: 10px;
     align-self: center;
