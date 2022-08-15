@@ -60,7 +60,7 @@ header {
 
 header ul li a {
     text-decoration: none;
-    color: #156C4A;
+    color: #ecf1effa;
     margin: 5px 10px;
     justify-content: space-around;
 }
@@ -89,7 +89,6 @@ header img {
     margin: auto;
     display: block;
     position: relative;
-    max-width: 800px;
 }
 
 .buscar {
