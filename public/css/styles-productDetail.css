@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #DEF3EB;
+    background-color: #ffffff;
     margin: 0;
     padding: 0%;
 }
@@ -23,13 +23,15 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+
 .header-mobile {
     display: flex;
     align-items: center;
     font-size: 2em;
     color: #156C4A;
 }
-.header-mobile img{
+
+.header-mobile img {
     display: flex;
     width: 100%;
     max-width: 200px;
@@ -37,15 +39,23 @@ header {
     align-items: center;
     margin-bottom: 10px;
 }
-.iconos{
+
+.iconos {
     padding: 0 2vw;
 }
-.iconos i{
+
+.iconos i {
     color: #156C4A;
     transition: all 350ms;
 }
-.iconos i:hover{
+
+.iconos i:hover {
     color: #DEF3EB;
+}
+
+.iconos2 {
+    display: flex;
+
 }
 
 header ul li a {
@@ -73,8 +83,9 @@ header img {
     background: none;
     border-radius: 5px;
 }
+
 .buscar-div {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: block;
     position: relative;
@@ -93,6 +104,7 @@ header img {
     left: 90%;
     top: 11px;
 }
+
 .lista-menu {
     display: none;
 }
@@ -101,13 +113,11 @@ header img {
 
 h1 {
     text-align: center;
-    margin: auto;
-    font-size: 2rem;
+    margin: 10px 0;
+    font-size: 24px;
     padding-top: 15px;
     color: black;
 }
-
-
 
 .slider-frame {
     width: 500px;
@@ -159,6 +169,22 @@ h1 {
     }
 }
 
+.precio{
+    font-weight: bold;
+    font-size: 20px;
+    align-items: flex-end;
+    transition: all 500ms;
+    padding-right: 3px;
+}
+
+.descuento{
+    padding:2px 10px 1px 10px ;
+    font-weight: bold;
+    color: #be0505;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
 /********** FOOTER **********/
 
 footer {
@@ -167,6 +193,8 @@ footer {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+
 }
 
 .atencion-clientes {
@@ -204,12 +232,15 @@ footer h3 {
     display: none;
 }
 
+
+/*++++++++++++++ MEDIAS ++++++++++++++*/
+
 @media (min-width: 570px) {
     .contactos {
         display: block;
     }
 
-    .contactos li a{
+    .contactos li a {
         font-size: 16px;
         text-transform: capitalize;
         color: #ffffff;
@@ -223,5 +254,43 @@ footer h3 {
     .contactos li a:hover {
         color: #ffffff;
         padding-left: 8px;
+    }
+}
+
+@media (min-width: 770px) {
+    .hambur {
+        display: none;
+    }
+
+    .iconos2 {
+        display: flex;
+        text-align: right;
+        padding-left: 50px;
+    }
+
+    .header-mobile {
+        justify-content: space-between;
+    }
+
+    .lista-menu {
+        display: block;
+    }
+
+    .lista-menu li {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .lista-menu li a {
+        display: block;
+        padding: 0.5vw 1vw;
+        font-weight: bold;
+        transition: all 350ms linear;
+        border-radius: 5px;
+
+    }
+
+    .lista-menu li a:hover {
+        background-color: #4a4a4a;
     }
 }
