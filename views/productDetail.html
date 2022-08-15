@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Shoes - Detalle de Producto</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles-productDetail.css">
 </head>
 
@@ -18,18 +21,23 @@
 
     <header>
         <div class="cabecera">
+
             <div class="header-mobile">
-                <div class="iconos"><i class="fas fa-bars"></i></div>
+
+                <div class="iconos hambur"><i class="fas fa-bars"></i></div>
                 <div class="iconos">
                     <a class="logo-principal" href="/"><img src="/images/logo.jpg" alt="logo"></a>
                     <!-- <a class="logo-mobile" href="/index.html"><img src="/images/logo-mobile.jpg" alt="logo-mobile"> --></a>
                 </div>
-                <div class="iconos">
-                    <a href="/register"><i class="fa-solid fa-user"></i></a>
+                <div class="iconos2">
+                    <div class="iconos">
+                        <a href="/register"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="iconos">
+                        <a href="/product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-                <div class="iconos">
-                    <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+
             </div>
 
             <nav class="menu">
@@ -55,27 +63,53 @@
     <!-- ********** MAIN *********** -->
 
     <main>
-        <h1>Nike Running Revolution 6 Nn Gs</h1>
-        <div class="slider-frame">
-            <ul>
-                <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 1.jpg" alt=""></li>
-                <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 3.jpg" alt=""></li>
-                <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 2.jpg" alt=""></li>
-            </ul>
-        </div>
+        <div class="info-completa">
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 1.jpg" alt=""></li>
+                    <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 3.jpg" alt=""></li>
+                    <li><img src="/images/Calzado deportivo/Hombre\Nike Running Revolution 6NN 2.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="talle-cantidad-botones">
+            <div class="info-producto">
+                <h1>Nike Running Revolution 6 Nn Gs</h1>
+                <br>
+                <p class="precio">$8.488</p>
+                <p class="descuento">10% off</p>
+            </div>
+                <div class="radio">
+                    <b>
+                        <h2>Talles</h2>
+                    </b>
+                    <input type="radio" name="SeleecionarTalle" id="38">
+                    <label for="38">38</label>
 
-        <div class="info-producto">
-            <i class="fas fa-truck"></i>
-            <p class="precio">$8.488</p>
-            <p class="descuento">10% off</p>
-        </div>
+                    <input type="radio" name="SeleecionarTalle" id="40">
+                    <label for="40">40</label>
 
-        <div>
+                    <input type="radio" name="SeleecionarTalle" id="42">
+                    <label for="42">42</label>
+
+                    <input type="radio" name="SeleecionarTalle" id="45">
+                    <label for="45">45</label>
+                </div>
+
+                <div class="cantidad-productos">
+                    <b><label class="cantidad">Cantidad</label></b>
+                    <input type="number" name="cantidad">
+                </div>
+
+                <div>
+                    <button type="button" class="boton-carrito">Agregar a carrito</button>
+                </div>
+            </div>
+        </div>
+        <div class="descripcionTexto">
             <b>
-                <h2 class="descripcionTexto">Descripción</h2>
+                <h2>Descripción</h2>
             </b>
-
-            <fieldset>
+            <div class="descripcion-zapa">
                 <p>Las Zapatillas Nike Revolution 6 Nn Gs son un calzado todoterreno
                     ideal para los atletas más jóvenes.
                     Su capellada es ligera y transpirable para aportar mayor confort y
@@ -84,55 +118,26 @@
                     Tiene una espuma suave en la planta del pie para mejorar la amortiguación y
                     ayudarte en cada actividad que elijas.
                 </p>
-            </fieldset>
+            </div>
         </div>
 
-        <div>
-            <h3 class="característicasLista">Características</h3>
-            <ul>
-                <fieldset>
-                    <li>.Género: Unisex</li>
-                    <li>.Adecuado para: Correr</li>
-                    <li>.Material: Malla</li>
-                    <li>.Beneficios: Amortiguación</li>
-                    <li>.Composicion: Capellada</li>
-                    <li>.Caña: Baja</li>
-                    <li>.Ajuste: Con cordones</li>
-                    <li>.Suela: goma</li>
-                    <li>.Origen: Importado</li>
-                    <li>.Marca: Nike</li>
-                </fieldset>
-            </ul>
-            </seccion>
+        <div class="característicasLista">
+            <h3>Características</h3>
+            <nav class="caractisticas">
+                <ul>
+                    <li>Género: Unisex</li>
+                    <li>Adecuado para: Correr</li>
+                    <li>Material: Malla</li>
+                    <li>Beneficios: Amortiguación</li>
+                    <li>Composicion: Capellada</li>
+                    <li>Caña: Baja</li>
+                    <li>Ajuste: Con cordones</li>
+                    <li>Suela: goma</li>
+                    <li>Origen: Importado</li>
+                    <li>Marca: Nike</li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="wrap">
-            <div class="radio">
-                <b>
-                    <h2>Talles</h2>
-                </b>
-                <input type="radio" name="SeleecionarTalle" id="38">
-                <label for="38">38</label>
-
-                <input type="radio" name="SeleecionarTalle" id="40">
-                <label for="40">40</label>
-
-                <input type="radio" name="SeleecionarTalle" id="42">
-                <label for="42">42</label>
-
-                <input type="radio" name="SeleecionarTalle" id="45">
-                <label for="45">45</label>
-            </div>
-
-            <div>
-                <b><label>Cantidad</label></b>
-                <input type="number" name="cantidad">
-            </div>
-
-            <div>
-                <button class="btn btn-prymary" type="button">Comprar ahora</button>
-                <button class="btn-outlineprimary" type="button">Agregar a carrito</button>
-            </div>
 
     </main>
 
