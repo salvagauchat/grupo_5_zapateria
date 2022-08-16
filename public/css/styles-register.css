@@ -23,13 +23,15 @@ header {
     box-sizing: border-box;
     width: 100%;
 }
+
 .header-mobile {
     display: flex;
     align-items: center;
     font-size: 2em;
     color: #156C4A;
 }
-.header-mobile img{
+
+.header-mobile img {
     display: flex;
     width: 100%;
     max-width: 200px;
@@ -37,20 +39,25 @@ header {
     align-items: center;
     margin-bottom: 10px;
 }
-.iconos{
+
+.iconos {
     padding: 0 2vw;
 }
-.iconos i{
+
+.iconos i {
     color: #156C4A;
     transition: all 350ms;
 }
-.iconos i:hover{
+
+.iconos i:hover {
     color: #DEF3EB;
 }
-.iconos2{
+
+.iconos2 {
     display: flex;
-    
+
 }
+
 header ul li a {
     text-decoration: none;
     color: #156C4A;
@@ -76,12 +83,12 @@ header img {
     background: none;
     border-radius: 5px;
 }
+
 .buscar-div {
     width: 80%;
     margin: auto;
     display: block;
     position: relative;
-    max-width: 800px;
 }
 
 .buscar {
@@ -96,6 +103,7 @@ header img {
     left: 90%;
     top: 11px;
 }
+
 .lista-menu {
     display: none;
 }
@@ -196,6 +204,30 @@ main button:hover::before {
     width: 100%;
 }
 
+.login {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    color: #212121;
+    font-size: large;
+    transition: all 500ms;
+}
+.login a{
+    text-decoration: none;
+    color: #212121;
+    transition: all 500ms;
+}
+.login:hover{
+    color: #be0505
+}
+.login:hover a{
+    color: #be0505;
+}
+.login p{
+    padding-right: 3px;
+}
+
 /********** FOOTER **********/
 
 footer {
@@ -246,7 +278,7 @@ footer h3 {
         display: block;
     }
 
-    .contactos li a{
+    .contactos li a {
         font-size: 16px;
         text-transform: capitalize;
         color: #ffffff;
@@ -262,26 +294,32 @@ footer h3 {
         padding-left: 8px;
     }
 }
-@media (min-width: 770px){
-    .hambur{
+
+@media (min-width: 770px) {
+    .hambur {
         display: none;
     }
-    .iconos2{
+
+    .iconos2 {
         display: flex;
         text-align: right;
         padding-left: 50px;
     }
-    .header-mobile{
+
+    .header-mobile {
         justify-content: space-between;
     }
-    .lista-menu{
+
+    .lista-menu {
         display: block;
     }
-    .lista-menu li{
+
+    .lista-menu li {
         display: inline-block;
         margin-bottom: 8px;
     }
-    .lista-menu li a{
+
+    .lista-menu li a {
         display: block;
         padding: 0.5vw 1vw;
         font-weight: bold;
@@ -289,7 +327,8 @@ footer h3 {
         border-radius: 5px;
 
     }
-    .lista-menu li a:hover{
+
+    .lista-menu li a:hover {
         background-color: #4a4a4a;
     }
 }
