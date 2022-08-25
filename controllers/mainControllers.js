@@ -6,6 +6,17 @@ const controllers = {
         res.render('login')
     },
     productCart: (req, res) => {
+        const productos = [
+            {
+                img: 'images/calzado-deportivo/hombre/Nike Court Vision Mid 1',
+                precio: 16599,
+                descuento: 10,
+                talle: [40, 42, 43, 45]
+            },
+            {
+
+            }
+        ]
         res.render('productCart')
     },
     productDetail: (req, res) => {
