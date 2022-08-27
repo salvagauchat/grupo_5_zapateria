@@ -18,46 +18,7 @@
 
 <body>
     <!-- ********** HEADER *********** -->
-    <header>
-        <div class="cabecera">
-
-            <div class="header-mobile">
-
-                <div class="iconos hambur"><i class="fas fa-bars"></i></div>
-                <div class="iconos">
-                    <a class="logo-principal" href="/"><img src="/images/logo.jpg" alt="logo"></a>
-                    <!-- <a class="logo-mobile" href="/index.html"><img src="/images/logo-mobile.jpg" alt="logo-mobile"> --></a>
-                </div>
-                <div class="iconos2">
-                    <div class="iconos">
-                        <a href="/login"><i class="fa-solid fa-user"></i></a>
-                    </div>
-                    <div class="iconos">
-                        <a href="/product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <nav class="menu">
-                <ul class="lista-menu">
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Mujer</a></li>
-                    <li><a href="#">Hombre</a></li>
-                    <li><a href="#">Niño</a></li>
-                    <li><a href="#">Niña</a></li>
-                    <li><a href="#">Marcas</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="buscar-div">
-            <label for=""></label>
-            <input type="text" placeholder=" Buscar productos, marcas y más" required class="buscar">
-            <i class="fas fa-search"></i>
-        </div>
-    </header>
+    <%- include('../partials/header.ejs') %>
 
     <!-- ********** MAIN *********** -->
     <main>
@@ -101,40 +62,7 @@
     </main>
 
     <!-- ********** FOOTER *********** -->
-    <footer>
-        <div class="ayuda-clientes">
-            <h3 class="atencion-clientes">AYUDA <i class="fa-solid fa-angle-down"></i></h3>
-            <ul class="contactos">
-                <li><a href="">Preguntas Frecuentes</a></li>
-                <li><a href="">¿Cómo comprar?</a></li>
-                <li><a href="">Entregas</a></li>
-                <li><a href="">Cambios</a></li>
-            </ul>
-        </div>
-
-        <div class="ayuda-clientes">
-            <h3 class="atencion-clientes">REDES SOCIALES <i class="fa-solid fa-angle-down"></i></h3>
-            <ul class="contactos">
-                <li><a href="">Instagram <i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="">Facebook <i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="">Twitter <i class="fa-brands fa-square-twitter"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="ayuda-clientes">
-            <h3 class="atencion-clientes">ATENCION AL CLIENTE <i class="fa-solid fa-angle-down"></i></h3>
-            <ul class="contactos">
-                <li><a href="">Lunes a viernes de 9 a 20hs</a></li>
-                <li><a href="">Sábado de 9 a 17hs</a></li>
-                <li><a href="">fivegroup@gmail.com</a></li>
-                <li><a href="">0800-FIVEGROUP</a></li>
-            </ul>
-        </div>
-        <div class="flecha-div">
-            <span class="flecha-inicio"><i href="#" class="fa-solid fa-circle-up"></i></span>
-        </div>
-
-    </footer>
+    <%- include('../partials/footer.ejs') %>
 </body>
 
 </html>

@@ -8,7 +8,7 @@ const controllers = {
     productCart: (req, res) => {
         const productos = [
             {
-                img: 'images/calzado-deportivo/hombre/Nike Court Vision Mid 1',
+                img: 'images/calzado-deportivo/hombre/nike-running-revolution-1.jpg',
                 precio: 16599,
                 descuento: 10,
                 talle: [40, 42, 43, 45]
