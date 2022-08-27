@@ -3,7 +3,7 @@ const controllers = {
         res.render('index')
     },
     login: (req, res) => {
-        res.render('login')
+        res.render('./users/login')
     },
     productCart: (req, res) => {
         const productos = [
@@ -17,13 +17,13 @@ const controllers = {
 
             }
         ]
-        res.render('productCart')
+        res.render('./products/productCart')
     },
     productDetail: (req, res) => {
-        res.render('productDetail')
+        res.render('./products/productDetail')
     },
     register: (req, res) => {
-        res.render('register')
+        res.render('./users/register')
     },
 }
 
