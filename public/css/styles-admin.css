@@ -312,10 +312,16 @@ footer h3 {
         width: 30%;
         margin: 0;
     }
+    .ayuda-clientes i{
+        display: none;
+    }
+
     .contactos {
         display: block;
     }
-
+    .contactos i{
+        display: inline;
+    }
     .contactos li a {
         font-size: 16px;
         text-transform: capitalize;

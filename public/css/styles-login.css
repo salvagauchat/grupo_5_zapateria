@@ -184,6 +184,7 @@ main {
    transition: transform .5s, color .3s;
 
 }
+
 main button {
    padding: 15px 25px;
    border: unset;
@@ -280,13 +281,23 @@ footer h3 {
       justify-content: space-evenly;
       width: 100%;
       padding: 20px 5%;
-  }
-  .ayuda-clientes{
+   }
+
+   .ayuda-clientes {
       width: 30%;
       margin: 0;
-  }
+   }
+
+   .ayuda-clientes i {
+      display: none;
+   }
+
    .contactos {
       display: block;
+   }
+
+   .contactos i {
+      display: inline;
    }
 
    .contactos li a {
