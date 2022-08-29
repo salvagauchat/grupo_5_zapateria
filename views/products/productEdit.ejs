@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Shoes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/styles-admin.css">
+
+</head>
+
+<body>
+
+    <!-- ********** HEADER *********** -->
+    <%- include('../partials/header.ejs') %>
+
+        <!-- ********** MAIN *********** -->
+        <main>
+            <h2 class="titulo-main">Editar producto</h2>
+            <form id="formulario" action="/" post="get" class="creacion-formulario">
+                <div class="control-form">
+                    <label for="nombre"></label>
+                    <input type="text" name="name" id="nombre" class="control" placeholder="Nombre producto">
+                </div>
+    
+                <div class="control-form">
+                    <label for=""></label>
+                    <input type="text" name="marca" id="marca" class="control" placeholder="Marca">
+                </div>
+
+                <div class="control-form">
+                    <label for=""></label>
+                    <input type="number" name="descuento" id="descuento" class="control" placeholder="Descuento %">
+                </div>
+
+                <div class="control-form">
+                    <label for=""></label>
+                    <input type="file" name="imagen" id="descuento" class="control" placeholder="Imagenes">
+                </div>
+
+                <div class="control-check">
+                    <label for="talles" class="titulos-form">Talles</label>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">22</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">24</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">26</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">28</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">30</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">32</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">34</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">35</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">36</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">37</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">38</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">39</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">40</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">41</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">42</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">43</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">44</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">45</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">46</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="talles" id="talles">
+                        <label for="">47</label>
+                    </div>
+        
+                </div>
+              
+                <div class="control-form">
+                    <label for="precio"></label>
+                    <input type="number" name="precio" id="precio" class="control" placeholder="Precio $$">
+                </div>
+    
+                <div class="control-form">
+                    <label for="precio" class="titulos-form" >Descripcion del producto</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" class="control"></textarea>
+                </div>
+    
+                <div class="botones">
+                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar producto</button>
+                    <button type="reset" class="boton-formulario">Borrar</button>
+                </div>
+            </form>
+            
+        </main>
+    
+
+        <!-- ********** FOOTER *********** -->
+        <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

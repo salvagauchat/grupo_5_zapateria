@@ -86,6 +86,12 @@ const controllers = {
     register: (req, res) => {
         res.render('./users/register')
     },
+    productAdmin: (req, res) =>{
+        res.render('./products/productAdmin')
+    },
+    productEdit: (req, res) =>{
+        res.render('./products/productEdit')
+    }
 }
 
 module.exports = controllers;
