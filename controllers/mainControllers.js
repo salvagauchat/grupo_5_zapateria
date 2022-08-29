@@ -6,6 +6,29 @@ const controllers = {
         res.render('./users/login')
     },
     productCart: (req, res) => {
+
+        const productosCarrito = [
+            {
+                img: 'images/hombre/nike-running-revolution-1.jpg',
+                precio: 16599,
+                descuento: 10,
+                talle: 43
+            },
+            {
+                img: 'images/mujer/reebok-gilde-ripple-1.jpg',
+                precio: 7400,
+                descuento: 0,
+                talle: 36
+            },
+            {
+                
+            }
+        ]
+        
+        res.render('./products/productCart')
+    },
+    productDetail: (req, res) => {
+
         const productos = [
             {
                 img: 'images/hombre/nike-running-revolution-1.jpg',
@@ -57,9 +80,7 @@ const controllers = {
                 disponibles: [1, 2, 1, 3]
             }
         ]
-        res.render('./products/productCart')
-    },
-    productDetail: (req, res) => {
+
         res.render('./products/productDetail')
     },
     register: (req, res) => {
