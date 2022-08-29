@@ -341,6 +341,18 @@ footer h3 {
 /*++++++++++++++ MEDIAS ++++++++++++++*/
 
 @media (min-width: 570px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 20px 5%;
+    }
+    .ayuda-clientes{
+        width: 30%;
+        margin: 0;
+    }
     .contactos {
         display: block;
     }

@@ -200,7 +200,7 @@ footer {
     flex-direction: column;
     position: relative;
     width: 100%;
-
+    padding: 20px 0;
 }
 
 .atencion-clientes {
@@ -242,9 +242,30 @@ footer h3 {
 /*++++++++++++++ MEDIAS ++++++++++++++*/
 
 @media (min-width: 570px) {
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 20px 5%;
+    }
+    .ayuda-clientes{
+        width: 30%;
+        margin: 0;
+    }
+    .ayuda-clientes i{
+        display: none;
+    }
+
     .contactos {
         display: block;
     }
+    .contactos i{
+        display: inline;
+    }
+
 
     .contactos li a {
         font-size: 16px;
@@ -260,6 +281,10 @@ footer h3 {
     .contactos li a:hover {
         color: #ffffff;
         padding-left: 8px;
+    }
+
+    .producto{
+        width: 40%;
     }
 }
 
@@ -298,5 +323,8 @@ footer h3 {
 
     .lista-menu li a:hover {
         background-color: #4a4a4a;
+    }
+    .producto{
+        width: 20%;
     }
 }
