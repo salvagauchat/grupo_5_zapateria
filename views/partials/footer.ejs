@@ -27,8 +27,19 @@
             <li><a href="">0800-FIVEGROUP</a></li>
         </ul>
     </div>
-    <div class="flecha-div">
-        <a href=""><span class="flecha-inicio"><i class="fa-solid fa-circle-up"></i></span></a>
-    </div>
 
+    <div class="flecha-div">
+        <button class="flecha-inicio"><i class="fa-solid fa-circle-up"></i></button>
+    </div>
+    
+    <script>
+        let btn = document.querySelector("button")
+    
+        btn.addEventListener("click", function() {
+          window.scrollTo(0, 0)
+        })
+    </script>
+   
 </footer>
+
+
