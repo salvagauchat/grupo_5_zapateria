@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/css/styles-index.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
@@ -22,124 +23,129 @@
     <!-- ********** HEADER *********** -->
     <%- include('../views/partials/header.ejs') %>
 
-    <!-- ********** MAIN *********** -->
-    <main>
-        <h3>Lo mas vendido <i class="fa-solid fa-fire" style="color: red;"></i></h3>
-        <section>
+        <!-- ********** MAIN *********** -->
+        <main>
+            <h3>Lo mas vendido <i class="fa-solid fa-fire" style="color: red;"></i></h3>
+            <section>
+                <% productos.forEach(producto=> { %>
+                    <article class="producto">
+                        <a class="imagen-producto" href="/product-detail"><img
+                                src="<%=producto.img %>"></a>
+                        <div class="info-producto">
+                            <i class="fas fa-truck"></i>
+                            <div class="descripcion">
+                                <h4>Nike Revolution 6NN</h4>
+                            </div>
+                            <p class="precio">$16.599</p>
+                        </div>
+                    </article>
+                    <% }) %>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img
-                        src="/images/hombre/nike-running-revolution-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Nike Revolution 6NN</h4>
-                    </div>
-                    <p class="precio">$16.599</p>
-                </div>
-            </article>
 
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img
-                        src="/images/hombre/new-balance-arishi-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>New Balance Running Fresh Foam Greem Leaf</h4>
-                    </div>
-                    <p class="precio">$9.000</p>
-                </div>
-            </article>
+                        <article class="producto">
+                            <a class="imagen-producto" href="/product-detail"><img
+                                    src="/images/hombre/new-balance-arishi-1.jpg"></a>
+                            <div class="info-producto">
+                                <i class="fas fa-truck"></i>
+                                <div class="descripcion">
+                                    <h4>New Balance Running Fresh Foam Greem Leaf</h4>
+                                </div>
+                                <p class="precio">$9.000</p>
+                            </div>
+                        </article>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img src="/images/mujer/asics-trail-lite-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Asics Trail Running Fuji Lite 2</h4>
-                    </div>
-                    <p class="precio">$11.700</p>
-                </div>
-            </article>
+                        <article class="producto">
+                            <a class="imagen-producto" href="/product-detail"><img
+                                    src="/images/mujer/asics-trail-lite-1.jpg"></a>
+                            <div class="info-producto">
+                                <i class="fas fa-truck"></i>
+                                <div class="descripcion">
+                                    <h4>Asics Trail Running Fuji Lite 2</h4>
+                                </div>
+                                <p class="precio">$11.700</p>
+                            </div>
+                        </article>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img
-                        src="/images/mujer/reebok-gilde-ripple-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Reebok Royal Gilde Ripple CLP</h4>
-                    </div>
-                    <p class="precio">$7.400</p>
-                </div>
-            </article>
-        </section>
+                        <article class="producto">
+                            <a class="imagen-producto" href="/product-detail"><img
+                                    src="/images/mujer/reebok-gilde-ripple-1.jpg"></a>
+                            <div class="info-producto">
+                                <i class="fas fa-truck"></i>
+                                <div class="descripcion">
+                                    <h4>Reebok Royal Gilde Ripple CLP</h4>
+                                </div>
+                                <p class="precio">$7.400</p>
+                            </div>
+                        </article>
+            </section>
 
-        <h3>Ofertas relámpago <i class="fa-solid fa-bolt" style="color:#d5d834;"></i></h3>
-        <section>
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img
-                        src="/images/hombre/nike-court-vision-mid-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Nike Court Vision Mid</h4>
+            <h3>Ofertas relámpago <i class="fa-solid fa-bolt" style="color:#d5d834;"></i></h3>
+            <section>
+                <article class="producto">
+                    <a class="imagen-producto" href="/product-detail"><img
+                            src="/images/hombre/nike-court-vision-mid-1.jpg"></a>
+                    <div class="info-producto">
+                        <i class="fas fa-truck"></i>
+                        <div class="descripcion">
+                            <h4>Nike Court Vision Mid</h4>
+                        </div>
+                        <div class="pago">
+                            <p class="precio">$12.230</p>
+                            <p class="descuento">10% off</p>
+                        </div>
                     </div>
-                    <div class="pago">
-                        <p class="precio">$12.230</p>
-                        <p class="descuento">10% off</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img src="/images/mujer/adidas-60s-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Adidas 60S 2.0</h4>
+                <article class="producto">
+                    <a class="imagen-producto" href="/product-detail"><img src="/images/mujer/adidas-60s-1.jpg"></a>
+                    <div class="info-producto">
+                        <i class="fas fa-truck"></i>
+                        <div class="descripcion">
+                            <h4>Adidas 60S 2.0</h4>
+                        </div>
+                        <div class="pago">
+                            <p class="precio">$9.200</p>
+                            <p class="descuento">20% off</p>
+                        </div>
                     </div>
-                    <div class="pago">
-                        <p class="precio">$9.200</p>
-                        <p class="descuento">20% off</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img src="/images/niña/adidas-racer-tr21-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Adidas Racer TR21 Niña</h4>
+                <article class="producto">
+                    <a class="imagen-producto" href="/product-detail"><img
+                            src="/images/niña/adidas-racer-tr21-1.jpg"></a>
+                    <div class="info-producto">
+                        <i class="fas fa-truck"></i>
+                        <div class="descripcion">
+                            <h4>Adidas Racer TR21 Niña</h4>
+                        </div>
+                        <div class="pago">
+                            <p class="precio">$6.662</p>
+                            <p class="descuento">20% off</p>
+                        </div>
                     </div>
-                    <div class="pago">
-                        <p class="precio">$6.662</p>
-                        <p class="descuento">20% off</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="producto">
-                <a class="imagen-producto" href="/product-detail"><img src="/images/niño/adidas-velcro-advantage-1.jpg"></a>
-                <div class="info-producto">
-                    <i class="fas fa-truck"></i>
-                    <div class="descripcion">
-                        <h4>Adidas Velcro Niño</h4>
+                <article class="producto">
+                    <a class="imagen-producto" href="/product-detail"><img
+                            src="/images/niño/adidas-velcro-advantage-1.jpg"></a>
+                    <div class="info-producto">
+                        <i class="fas fa-truck"></i>
+                        <div class="descripcion">
+                            <h4>Adidas Velcro Niño</h4>
+                        </div>
+                        <div class="pago">
+                            <p class="precio">$7.662</p>
+                            <p class="descuento">10% off</p>
+                        </div>
                     </div>
-                    <div class="pago">
-                        <p class="precio">$7.662</p>
-                        <p class="descuento">10% off</p>
-                    </div>
-                </div>
-            </article>
+                </article>
 
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- ********** FOOTER *********** -->
-    <%- include('../views/partials/footer.ejs') %>
+        <!-- ********** FOOTER *********** -->
+        <%- include('../views/partials/footer.ejs') %>
 </body>
 
 </html>
