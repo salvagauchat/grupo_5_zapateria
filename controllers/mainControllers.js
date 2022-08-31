@@ -1,4 +1,3 @@
-
 const productos = [
     {
         img: 'images/hombre/nike-running-revolution-1.jpg',
@@ -72,12 +71,12 @@ const productos = [
         disponibles: [1, 2, 1, 3],
         categoria: "oferta"
     }
-]
+] 
 
 
 const controllers = {
     index: (req, res) => {
-        res.render('index', {
+        res.render('index', /* {
             productos:productos.forEach(producto => {
                 if (producto.categoria === "oferta") {
                     oferta.push(producto)
@@ -85,7 +84,7 @@ const controllers = {
                     destacado.push(producto)
                 }
             })
-        })
+        } */)
     },
 
     login: (req, res) => {
