@@ -47,8 +47,23 @@ const controllers = {
         res.render('./users/register')
     },
     productAdmin: (req, res) => {
-        res.render('./products/productAdmin')
+        res.render('./products/productAdmin'); 
     },
+    productAdminProducto: (req, res) =>{
+
+        let productoCreado = {
+            name: req.body.name,
+            price: req.body.price,
+            discount: req.body.discount,
+            category: req.body.category,
+            image: req.body.image,
+            talle: req.body.talle 
+        }
+        productos.push(productoCreado);
+
+        fs.writesFileSync(pathDataBase,JSON.stringify(productos, null, " "));
+    
+    }, 
     productEdit: (req, res) => {
         res.render('./products/productEdit')
     }

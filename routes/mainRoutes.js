@@ -9,8 +9,11 @@ router.get('/login', mainController.login);
 router.get('/register', mainController.register);
 router.get('/product-cart', mainController.productCart);
 router.get('/product-detail', mainController.productDetail);
+
 router.get('/product-admin', mainController.productAdmin);
+router.post('/product-admin', mainController.productAdminProducto);
+
 router.get('/product-edit', mainController.productEdit);
 
 
-module.exports = router
+module.exports = router;
