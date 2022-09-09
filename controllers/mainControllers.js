@@ -3,7 +3,7 @@ const path = require('path');
 
 const pathDataBase = path.join(__dirname, '../data/products.json')
 
-const productos = JSON.parse(fs.readFileSync(pathDataBase), {encoding: 'utf-8'});
+const products = JSON.parse(fs.readFileSync(pathDataBase), {encoding: 'utf-8'});
 
 const controllers = {
     index: (req, res) => {
@@ -59,10 +59,12 @@ const controllers = {
             image: req.body.image,
             talle: req.body.talle 
         }
-        productos.push(productoCreado);
+        console.log(req.body);
+        products.push(productoCreado);
 
-        fs.writesFileSync(pathDataBase,JSON.stringify(productos, null, " "));
-    
+        fs.appendFileSync(pathDataBase,JSON.stringify(products, null, " "));
+
+        res.redirect('/');
     }, 
     productEdit: (req, res) => {
         res.render('./products/productEdit')

@@ -27,7 +27,7 @@
         <main>
             <h2 class="titulo-main">Crear producto</h2>
 
-            <form id="formulario" action="product-admin" post="POST" class="creacion-formulario">
+            <form id="formulario" action="/product-admin" post="POST" class="creacion-formulario" enctype="multipart/form-data">
                 <div class="control-form">
                     <label for="nombre"></label>
                     <input type="text" name="name" id="nombre" class="control" placeholder="Nombre producto">
@@ -54,7 +54,7 @@
 
                 <div class="control-form">
                     <label for="imagen" class="titulos-form">Imagenes del producto</label>
-                    <input type="file" name="image" id="image" class="control" placeholder="Imagenes">
+                    <input type="file" name="image" id="image" class="control" placeholder="Imagenes" multiple>
                 </div>
 
                 <div class="control-check">
