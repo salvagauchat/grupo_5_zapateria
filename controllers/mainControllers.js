@@ -8,7 +8,7 @@ const products = JSON.parse(fs.readFileSync(pathDataBase), {encoding: 'utf-8'});
 const controllers = {
     index: (req, res) => {
         res.render('index', {
-            productos: productos
+            productos: products
         })
     },
 
@@ -17,24 +17,7 @@ const controllers = {
     },
     productCart: (req, res) => {
 
-        const productosCarrito = [
-            {
-                img: 'images/hombre/nike-running-revolution-1.jpg',
-                precio: 16599,
-                descuento: 10,
-                talle: 43
-            },
-            {
-                img: 'images/mujer/reebok-gilde-ripple-1.jpg',
-                precio: 7400,
-                descuento: 0,
-                talle: 36
-            },
-            {
-
-            }
-        ]
-
+        s
         res.render('./products/productCart')
     },
     productDetail: (req, res) => {
@@ -63,6 +46,7 @@ const controllers = {
         products.push(productoCreado);
 
         fs.appendFileSync(pathDataBase,JSON.stringify(products, null, " "));
+        fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
 
         res.redirect('/');
     }, 
