@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path');
 
-const pathDataBase = path.join(__dirname, '../data/products.json')
+const pathDataBase = path.join(__dirname, '../data/products.json');
 
-const products = JSON.parse(fs.readFileSync(pathDataBase), {encoding: 'utf-8'});
+const products = JSON.parse(fs.readFileSync(pathDataBase), { encoding: 'utf-8' });
 
 const controllers = {
     index: (req, res) => {
@@ -30,9 +30,9 @@ const controllers = {
         res.render('./users/register')
     },
     productAdmin: (req, res) => {
-        res.render('./products/productAdmin'); 
+        res.render('./products/productAdmin');
     },
-    productAdminProducto: (req, res) =>{
+    productAdminProducto: (req, res) => {
 
         let productoCreado = {
             name: req.body.name,
@@ -40,18 +40,26 @@ const controllers = {
             discount: req.body.discount,
             category: req.body.category,
             image: req.body.image,
-            talle: req.body.talle 
+            talle: req.body.talle
         }
-        console.log(req.body);
         products.push(productoCreado);
 
-        fs.appendFileSync(pathDataBase,JSON.stringify(products, null, " "));
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
 
         res.redirect('/');
-    }, 
+    },
     productEdit: (req, res) => {
         res.render('./products/productEdit')
+    },
+    edit: (req, res) => {
+        const productId = Number(req.params.id);
+
+        const theProduct = products.find(thisProduct => thisProduct.id === productId);
+
+        return res.render('./products/productEdit', {
+            product: theProduct,
+        });
+
     }
 }
 

@@ -5,14 +5,22 @@ const mainRoutes = require('./routes/mainRoutes')
 
 const app = express()
 
-const publicPath = path.resolve(__dirname, './public')
+const publicPath = path.resolve(__dirname, './public');
 
+const methodOverride = require('method-override');
+
+
+app.use(methodOverride('_method'));
+
+app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs')
 
 app.use(express.static('public'))
 
 app.use(express.urlencoded({extended: true }));
 app.use(express.json());
+
+
 
 app.use(mainRoutes)
 

@@ -13,7 +13,8 @@ router.get('/product-detail', mainController.productDetail);
 router.get('/product-admin', mainController.productAdmin);
 router.post('/product-admin', mainController.productAdminProducto);
 
-router.get('/product-edit', mainController.productEdit);
+router.get('/product-edit/:id', mainController.productEdit);
+router.put('/product-edit/:id',mainController.edit);
 
 
 module.exports = router;

@@ -3,7 +3,8 @@
     "app": "^0.1.0",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "method-override": "^3.0.0"
   },
   "scripts": {
     "start": "node app",
