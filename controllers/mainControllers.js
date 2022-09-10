@@ -17,12 +17,9 @@ const controllers = {
     },
     productCart: (req, res) => {
 
-        s
         res.render('./products/productCart')
     },
     productDetail: (req, res) => {
-
-
 
         res.render('./products/productDetail')
     },
@@ -64,3 +61,4 @@ const controllers = {
 }
 
 module.exports = controllers;
+
