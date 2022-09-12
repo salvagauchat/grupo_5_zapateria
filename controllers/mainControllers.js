@@ -5,6 +5,8 @@ const pathDataBase = path.join(__dirname, '../data/products.json');
 
 const products = JSON.parse(fs.readFileSync(pathDataBase), { encoding: 'utf-8' });
 
+const {validationResult} = require('express-validator');
+
 const controllers = {
     index: (req, res) => {
         res.render('index', {
@@ -31,6 +33,15 @@ const controllers = {
     },
     productAdminProducto: (req, res) => {
 
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0){
+            return res.render('./products/productAdmin', {
+                errors: resultValidation.mapped(), //convierte al array en un objeto.
+                oldData: req.body
+            })
+        }
+
         const generateId = () => {
             const lastProduct = products[products.length - 1];
             const lastId = lastProduct.id;
@@ -54,7 +65,7 @@ const controllers = {
 
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
 
-        res.redirect('/');
+        res.redirect('./products/productAdmin');
     },
     productEdit: (req, res) => {
         res.render('./products/productEdit')

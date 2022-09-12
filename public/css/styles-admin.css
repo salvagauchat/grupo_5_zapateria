@@ -248,6 +248,10 @@ main button:hover::before {
     padding: 0 10px;
 } 
 
+.errores{
+    color: rgba(235, 79, 51, 0.801);
+    padding-top: 2px;
+}
 
 /********** FOOTER **********/
 

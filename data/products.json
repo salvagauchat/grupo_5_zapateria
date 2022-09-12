@@ -170,5 +170,14 @@
    "on",
    "on"
   ]
+ },
+ {
+  "id": 10,
+  "name": "nuevo",
+  "price": "5500",
+  "discount": "10",
+  "category": "destacado",
+  "image": [],
+  "talle": "on"
  }
 ]
