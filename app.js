@@ -7,7 +7,7 @@ const app = express()
 
 const publicPath = path.resolve(__dirname, './public');
 
-const methodOverride = require('method-override');
+const methodOverride = require('method-override'); 
 
 
 app.use(methodOverride('_method'));

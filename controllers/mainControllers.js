@@ -31,13 +31,24 @@ const controllers = {
     },
     productAdminProducto: (req, res) => {
 
+        const generateId = () => {
+            const lastProduct = products[products.length - 1];
+            const lastId = lastProduct.id;
+            return lastId + 1;
+        }
+
+
         let productoCreado = {
+            id: generateId(),
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
             category: req.body.category,
             image: req.body.image,
             talle: req.body.talle
+        }
+        if (req.files) {
+            productoCreado.image = req.files.map(file => file.filename);
         }
         products.push(productoCreado);
 
