@@ -63,9 +63,11 @@ const controllers = {
         }
         products.push(productoCreado);
 
+
+
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
 
-        res.redirect('./products/productAdmin');
+        res.redirect('./');
     },
     productEdit: (req, res) => {
         res.render('./products/productEdit')
@@ -78,7 +80,6 @@ const controllers = {
         return res.render('./products/productEdit', {
             product: theProduct,
         });
-
     }
 }
 

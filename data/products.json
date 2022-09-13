@@ -156,28 +156,5 @@
    3
   ],
   "category": "oferta"
- },
- {
-  "id": 9,
-  "name": "hola",
-  "price": "5500",
-  "discount": "10",
-  "category": "oferta",
-  "image": [
-   "images_1662990789733.jpeg"
-  ],
-  "talle": [
-   "on",
-   "on"
-  ]
- },
- {
-  "id": 10,
-  "name": "nuevo",
-  "price": "5500",
-  "discount": "10",
-  "category": "destacado",
-  "image": [],
-  "talle": "on"
  }
 ]
