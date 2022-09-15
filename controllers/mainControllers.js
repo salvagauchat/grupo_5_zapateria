@@ -63,14 +63,12 @@ const controllers = {
         }
         products.push(productoCreado);
 
-
-
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
 
         res.redirect('./');
     },
     productEdit: (req, res) => {
-        res.render('./products/productEdit')
+        res.render('./products/productEdit');
     },
     edit: (req, res) => {
         const productId = Number(req.params.id);
