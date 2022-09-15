@@ -31,7 +31,7 @@
                 enctype="multipart/form-data">
                 <div class="control-form">
                     <label for="nombre"></label>
-                    <input type="text" name="name" id="name" class="control" placeholder="Nombre producto" value="<%= locals.oldData ? oldData.name : null  %> ">
+                    <input type="text" name="name" id="name" class="control"  value="<%= locals.oldData ? oldData.name : null  %>" placeholder="Nombre producto">
                     <% if (locals.errors && errors.name) { %>
                         <div class="errores">
                             <%= errors.name.msg %>
