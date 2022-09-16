@@ -17,6 +17,15 @@ const controllers = {
     login: (req, res) => {
         res.render('./users/login')
     },
+    processLogin: (req, res) => {
+        let resultValidation = validationResult(req);
+       if (resultValidation.errors.length > 0){
+        return res.render('./users/login', {
+            errors: resultValidation.mapped(), //convierte al array en un objeto.
+            oldData: req.body
+        })
+    }
+    },
     productCart: (req, res) => {
 
         res.render('./products/productCart')
@@ -33,7 +42,7 @@ const controllers = {
     },
     productAdminProducto: (req, res) => {
 
-        const resultValidation = validationResult(req);
+        let resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0){
             return res.render('./products/productAdmin', {

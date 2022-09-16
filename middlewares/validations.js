@@ -26,6 +26,10 @@ const validations = {
             }
             } 
         }) */
+    ],
+    validationsLogin:[
+        body('email').notEmpty().withMessage('Tienes que escribir un correo electrónico '),
+        body('password').notEmpty().withMessage('Tienes que escribir una contraceña')
     ]
 }
 
