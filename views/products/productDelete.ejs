@@ -25,8 +25,8 @@
 
         <!-- ********** MAIN *********** -->
         <main>
-            <h2 class="titulo-main">Editar producto - <%= editProduct.name %> -</h2>
-            <form id="formulario" action="/product-edit/actualizar?_method=PUT" method="POST" class="creacion-formulario">
+            <h2 class="titulo-main">Eliminar producto - <%= editProduct.name %> -</h2>
+            <form id="formulario" action="/product-delete/eliminar?_method=DELETE" method="POST" class="creacion-formulario">
                 <div class="control-form">
                     <label for="nombre" class="titulos-form">Nombre producto:</label>
                     <input type="text" name="name" id="nombre" class="control" value="<%= editProduct.name %>">
@@ -142,7 +142,7 @@
                 </div>
     
                 <div class="botones">
-                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar producto</button>
+                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Eliminar producto</button>
                     <!-- <button type="reset" class="boton-formulario">Borrar</button> -->
                 </div>
             </form>

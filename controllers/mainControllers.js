@@ -5,7 +5,7 @@ const pathDataBase = path.join(__dirname, '../data/products.json');
 
 const products = JSON.parse(fs.readFileSync(pathDataBase), { encoding: 'utf-8' });
 
-const {validationResult} = require('express-validator');
+const { validationResult } = require('express-validator');
 
 const controllers = {
     index: (req, res) => {
@@ -35,7 +35,7 @@ const controllers = {
 
         const resultValidation = validationResult(req);
 
-        if (resultValidation.errors.length > 0){
+        if (resultValidation.errors.length > 0) {
             return res.render('./products/productAdmin', {
                 errors: resultValidation.mapped(), //convierte al array en un objeto.
                 oldData: req.body
@@ -68,16 +68,60 @@ const controllers = {
         res.redirect('./');
     },
     productEdit: (req, res) => {
-        res.render('./products/productEdit');
+        let idProduct = req.params.id;
+
+        let editProduct = products[idProduct - 1];
+
+        res.render("./products/productEdit", { editProduct });
+
     },
     edit: (req, res) => {
-        const productId = Number(req.params.id);
 
-        const theProduct = products.find(thisProduct => thisProduct.id === productId);
+        let idProduct = req.params.id;
 
-        return res.render('./products/productEdit', {
-            product: theProduct,
+        let productoEditado= {
+            id: idProduct,
+            name: req.body.name,
+            price: req.body.price,
+            discount: req.body.discount,
+            category: req.body.category,
+            image: req.body.image,
+            talle: req.body.talle
+        }
+
+        products.forEach(elementoActual=> {
+            if (elementoActual.id == idProduct){
+                elementoActual.name = productoEditado.name
+                elementoActual.price = productoEditado.price
+                elementoActual.discount = productoEditado.discount
+                elementoActual.category = productoEditado.category,
+                elementoActual.talle = productoEditado.talle
+            }
         });
+
+        fs.writeFileSync(pathDataBase, JSON.stringify(products, null, " "));
+
+        res.redirect("/");
+
+    },
+    productDelete: (req, res)=>{
+
+        let idProduct = req.params.id;
+
+        let editProduct = products[idProduct - 1];
+
+        res.render("./products/productDelete", { editProduct });
+    },
+    delete: (req, res)=>{
+        let idProduct = req.params.id;
+
+        const productoEliminado= products.filter(producto => producto.id != idProduct);
+
+        products = productoEliminado;
+
+        fs.writeFileSync(pathDataBase, JSON.stringify(products, null, " "));
+
+        res.send("voy por delete");
     }
 }
 
