@@ -24,7 +24,9 @@
 
     <!-- ********** MAIN *********** -->
     <main>
-        <form class="form">
+     
+      
+        <form class="form" method="POST" action="/login">
             <h2 class="form__title">Inicia Sesión</h2>
             <p class="form__paragraph">¿Aún no tienes una cuenta? <a href="/register" class="form__link">Entra aquí</a>
             </p>
@@ -32,13 +34,23 @@
             <div class="form__container">
 
                 <div class="form__group">
-                    <input type="email" id="email" class="form__input" placeholder=" ">
+                    <input type="email" name="email" id="email" class="form__input <%= locals.errors && errors.email ? 'is-invalid' : null %>" placeholder=" ">
                     <label form="email" class="form__label">Correo electrónico:</label>
+                    <%  if(locals.errors && errors.email) { %>
+                        <div class="text-danger">
+                            <%= errors.email.msg%> 
+                        </div>
+                       <% } %> 
                     <spam class="form__line"></spam>
                 </div>
                 <div class="form__group">
-                    <input type="password" id="password" class="form__input" placeholder=" ">
+                    <input type="password" name="password" id="password" class="form__input <%= locals.errors && errors.password ? 'is-invalid' : null %>" placeholder=" ">
                     <label form="password" class="form__label">Contraseña:</label>
+                    <%  if(locals.errors && errors.password) { %>
+                        <div class="text-danger">
+                            <%= errors.password.msg%> 
+                        </div>
+                       <% } %> 
                     <spam class="form__line"></spam>
                 </div>
                 <div class="botones">

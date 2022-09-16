@@ -20,11 +20,14 @@ const storage = multer.diskStorage({
     }
 })
 
+
 let upload = multer({storage: storage});
 
-
 router.get('/', mainController.index);
+
 router.get('/login', mainController.login);
+router.post('/login', validations.validationsLogin ,mainController.processLogin);
+
 router.get('/register', mainController.register);
 router.get('/product-cart', mainController.productCart);
 router.get('/product-detail', mainController.productDetail);
