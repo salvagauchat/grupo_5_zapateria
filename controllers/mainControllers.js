@@ -46,7 +46,7 @@ const controllers = {
 
         if (resultValidation.errors.length > 0){
             return res.render('./products/productAdmin', {
-                errors: resultValidation.mapped(), //convierte al array en un objeto.
+                errors: resultValidation.mapped(), //convierte al array en un objeto literario.
                 oldData: req.body
             })
         }
