@@ -227,7 +227,12 @@ main button:hover::before {
 .login p{
     padding-right: 3px;
 }
-
+.text-danger{
+    color: #be0505;
+}
+.is-invalid{
+    border: #be0505 solid 1px;
+}
 /********** FOOTER **********/
 
 footer {

@@ -25,6 +25,8 @@ const controllers = {
                 oldData: req.body
             })
         }
+        
+        return res.send('Registro en construcción')
     },
     productCart: (req, res) => {
 

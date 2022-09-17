@@ -27,7 +27,14 @@
             <form id="formulario" method="POST" action="/register" class="creacion-formulario">
                 <div class="control-form">
                     <label for="nombre"></label>
-                    <input type="text" name="name" id="nombre" class="control" placeholder="Nombre y apellido">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="nombre" 
+                        class="control <%= locals.errors && errors.name ? 'is-invalid' : null %>" 
+                        placeholder="Nombre y apellido"
+                        value="<%= locals.oldData ? oldData.name : null %>"
+                    >
                     <% if(locals.errors && errors.name) { %>
                         <div class="text-danger">
                             <%= errors.name.msg %>
@@ -37,8 +44,14 @@
 
                 <div class="control-form">
                     <label for=""></label>
-                    <input type="text" name="nameUser" id="nombre-usuario" class="control"
-                        placeholder="Nombre de usuario">
+                    <input 
+                        type="text" 
+                        name="nameUser" 
+                        id="nombre-usuario" 
+                        class="control <%= locals.errors && errors.nameUser ? 'is-invalid' : null %>"
+                        placeholder="Nombre de usuario"
+                        value="<%= locals.oldData ? oldData.nameUser : null %>"    
+                    >
                     <% if(locals.errors && errors.nameUser) { %>
                         <div class="text-danger">
                             <%= errors.nameUser.msg %>
@@ -48,7 +61,13 @@
 
                 <div class="control-form">
                     <label for="fecha" class="titulos-form">Fecha de nacimiento</label>
-                    <input type="date" name="fechaNaci" id="fecha" class="control">
+                    <input 
+                        type="date" 
+                        name="fechaNaci" 
+                        id="fecha" 
+                        class="control <%= locals.errors && errors.fechaNaci ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.fechaNaci : null %>"    
+                    >
                     <% if(locals.errors && errors.fechaNaci) { %>
                         <div class="text-danger">
                             <%= errors.fechaNaci.msg %>
@@ -58,7 +77,14 @@
 
                 <div class="control-form">
                     <label for="domicilio"></label>
-                    <input type="text" name="domic" id="domicilio" class="control" placeholder="Domicilio">
+                    <input 
+                        type="text" 
+                        name="domic" 
+                        id="domicilio" 
+                        class="control <%= locals.errors && errors.domic ? 'is-invalid' : null %>" 
+                        placeholder="Domicilio"
+                        value="<%= locals.oldData ? oldData.domic : null %>"    
+                    >
                     <% if(locals.errors && errors.domic) { %>
                         <div class="text-danger">
                             <%= errors.domic.msg %>
@@ -68,7 +94,14 @@
 
                 <div class="control-form">
                     <label for="email"></label>
-                    <input type="email" name="email" id="email" class="control" placeholder="Email">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        class="control <%= locals.errors && errors.email ? 'is-invalid' : null %>" 
+                        placeholder="Email"
+                        value="<%= locals.oldData ? oldData.email : null %>"    
+                    >
                     <% if(locals.errors && errors.email) { %>
                         <div class="text-danger">
                             <%= errors.email.msg %>
@@ -78,7 +111,12 @@
 
                 <div class="control-form">
                     <label for="contraseña"></label>
-                    <input type="password" name="password" id="contraseña" class="control" placeholder="Contraseña">
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="contraseña" 
+                        class="control <%= locals.errors && errors.password ? 'is-invalid' : null %>" 
+                        placeholder="Contraseña">
                     <% if(locals.errors && errors.password) { %>
                         <div class="text-danger">
                             <%= errors.password.msg %>
@@ -87,7 +125,11 @@
                 </div>
                 <div class="control-form">
                     <label for="confirpass"></label>
-                    <input type="password" name="confpassword" id="confircontra" class="control"
+                    <input 
+                        type="password" 
+                        name="confpassword" 
+                        id="confircontra" 
+                        class="control <%= locals.errors && errors.confpassword ? 'is-invalid' : null %>"
                         placeholder="Confirmar contraseña">
                     <% if(locals.errors && errors.confpassword) { %>
                         <div class="text-danger">
