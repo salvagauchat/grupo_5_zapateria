@@ -33,14 +33,14 @@ const validations = {
         body('password').notEmpty().withMessage('Debes escribir una contraceña'),
     ],
 
-    validationRegister: [
+    validationsRegister : [
         body('name').notEmpty().withMessage('Escribir tu nombre y apellido'),
         body('nameUser').notEmpty().withMessage('Escribir un nombre de usuario'),
         body('fechaNaci').notEmpty().withMessage('Escribir tu fecha de nacimiento'),
         body('domic').notEmpty().withMessage('Escribir tu direccion'),
         body('email').isEmail().withMessage('Completar con un email valido'),
-        body('passwor').notEmpty().withMessage('Debe ser mayor a 8 caracteres'),
-        body('confirPass').notEmpty().withMessage('Confirmar contraseña'),
+        body('password').notEmpty().withMessage('Debe ser mayor a 8 caracteres'),
+        body('confpassword').notEmpty().withMessage('Confirmar contraseña'),
     ]
 }
 

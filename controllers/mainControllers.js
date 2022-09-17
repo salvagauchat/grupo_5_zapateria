@@ -19,12 +19,12 @@ const controllers = {
     },
     processLogin: (req, res) => {
         let resultValidation = validationResult(req);
-       if (resultValidation.errors.length > 0){
-        return res.render('./users/login', {
-            errors: resultValidation.mapped(), //convierte al array en un objeto.
-            oldData: req.body
-        })
-    }
+        if (resultValidation.errors.length > 0) {
+            return res.render('./users/login', {
+                errors: resultValidation.mapped(), //convierte al array en un objeto.
+                oldData: req.body
+            })
+        }
     },
     productCart: (req, res) => {
 
@@ -36,6 +36,15 @@ const controllers = {
     },
     register: (req, res) => {
         res.render('./users/register')
+    },
+    processRegister: (req, res) => {
+        let resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+            return res.render('./users/register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
     },
     productAdmin: (req, res) => {
         res.render('./products/productAdmin');
@@ -88,7 +97,7 @@ const controllers = {
 
         let idProduct = req.params.id;
 
-        let productoEditado= {
+        let productoEditado = {
             id: idProduct,
             name: req.body.name,
             price: req.body.price,
@@ -98,13 +107,13 @@ const controllers = {
             talle: req.body.talle
         }
 
-        products.forEach(elementoActual=> {
-            if (elementoActual.id == idProduct){
+        products.forEach(elementoActual => {
+            if (elementoActual.id == idProduct) {
                 elementoActual.name = productoEditado.name
                 elementoActual.price = productoEditado.price
                 elementoActual.discount = productoEditado.discount
                 elementoActual.category = productoEditado.category,
-                elementoActual.talle = productoEditado.talle
+                    elementoActual.talle = productoEditado.talle
             }
         });
 
@@ -113,7 +122,7 @@ const controllers = {
         res.redirect("/");
 
     },
-    productDelete: (req, res)=>{
+    productDelete: (req, res) => {
 
         let idProduct = req.params.id;
 
@@ -121,10 +130,10 @@ const controllers = {
 
         res.render("./products/productDelete", { editProduct });
     },
-    delete: (req, res)=>{
+    delete: (req, res) => {
         let idProduct = req.params.id;
 
-        const productoEliminado= products.filter(producto => producto.id != idProduct);
+        const productoEliminado = products.filter(producto => producto.id != idProduct);
 
         products = productoEliminado;
 

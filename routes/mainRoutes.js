@@ -29,6 +29,9 @@ router.get('/login', mainController.login);
 router.post('/login', validations.validationsLogin ,mainController.processLogin);
 
 router.get('/register', mainController.register);
+router.post('/register', validations.validationsRegister, mainController.processRegister);
+
+
 router.get('/product-cart', mainController.productCart);
 router.get('/product-detail', mainController.productDetail);
 
