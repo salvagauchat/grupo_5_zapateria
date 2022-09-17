@@ -30,7 +30,7 @@ const validations = {
 
     validationsLogin: [
         body('email').isEmail().withMessage('Completar con un email valido'),
-        body('password').notEmpty().withMessage('Debes escribir una contraceña'),
+        body('password').isLength({min: 8}).withMessage('Debes escribir tu contraseña'),
     ],
 
     validationsRegister : [
@@ -39,7 +39,7 @@ const validations = {
         body('fechaNaci').notEmpty().withMessage('Escribir tu fecha de nacimiento'),
         body('domic').notEmpty().withMessage('Escribir tu direccion'),
         body('email').isEmail().withMessage('Completar con un email valido'),
-        body('password').notEmpty().withMessage('Debe ser mayor a 8 caracteres'),
+        body('password').isLength({min: 8}).withMessage('Debe ser mayor a 7 caracteres'),
         body('confpassword').notEmpty().withMessage('Confirmar contraseña'),
     ]
 }
