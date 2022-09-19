@@ -26,12 +26,13 @@
         <!-- ********** MAIN *********** -->
         <main>
             <h2 class="titulo-main">Editar producto - <%= editProduct.name %> -</h2>
-            <form id="formulario" action="/product-edit/<%=editProduct.id%>?_method=PUT" method="POST" class="creacion-formulario">
+            <form id="formulario" action="/product-edit/<%=editProduct.id%>?_method=PUT" method="POST"
+                class="creacion-formulario">
                 <div class="control-form">
                     <label for="nombre" class="titulos-form">Nombre producto:</label>
                     <input type="text" name="name" id="nombre" class="control" value="<%= editProduct.name %>">
                 </div>
-    
+
                 <div class="control-form">
                     <label for="marca" class="titulos-form">Marca:</label>
                     <input type="text" name="marca" id="marca" class="control" value="<%= editProduct.marca %>">
@@ -39,7 +40,8 @@
 
                 <div class="control-form">
                     <label for="descuento" class="titulos-form">Descuento:</label>
-                    <input type="number" name="discount" id="descuento" class="control" value="<%= editProduct.discount %>">
+                    <input type="number" name="discount" id="descuento" class="control"
+                        value="<%= editProduct.discount %>">
                 </div>
 
                 <div class="control-form">
@@ -130,24 +132,34 @@
                         <label for="">47</label>
                     </div>
                 </div>
-        
+
                 <div class="control-form">
                     <label for="descuento" class="titulos-form">Precio:</label>
                     <input type="number" name="price" id="precio" class="control" value="<%= editProduct.price %>">
                 </div>
-    
                 <div class="control-form">
-                    <label for="precio" class="titulos-form" >Descripcion del producto</label>
+                    <label for="category" class="titulos-form">Categoria:</label>
+                    <select name="category" id="category" class="control">
+                        <option value="" selected>Ninguna</option>
+                        <option value="destacado">Destacado</option>
+                        <option value="oferta">Oferta</option>
+                    </select>
+                </div>
+                <div class="control-form">
+                    <label for="precio" class="titulos-form">Descripcion del producto</label>
                     <textarea name="comentario" id="comentario" cols="30" rows="10" class="control"></textarea>
                 </div>
-    
+
+
+
                 <div class="botones">
-                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar producto</button>
+                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar
+                        producto</button>
                 </div>
             </form>
-            
+
         </main>
-    
+
 
         <!-- ********** FOOTER *********** -->
         <%- include('../partials/footer.ejs') %>

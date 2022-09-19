@@ -99,7 +99,7 @@ const controllers = {
     edit: (req, res) => {
 
         let idProduct = req.params.id;
-        idProduct = idProduct-1;
+        idProduct = idProduct;
         
 
         let productoEditado = {
@@ -122,6 +122,7 @@ const controllers = {
             }
         });
         
+        console.log(productoEditado);
 
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, " "));
 
