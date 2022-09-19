@@ -33,3 +33,40 @@ Sprint 2 (Retro):
 
 - Que deberiamos dejar de hacer:
     * Demorar mucho en resolver problemas
+
+
+Sprint 3 (Retro):
+- Que hicimos bien:
+    * Nos supimos dividir las tareas
+    * Tuvimos muy buena comunicación
+    * Hubo participación de todos los integrantes del grupo
+    * Se trabajaron nuevas ideas para el proyecto
+
+- Que hicimos mal:
+    * No coincidir en un horario fijo para juntarnos
+    * No poder trabajar en las ceremonias
+
+- Que deberiamos empezar a hacer:
+    * Deberiamos empezar a tener dailys
+
+- Que deberiamos dejar de hacer:
+    * Demorar mucho en resolver problemas
+
+
+Sprint 4 (Retro):
+- Que hicimos bien:
+    * Nos supimos dividir las tareas
+    * Hubo participación de todos los integrantes del grupo
+    * Se trabajaron nuevas ideas para el proyecto
+
+- Que hicimos mal:
+    * No coincidir en un horario fijo para juntarnos
+    * No poder trabajar en las ceremonias
+    * No tuvimos mucha comunicación
+
+- Que deberiamos empezar a hacer:
+    * Deberiamos empezar a tener dailys
+    * Empezar a usar trello para organizar tareas
+
+- Que deberiamos dejar de hacer:
+    * Demorar mucho en resolver problemas
