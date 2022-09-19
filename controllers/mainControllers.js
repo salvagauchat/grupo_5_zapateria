@@ -89,7 +89,8 @@ const controllers = {
     },
     productEdit: (req, res) => {
         let idProduct = req.params.id;
-
+        idProduct = idProduct-1;
+    
         let editProduct = products[idProduct];
 
         res.render("./products/productEdit", { editProduct });
@@ -99,6 +100,7 @@ const controllers = {
 
         let idProduct = req.params.id;
         idProduct = idProduct-1;
+        
 
         let productoEditado = {
             id: idProduct,
