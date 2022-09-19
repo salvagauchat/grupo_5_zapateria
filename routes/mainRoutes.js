@@ -25,21 +25,11 @@ let upload = multer({storage: storage});
 
 router.get('/', mainController.index);
 
-router.get('/login', mainController.login);
-router.post('/login', validations.validationsLogin ,mainController.processLogin);
-
-router.get('/register', mainController.register);
-router.post('/register', validations.validationsRegister, mainController.processRegister);
-
-
 router.get('/product-cart', mainController.productCart);
 router.get('/product-detail', mainController.productDetail);
 
-
 router.get('/product-admin', mainController.productAdmin);
 router.post('/product-admin', [upload.any(), ...validations.validationProduct], mainController.productAdminProducto);
-
-
 
 router.get('/product-edit/:id', mainController.productEdit);
 router.put('/product-edit/:id',mainController.edit);

@@ -13,21 +13,6 @@ const controllers = {
             productos: products
         })
     },
-
-    login: (req, res) => {
-        res.render('./users/login')
-    },
-    processLogin: (req, res) => {
-        let resultValidation = validationResult(req);
-        if (resultValidation.errors.length > 0) {
-            return res.render('./users/login', {
-                errors: resultValidation.mapped(), //convierte al array en un objeto.
-                oldData: req.body
-            })
-        }
-        
-        return res.send('Registro en construcción')
-    },
     productCart: (req, res) => {
 
         res.render('./products/productCart')
@@ -35,18 +20,6 @@ const controllers = {
     productDetail: (req, res) => {
 
         res.render('./products/productDetail')
-    },
-    register: (req, res) => {
-        res.render('./users/register')
-    },
-    processRegister: (req, res) => {
-        let resultValidation = validationResult(req);
-        if (resultValidation.errors.length > 0) {
-            return res.render('./users/register', {
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            })
-        }
     },
     productAdmin: (req, res) => {
         res.render('./products/productAdmin');
