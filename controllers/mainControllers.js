@@ -90,7 +90,7 @@ const controllers = {
     productEdit: (req, res) => {
         let idProduct = req.params.id;
 
-        let editProduct = products[idProduct - 1];
+        let editProduct = products[idProduct];
 
         res.render("./products/productEdit", { editProduct });
 
@@ -98,6 +98,7 @@ const controllers = {
     edit: (req, res) => {
 
         let idProduct = req.params.id;
+        idProduct = idProduct-1;
 
         let productoEditado = {
             id: idProduct,
@@ -118,6 +119,7 @@ const controllers = {
                     elementoActual.talle = productoEditado.talle
             }
         });
+        
 
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, " "));
 
@@ -127,21 +129,20 @@ const controllers = {
     productDelete: (req, res) => {
 
         let idProduct = req.params.id;
-
-        let editProduct = products[idProduct - 1];
+        idProduct = idProduct -1;
+        
+        let editProduct = products[idProduct];
 
         res.render("./products/productDelete", { editProduct });
     },
     delete: (req, res) => {
         let idProduct = req.params.id;
+        idProduct = idProduct-1;
+        let productsMenosEliminado = products.filter(productoActual => productoActual.id != idProduct);
 
-        const productoEliminado = products.filter(producto => producto.id != idProduct);
+        fs.writeFileSync(pathDataBase, JSON.stringify(productsMenosEliminado, null, " "));
 
-        products = productoEliminado;
-
-        fs.writeFileSync(pathDataBase, JSON.stringify(products, null, " "));
-
-        res.send("voy por delete");
+        res.render("/");
     }
 }
 

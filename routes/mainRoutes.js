@@ -41,10 +41,10 @@ router.post('/product-admin', [upload.any(), ...validations.validationProduct], 
 
 
 
-router.get('/product-edit/:id/actualizar', mainController.productEdit);
-router.put('/product-edit/:id/',mainController.edit);
+router.get('/product-edit/:id', mainController.productEdit);
+router.put('/product-edit/:id',mainController.edit);
 
-router.get('/product-delete/:id/eliminar',mainController.productDelete);
+router.get('/product-delete/:id',mainController.productDelete);
 router.delete('/product-delete/:id', mainController.delete);
 
 
