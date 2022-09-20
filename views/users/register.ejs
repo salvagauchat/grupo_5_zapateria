@@ -24,7 +24,7 @@
         <!-- ********** MAIN *********** -->
         <main>
             <h2 class="titulo-main">Formulario de Registro</h2>
-            <form id="formulario" method="POST" action="/register" class="creacion-formulario">
+            <form id="formulario" method="POST" action="/register" class="creacion-formulario" enctype="multipart/form-data">
                 <div class="control-form">
                     <label for="nombre"></label>
                     <input 
@@ -130,12 +130,19 @@
                         name="confpassword" 
                         id="confircontra" 
                         class="control <%= locals.errors && errors.confpassword ? 'is-invalid' : null %>"
-                        placeholder="Confirmar contraseña">
-                    <% if(locals.errors && errors.confpassword) { %>
-                        <div class="text-danger">
-                            <%= errors.confpassword.msg %>
-                        </div>
-                        <% } %>
+                        placeholder="Confirmar contraseña">                        
+                </div>
+
+                <div class="control-form">
+                    <label for="avatar"></label>
+                    <input 
+                        type="file" 
+                        name="avatar" 
+                        id="avatar" 
+                        class="control"
+                        
+                    >
+                                           
                 </div>
 
                 <div class="botones">

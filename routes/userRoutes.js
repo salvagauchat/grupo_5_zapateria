@@ -9,6 +9,8 @@ const path = require('path');
 const validations = require('../middlewares/validations.js');
 
 const multer = require('multer');
+
+
 const { throws } = require('assert');
 
 const storage = multer.diskStorage({
@@ -20,14 +22,15 @@ const storage = multer.diskStorage({
     }
 })
 
+let uploadFile = multer({storage: storage});
+
 router.get('/register', userController.register);
-router.post('/register', validations.validationsRegister, userController.processRegister);
+router.post('/register', uploadFile.single('avatar'), validations.validationsRegister, userController.processRegister);
 
 router.get('/login', userController.login);
 router.post('/login', validations.validationsLogin ,userController.processLogin);
 
 
-let upload = multer({storage: storage});
 
 
 module.exports = router;

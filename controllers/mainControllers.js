@@ -44,6 +44,7 @@ const controllers = {
 
         let productoCreado = {
             id: generateId(),
+            marca: req.body.marca,
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
@@ -54,6 +55,9 @@ const controllers = {
         if (req.files) {
             productoCreado.image = req.files.map(file => file.filename);
         }
+
+        
+
         products.push(productoCreado);
 
         fs.writeFileSync(pathDataBase, JSON.stringify(products, null, ' '));
@@ -77,6 +81,7 @@ const controllers = {
 
         let productoEditado = {
             id: idProduct,
+            marca: req.body.marca,
             name: req.body.name,
             price: req.body.price,
             discount: req.body.discount,
@@ -91,7 +96,7 @@ const controllers = {
                 elementoActual.price = productoEditado.price
                 elementoActual.discount = productoEditado.discount
                 elementoActual.category = productoEditado.category,
-                    elementoActual.talle = productoEditado.talle
+                elementoActual.talle = productoEditado.talle
             }
         });
         

@@ -19,7 +19,32 @@ let userController = {
                 oldData: req.body
             })
         }
+        const generateId = () => {
+            const lastUser = users[users.length - 1];
+            const lastId = lastUser.id;
+            return lastId + 1;
+        }
+
+        let usuarioCreado = {
+            id: generateId(),
+            name: req.body.name,
+            nameUser: req.body.nameUser,
+            domic: req.body.domic,
+            category: req.body.category,
+            email: req.body.email,
+            password: req.body.password
+        }
+        if (req.files) {
+            usuarioCreado.image = req.files.map(file => file.filename);
+        }
+        users.push(usuarioCreado);
+
+        fs.writeFileSync(pathDataBase, JSON.stringify(users, null, ' '));
+
+        res.redirect('./');
     },
+
+
     login: (req, res) => {
         res.render('./users/login')
     },
