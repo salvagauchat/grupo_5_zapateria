@@ -38,7 +38,7 @@
                     <label form="email" class="form__label">Correo electrónico:</label>
                     <%  if(locals.errors && errors.email) { %>
                         <div class="text-danger">
-                            <%= errors.email.msg%> 
+                            <%= errors.email.msg %> 
                         </div>
                        <% } %> 
                     <spam class="form__line"></spam>
@@ -56,7 +56,8 @@
                 <div class="botones">
                     <button type="submit" class="boton-formulario" style="margin-right: 10px;"
                         id="boton">Entrar</button>
-                </div>
+                    </div>
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox"> Recordar mi usuario </label><br>
             </div>
         </form>
     </main>

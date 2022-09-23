@@ -7,6 +7,7 @@ const router = express.Router();
 const path = require('path');
 
 const validations = require('../middlewares/validations.js');
+const redirecion = require('../middlewares/redirecion.js');
 
 const multer = require('multer');
 
@@ -27,7 +28,7 @@ let uploadFile = multer({storage: storage});
 router.get('/register', userController.register);
 router.post('/register', uploadFile.single('avatar'), validations.validationsRegister, userController.processRegister);
 
-router.get('/login', userController.login);
+router.get('/login', redirecion ,userController.login);
 router.post('/login', validations.validationsLogin ,userController.processLogin);
 
 
