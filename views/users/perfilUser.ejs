@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Shoes - Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8c2ec1b35f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/styles-register.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <!-- ********** HEADER *********** -->
+    <%- include('../partials/header.ejs') %>
+
+
+        <!-- ********** MAIN *********** -->
+       
+        <main style="margin-bottom: 20px;">
+            <div>
+                <h2 class="titulo-main"> Perfil de usuario</h2>
+            </div>
+            <form id="formulario" method="POST" action="" class="creacion-formulario" enctype="multipart/form-data"></form>
+                <div class="avatar">
+                    <img src="/images/avatar.jpg" alt="">
+                </div>
+                <div class="perfil-form">
+                    <label for=""></label>
+                    <input class="perfil-control" type="text" name="" id="">
+                </div>
+                <div class="perfil-form">
+                    <label for=""></label>
+                    <input class="perfil-control" type="text" name="" id="">
+                </div>
+                <div class="perfil-form">
+                    <label for=""></label>
+                    <input class="perfil-control" type="text" name="" id="">
+                </div>
+                <div class="perfil-form">
+                    <label for=""></label>
+                    <input class="perfil-control" type="text" name="" id="">
+                </div>
+                <div class="perfil-form">
+                    <label for=""></label>
+                    <input class="perfil-control" type="text" name="" id="">
+                </div>
+            </form>
+        </main>
+
+
+
+
+        <!-- ********** FOOTER *********** -->
+
+        <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

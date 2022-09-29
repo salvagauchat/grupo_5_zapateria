@@ -31,6 +31,8 @@ router.post('/register', uploadFile.single('avatar'), validations.validationsReg
 router.get('/login', redirecion ,userController.login);
 router.post('/login', validations.validationsLogin ,userController.processLogin);
 
+router.get('/perfil',userController.perfil);
+
 
 
 

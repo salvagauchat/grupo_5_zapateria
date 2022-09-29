@@ -86,6 +86,9 @@ let userController = {
         })
       
     },
+    perfil: (req, res)=>{
+        res.render('./users/perfilUser');
+    }
 }
 
 
