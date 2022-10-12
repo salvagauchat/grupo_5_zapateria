@@ -1,1 +1,1 @@
-* Proxima daily: 20/09 - Horario a convenir
+* Proxima daily: 18/10 - Horario a convenir
