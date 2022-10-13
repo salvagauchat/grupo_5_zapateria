@@ -29,25 +29,28 @@
         <div class="info-completa">
             <div class="slider-frame">
                 <ul>
-                    <li><img src="/images/hombre/nike-running-revolution-1.jpg" alt=""></li>
+                    <li><img src=<%= product.image %> alt=""></li>
                     <li><img src="/images/hombre/nike-running-revolution-3.jpg" alt=""></li>
                     <li><img src="/images/hombre/nike-running-revolution-2.jpg" alt=""></li>
                 </ul>
             </div>
             <div class="talle-cantidad-botones">
                 <div class="info-producto">
-                    <h1>Nike Running Revolution 6 Nn Gs</h1>
+                    <h1><%= product.marca %> <%= product.name %> </h1>
                     <br>
                     <div class="precio-descuento">
-                        <p class="precio">$16.599</p>
-                        <p class="descuento">10% off</p>
+                        <p class="precio">$<%= product.price %> </p>
+                        <% if (product.discount != 0) { %>
+                         <p class="descuento"><%= product.discount %> % off</p>
+                        <% } %>
                     </div>
                 </div>
                 <div class="radio">
                     <b>
-                        <h2>Talles</h2>
+                        <h3>Talles disponibles</h3>
                     </b>
-                    <input type="radio" name="SeleecionarTalle" id="38">
+                  
+                    <input type="radio" name="SeleecionarTalle" id="40">
                     <label for="38">38</label>
 
                     <input type="radio" name="SeleecionarTalle" id="40">
@@ -75,7 +78,7 @@
                 <h2>Descripción</h2>
             </b>
             <div class="descripcion-zapa">
-                <p>Las Zapatillas Nike Revolution 6 Nn Gs son un calzado todoterreno
+                <p>Las Zapatillas <%= product.marca %>  <%= product.name %>  son un calzado todoterreno
                     ideal para los atletas más jóvenes.
                     Su capellada es ligera y transpirable para aportar mayor confort y
                     cuenta con un talón con revestimiento para brindar soporte y estabilidad en cada

@@ -19,7 +19,12 @@ const controllers = {
     },
     productDetail: (req, res) => {
 
-        res.render('./products/productDetail')
+        let idProduct = req.params.id;
+        idProduct = idProduct-1;
+    
+        let product = products[idProduct];
+
+        res.render('./products/productDetail', {product:product});
     },
     productAdmin: (req, res) => {
         res.render('./products/productAdmin');

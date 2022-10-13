@@ -26,7 +26,8 @@ let upload = multer({storage: storage});
 router.get('/', mainController.index);
 
 router.get('/product-cart', mainController.productCart);
-router.get('/product-detail', mainController.productDetail);
+
+router.get('/product-detail/:id', mainController.productDetail);
 
 router.get('/product-admin', mainController.productAdmin);
 router.post('/product-admin', [upload.any(), ...validations.validationProduct], mainController.productAdminProducto);
