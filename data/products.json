@@ -4,8 +4,8 @@
   "image": "images/hombre/nike-running-revolution-1.jpg",
   "marca": "Nike",
   "name": "Court Vision Mid",
-  "price": "10000",
-  "discount": "0",
+  "price": 17000,
+  "discount": 0,
   "disponibles": [
    1,
    2,

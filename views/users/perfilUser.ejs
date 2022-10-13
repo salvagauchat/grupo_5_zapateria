@@ -22,39 +22,55 @@
 
 
         <!-- ********** MAIN *********** -->
-       
-        <main style="margin-bottom: 20px;">
-            <div>
-                <h2 class="titulo-main"> Perfil de usuario</h2>
+
+        <main>
+            <h2 class="titulo-main">Perfil de - <%= editUser.name %> -</h2>
+
+            <div class="avatar">
+                <img src="/images/avatar.jpg" alt="">
             </div>
-            <form id="formulario" method="POST" action="" class="creacion-formulario" enctype="multipart/form-data"></form>
-                <div class="avatar">
-                    <img src="/images/avatar.jpg" alt="">
+
+            <form id="formulario" action="/perfil/<%=editUser.id%>?_method=PUT" method="POST"
+                class="creacion-formulario">
+
+                <div class="control-form">
+                    <label for="nombre" class="titulos-form">Nombre:</label>
+                    <input type="text" name="name" id="nombre" class="control" value="<%= editUser.name %>">
                 </div>
-                <div class="perfil-form">
-                    <label for=""></label>
-                    <input class="perfil-control" type="text" name="" id="">
+
+                <div class="control-form">
+                    <label for="nombreUser" class="titulos-form">Nombre de usuario:</label>
+                    <input type="text" name="nameUser" id="nombreUsuario" class="control"
+                        value="<%= editUser.nameUser %>">
                 </div>
-                <div class="perfil-form">
-                    <label for=""></label>
-                    <input class="perfil-control" type="text" name="" id="">
+                <div class="control-form">
+                    <label for="domic" class="titulos-form">Domicilio:</label>
+                    <input type="text" name="domic" id="domic" class="control" value="<%= editUser.domic %>">
                 </div>
-                <div class="perfil-form">
-                    <label for=""></label>
-                    <input class="perfil-control" type="text" name="" id="">
+                <div class="control-form">
+                    <label for="email" class="titulos-form">Email:</label>
+                    <input type="email" name="email" id="email" class="control" value="<%= editUser.email %>">
                 </div>
-                <div class="perfil-form">
-                    <label for=""></label>
-                    <input class="perfil-control" type="text" name="" id="">
+                <div class="control-form">
+                    <label for="password" class="titulos-form">Contraseña:</label>
+                    <input type="password" name="password" id="nombre" class="control" value="<%= editUser.password %>">
                 </div>
-                <div class="perfil-form">
-                    <label for=""></label>
-                    <input class="perfil-control" type="text" name="" id="">
+
+                <div class="botones">
+                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar
+                        usuario</button>
                 </div>
             </form>
+
+            <form id="formulario" action="/perfil/<%=editUser.id%>?_method=DELETE" method="POST"
+                class="creacion-formulario">
+                    <div class="botones">
+                        <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Borrar
+                            usuario</button>
+                    </div>
+            </form> 
+
         </main>
-
-
 
 
         <!-- ********** FOOTER *********** -->

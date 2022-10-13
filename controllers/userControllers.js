@@ -9,6 +9,7 @@ const pathDataBase = path.join(__dirname, '../data/user.json');
 const users = JSON.parse(fs.readFileSync(pathDataBase), { encoding: 'utf-8' });
 
 const { validationResult } = require('express-validator');
+const e = require('method-override');
 
 let userController = {
     register: (req, res) => {
@@ -87,7 +88,51 @@ let userController = {
       
     },
     perfil: (req, res)=>{
-        res.render('./users/perfilUser');
+        const id = req.params.id;
+        let editUser = users[id];
+
+        res.render('./users/perfilUser', {editUser:editUser});
+    },
+    editPerfil:(req, res)=>{
+
+        const id = req.params.id;
+        let userId = Number(id);
+
+        let usuarioEditado = {
+            id: userId,
+            name: req.body.name,
+            nameUser: req.body.nameUser,
+            email: req.body.email,
+            domic: req.body.domic,
+            password: req.body.password, 
+        }
+
+        users.forEach(usuarioActual => {
+            if (usuarioActual.id == usuarioEditado.id) {
+                usuarioActual.name = usuarioEditado.name,
+                usuarioActual.nameUser = usuarioEditado.nameUser,
+                usuarioActual.domic = usuarioEditado.domic,
+                usuarioActual.email = usuarioEditado.email,
+                usuarioActual.password = usuarioEditado.password
+            }
+        });
+        
+        console.log(usuarioEditado);
+
+        fs.writeFileSync(pathDataBase, JSON.stringify(users, null, " "));
+
+        res.redirect("/");
+    },
+    deletePerfil:(req, res)=>{
+        const id = req.params.id;
+        let userId = Number(id);
+        
+        let usersMenosEliminado = users.filter(usuarioActual => usuarioActual.id != userId);
+
+        console.log(usersMenosEliminado);
+        fs.writeFileSync(pathDataBase, JSON.stringify(usersMenosEliminado, null, " "));
+
+        res.redirect("/");
     }
 }
 
