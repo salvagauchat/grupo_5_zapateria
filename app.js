@@ -1,10 +1,10 @@
 const express = require('express');
-const session = require('express-session')
-const cookies = require('cookie-parser')
+const session = require('express-session');
+const cookies = require('cookie-parser');
 const dotenv = require('dotenv').config();
 const path = require('path')
-const mainRoutes = require('./routes/mainRoutes')
-const userRoutes = require('./routes/userRoutes')
+const mainRoutes = require('./routes/mainRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 
 const app = express()

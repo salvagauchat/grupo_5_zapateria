@@ -36,11 +36,10 @@ const validations = {
     validationsRegister: [
         body('name').notEmpty().withMessage('Escribe tu nombre y apellido'),
         body('nameUser').notEmpty().withMessage('Nombre de usuario no válido'),
-        body('fechaNaci').notEmpty().withMessage('Escribe tu fecha de nacimiento'),
+        /* body('fechaNaci').notEmpty().withMessage('Escribe tu fecha de nacimiento'), */
         body('domic').notEmpty().withMessage('Escribe tu direccion'),
         body('email').isEmail().withMessage('Completa con un email válido'),
         body('password').isLength({ min: 8 }).withMessage('Debe ser mayor a 7 caracteres'),
-        body('confpassword').notEmpty().withMessage('Tu contraseña es incorrecta'),
     ]
 }
 

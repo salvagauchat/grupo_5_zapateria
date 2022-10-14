@@ -30,7 +30,7 @@
                 <% productos.forEach(function (productoActual) { %>
                     <% if (productoActual.category==="destacado" ) { %>
                         <article class="producto">
-                            <a class="imagen-producto" href="/product-detail"><img
+                            <a class="imagen-producto" href="/product-detail/<%= productoActual.id %> "><img
                                     src="/<%= productoActual.image %>"></a>
                             <div class="info-producto">
                                 <i class="fas fa-truck"></i>
@@ -46,43 +46,7 @@
                         <% } %>
                             <% }) %>
             </section>
-            <!-- 
-                            <article class="producto">
-                                <a class="imagen-producto" href="/product-detail"><img
-                                        src="/images/hombre/new-balance-arishi-1.jpg"></a>
-                                <div class="info-producto">
-                                    <i class="fas fa-truck"></i>
-                                    <div class="descripcion">
-                                        <h4>New Balance Running Fresh Foam Greem Leaf</h4>
-                                    </div>
-                                    <p class="precio">$9.000</p>
-                                </div>
-                            </article>
-
-                            <article class="producto">
-                                <a class="imagen-producto" href="/product-detail"><img
-                                        src="/images/mujer/asics-trail-lite-1.jpg"></a>
-                                <div class="info-producto">
-                                    <i class="fas fa-truck"></i>
-                                    <div class="descripcion">
-                                        <h4>Asics Trail Running Fuji Lite 2</h4>
-                                    </div>
-                                    <p class="precio">$11.700</p>
-                                </div>
-                            </article>
-
-                            <article class="producto">
-                                <a class="imagen-producto" href="/product-detail"><img
-                                        src="/images/mujer/reebok-gilde-ripple-1.jpg"></a>
-                                <div class="info-producto">
-                                    <i class="fas fa-truck"></i>
-                                    <div class="descripcion">
-                                        <h4>Reebok Royal Gilde Ripple CLP</h4>
-                                    </div>
-                                    <p class="precio">$7.400</p>
-                                </div>
-                            </article> -->
-            <!-- </section> -->
+          
 
             <h3>Ofertas relámpago <i class="fa-solid fa-bolt" style="color:#d5d834;"></i></h3>
 

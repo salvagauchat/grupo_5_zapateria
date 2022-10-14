@@ -30,5 +30,56 @@
   "domic": "123123",
   "email": "asdasd@asdasdasd.com",
   "password": "12312312312312"
+ },
+ {
+  "id": 4,
+  "name": "Hola",
+  "nameUser": "saldas",
+  "domic": "hola123",
+  "email": "salvagaucha@hotmail.com",
+  "password": "$2a$10$PpvQOB5MJiOGCSG19w8lwOI7DV7S.s/7KtUxc//l99t/AYrWpLOJu"
+ },
+ {
+  "id": 5,
+  "name": "Salvad",
+  "nameUser": "salvag",
+  "fechaNaci": "1999-12-12",
+  "domic": "hola",
+  "email": "sagafd@gmail.com",
+  "password": "$2a$10$AoWwBSwSPR7JErzQQ/yHdOO2K31TutEnWnoxm9yhEoNxwH82RO2Xe",
+  "confpassword": "1|231241231"
+ },
+ {
+  "id": 6,
+  "name": "Salvad",
+  "nameUser": "salvag",
+  "fechaNaci": "1999-12-12",
+  "domic": "hola",
+  "email": "1234@gmail.com",
+  "password": "$2a$10$gQdjyCPpOJQKHmEDhHx9k.l0IcYoD/HpD1/ozQVtUYhiKRNO3a7Gq"
+ },
+ {
+  "id": 7,
+  "name": "Salvad",
+  "nameUser": "salvag",
+  "domic": "hola",
+  "email": "sa12323@gmail.com",
+  "password": "$2a$10$Mnx6v/fHAGU2NzODBDCh.ehs8UthbMl/IeSCL62m.1gluaAoil8qu"
+ },
+ {
+  "id": 8,
+  "name": "Salvad",
+  "nameUser": "salvag",
+  "domic": "hola",
+  "email": "sa123223@gmail.com",
+  "password": "$2a$10$LJe75eF5hRaDyILkcej5guh0QX8KIq0Xq1P0AjNs1VanuqE4KnJVG"
+ },
+ {
+  "id": 9,
+  "name": "salva",
+  "nameUser": "salva",
+  "domic": "hola123",
+  "email": "salva@gmail.com",
+  "password": "$2a$10$T.axclbXnei/q3rXvpjHUe2aHtiatZZzWpBbExT/H9GYNHpCu3NFO"
  }
 ]

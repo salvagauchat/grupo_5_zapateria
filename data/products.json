@@ -1,17 +1,17 @@
 [
  {
   "id": 1,
-  "image":"/images/hombre/nike-running-revolution-1.jpg",
+  "image": "images/hombre/nike-running-revolution-1.jpg",
   "marca": "Nike",
   "name": "Court Vision Mid",
   "price": 17000,
   "discount": 10,
   "talle": [
-    38,
-    40,
-    41,
-    44
-   ],
+   38,
+   40,
+   41,
+   44
+  ],
   "disponibles": [
    1,
    2,
@@ -22,7 +22,7 @@
  },
  {
   "id": 2,
-  "image": "/images/hombre/new-balance-arishi-1.jpg",
+  "image": "images/hombre/new-balance-arishi-1.jpg",
   "marca": "New Balance",
   "name": "Running Fresh Foam Greem Leaf",
   "price": 9000,
@@ -43,7 +43,7 @@
  },
  {
   "id": 3,
-  "image": "/images/mujer/asics-trail-lite-1.jpg",
+  "image": "images/mujer/asics-trail-lite-1.jpg",
   "marca": "Asics",
   "name": "Trail Running Fuji Lite 2",
   "price": 11700,
@@ -66,7 +66,7 @@
  },
  {
   "id": 4,
-  "image": "/images/mujer/reebok-gilde-ripple-1.jpg",
+  "image": "images/mujer/reebok-gilde-ripple-1.jpg",
   "marca": "Reebok",
   "name": "Royal Gilde Ripple CLP",
   "price": 7400,
@@ -87,7 +87,7 @@
  },
  {
   "id": 5,
-  "image": "/images/hombre/nike-court-vision-mid-1.jpg",
+  "image": "images/hombre/nike-court-vision-mid-1.jpg",
   "marca": "Nike",
   "name": "Court Vision Mid",
   "price": 12230,
@@ -106,7 +106,7 @@
  },
  {
   "id": 6,
-  "image": "/images/mujer/adidas-60s-1.jpg",
+  "image": "images/mujer/adidas-60s-1.jpg",
   "marca": "Adidas",
   "name": "60S 2.0",
   "price": 9200,
@@ -125,7 +125,7 @@
  },
  {
   "id": 7,
-  "image": "/images/niña/adidas-racer-tr21-1.jpg",
+  "image": "images/niña/adidas-racer-tr21-1.jpg",
   "marca": "Adidas",
   "name": "Racer TR21 Niña",
   "price": 6662,
@@ -164,5 +164,16 @@
    3
   ],
   "category": "oferta"
+ },
+ {
+  "id": 9,
+  "marca": "hola",
+  "name": "hola",
+  "price": "123123",
+  "discount": "123",
+  "category": "destacado",
+  "image": [
+   "images_1665712631900.jpg"
+  ]
  }
 ]
