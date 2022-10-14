@@ -1,13 +1,5 @@
 [
  {
-  "id": 0,
-  "name": "Hola",
-  "nameUser": "asdasd",
-  "domic": "123123",
-  "email": "stefa.fabbro@gmail.com",
-  "password": "kdanskldnalnfal"
- },
- {
   "id": 1,
   "name": "salvador",
   "nameUser": "gauchat",
@@ -17,69 +9,26 @@
  },
  {
   "id": 2,
-  "name": "Jona",
-  "nameUser": "Joniloco",
-  "domic": "Tu corazon 123",
-  "email": "joni@crack.com",
-  "password": "123456789"
+  "name": "Homero Simpson",
+  "nameUser": "Homero Thompson",
+  "domic": "Av Siempre viva 123",
+  "email": "Thesimpson@gmail.com",
+  "password": "$2a$10$k.61fmp9AKkRk0f3GBZ12urXF29aEYBxh.FfUkXwSbjKCZ6zWOcjS"
  },
  {
   "id": 3,
-  "name": "Stefano",
-  "nameUser": "asdasd",
-  "domic": "123123",
-  "email": "asdasd@asdasdasd.com",
-  "password": "12312312312312"
+  "name": "Jonatan Garcia",
+  "nameUser": "Jonaldo",
+  "domic": "Rafaela 2300",
+  "email": "Jonaldogarcia@gmail.com",
+  "password": "$2a$10$uOL28/lUntGg31PvGytGoOWpabvNqby/YsReBp/Jewk2jk59BnuYG"
  },
  {
   "id": 4,
-  "name": "Hola",
-  "nameUser": "saldas",
-  "domic": "hola123",
-  "email": "salvagaucha@hotmail.com",
-  "password": "$2a$10$PpvQOB5MJiOGCSG19w8lwOI7DV7S.s/7KtUxc//l99t/AYrWpLOJu"
- },
- {
-  "id": 5,
-  "name": "Salvad",
-  "nameUser": "salvag",
-  "fechaNaci": "1999-12-12",
-  "domic": "hola",
-  "email": "sagafd@gmail.com",
-  "password": "$2a$10$AoWwBSwSPR7JErzQQ/yHdOO2K31TutEnWnoxm9yhEoNxwH82RO2Xe",
-  "confpassword": "1|231241231"
- },
- {
-  "id": 6,
-  "name": "Salvad",
-  "nameUser": "salvag",
-  "fechaNaci": "1999-12-12",
-  "domic": "hola",
-  "email": "1234@gmail.com",
-  "password": "$2a$10$gQdjyCPpOJQKHmEDhHx9k.l0IcYoD/HpD1/ozQVtUYhiKRNO3a7Gq"
- },
- {
-  "id": 7,
-  "name": "Salvad",
-  "nameUser": "salvag",
-  "domic": "hola",
-  "email": "sa12323@gmail.com",
-  "password": "$2a$10$Mnx6v/fHAGU2NzODBDCh.ehs8UthbMl/IeSCL62m.1gluaAoil8qu"
- },
- {
-  "id": 8,
-  "name": "Salvad",
-  "nameUser": "salvag",
-  "domic": "hola",
-  "email": "sa123223@gmail.com",
-  "password": "$2a$10$LJe75eF5hRaDyILkcej5guh0QX8KIq0Xq1P0AjNs1VanuqE4KnJVG"
- },
- {
-  "id": 9,
-  "name": "salva",
-  "nameUser": "salva",
-  "domic": "hola123",
-  "email": "salva@gmail.com",
-  "password": "$2a$10$T.axclbXnei/q3rXvpjHUe2aHtiatZZzWpBbExT/H9GYNHpCu3NFO"
+  "name": "ariel garay",
+  "nameUser": "ariel",
+  "domic": "moreno 154",
+  "email": "arie@gmail.com",
+  "password": "$2a$10$HRvwk8N0Wiw8SwmHHuBC/u/jQu0RntAepJy430r0djRvQotJRVBQ6"
  }
 ]
