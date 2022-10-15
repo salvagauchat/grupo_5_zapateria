@@ -1,6 +1,6 @@
 function redirecion (req, res, next) {
     if(req.session.userLogged) {
-        return res.redirect('/')
+        return res.redirect('/perfil/4')
 }
 next()
 }

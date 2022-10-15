@@ -30,5 +30,14 @@
   "domic": "moreno 154",
   "email": "arie@gmail.com",
   "password": "$2a$10$HRvwk8N0Wiw8SwmHHuBC/u/jQu0RntAepJy430r0djRvQotJRVBQ6"
+ },
+ {
+  "id": 5,
+  "name": "Stefano",
+  "nameUser": "Stefano",
+  "domic": "123123",
+  "email": "usuario@deprueba.com",
+  "password": "$2a$10$lhE7jhAZoiAjW1kzXAPpN.da2E.CVn.Vd3VzD78c8VGM8RzricrPS",
+  "avatar": "avatar_1665840938671.jpeg"
  }
 ]

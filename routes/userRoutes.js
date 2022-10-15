@@ -8,6 +8,7 @@ const path = require('path');
 
 const validations = require('../middlewares/validations.js');
 const redirecion = require('../middlewares/redirecion.js');
+const authMiddleware = require('../middlewares/authMiddleware')
 
 const multer = require('multer');
 
@@ -25,13 +26,15 @@ const storage = multer.diskStorage({
 
 let uploadFile = multer({storage: storage});
 
-router.get('/register', userController.register);
+router.get('/register', redirecion, userController.register);
 router.post('/register', uploadFile.single('avatar'), validations.validationsRegister, userController.processRegister);
 
 router.get('/login', redirecion ,userController.login);
 router.post('/login', validations.validationsLogin ,userController.processLogin);
 
-router.get('/perfil/:id',userController.perfil);
+router.get('/logout',userController.logout);
+
+router.get('/perfil/:id',authMiddleware, userController.perfil);
 router.put('/perfil/:id',userController.editPerfil);
 router.delete('/perfil/:id', userController.deletePerfil);
 

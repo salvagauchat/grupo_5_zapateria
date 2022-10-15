@@ -13,6 +13,7 @@ const publicPath = path.resolve(__dirname, './public');
 
 const methodOverride = require('method-override'); 
 
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 
 
 app.use(methodOverride('_method'));
@@ -27,6 +28,8 @@ app.use(session({
 app.use(cookies())
 app.use(express.urlencoded({extended: true }));
 app.use(express.json());
+
+app.use(userLoggedMiddleware)
 
 app.use(mainRoutes);
 app.use(userRoutes);

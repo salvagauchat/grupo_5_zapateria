@@ -13,7 +13,7 @@ const e = require('method-override');
 
 let userController = {
     register: (req, res) => {
-        res.cookie('testing', 'hola mundo',{ maxAge: 1000 * 30})
+        res.cookie('testing', 'hola mundo',{ maxAge: 100000000 * 900})
         res.render('./users/register')
     },
     processRegister: (req, res) => {
@@ -55,6 +55,11 @@ let userController = {
         console.log(req.cookies.testing)
         res.render('./users/login')
     },
+    logout: (req, res) => {
+        res.clearCookie('userEmail')
+        req.session.destroy();
+        return res.redirect('/')
+    },
     processLogin: (req, res) => {
         let resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
@@ -67,15 +72,19 @@ let userController = {
         if(userToLogin) {
             let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if(isOkThePassword){
+                delete userToLogin.password;
                 req.session.userLogged = userToLogin;
-
-                if(req.body.renember_user) {
+                
+                if(req.body.remember_user) {
                     res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2 })
                 }
 
                 console.log('estas en profile')
                 console.log(req.session); 
-                return res.redirect('/')
+                
+
+                //El ID sale como "undefined", hay que cambiarlo
+                return res.redirect('/perfil/4')
         }
     }
         
@@ -135,6 +144,7 @@ let userController = {
 
         res.redirect("/");
     }
+    
 }
 
 

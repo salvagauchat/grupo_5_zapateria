@@ -27,7 +27,7 @@
             <h2 class="titulo-main">Perfil de - <%= editUser.name %> -</h2>
 
             <div class="avatar">
-                <img src="/images/avatar.jpg" alt="">
+                <img src="/images/user/<%= editUser.avatar %> " alt="">
             </div>
 
             <form id="formulario" action="/perfil/<%=editUser.id%>?_method=PUT" method="POST"
