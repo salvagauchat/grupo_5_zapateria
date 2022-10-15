@@ -79,12 +79,10 @@ let userController = {
                     res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 2 })
                 }
 
-                /* console.log('estas en profile')
-                console.log(req.session);  */
+                console.log('estas en profile')
+                console.log(req.session);  
                 console.log(userToLogin);
                 
-
-                //El ID sale como "undefined", hay que cambiarlo
                 let id = userToLogin.id - 1
                 return res.redirect('/perfil/' + id)
         }
