@@ -80,11 +80,11 @@ let userController = {
                 }
 
                 console.log('estas en profile')
-                console.log(req.session); 
+                console.log(req.session);  
+                console.log(userToLogin);
                 
-
-                //El ID sale como "undefined", hay que cambiarlo
-                return res.redirect('/perfil/4')
+                let id = userToLogin.id - 1
+                return res.redirect('/perfil/' + id)
         }
     }
         

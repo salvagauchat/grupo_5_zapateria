@@ -39,5 +39,14 @@
   "email": "usuario@deprueba.com",
   "password": "$2a$10$lhE7jhAZoiAjW1kzXAPpN.da2E.CVn.Vd3VzD78c8VGM8RzricrPS",
   "avatar": "avatar_1665840938671.jpeg"
+ },
+ {
+  "id": 6,
+  "name": "123",
+  "nameUser": "123",
+  "domic": "123",
+  "email": "12@hola.com",
+  "password": "$2a$10$gaMxpIgyFHncTlFxHd60oec3UL4N7E3JNdf0BY9DiZ4rt0GnJ/fbO",
+  "avatar": "avatar_1665870420511.jpeg"
  }
 ]
