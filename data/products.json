@@ -164,16 +164,5 @@
    3
   ],
   "category": "oferta"
- },
- {
-  "id": 9,
-  "marca": "hola",
-  "name": "hola",
-  "price": "123123",
-  "discount": "123",
-  "category": "destacado",
-  "image": [
-   "images_1665712631900.jpg"
-  ]
  }
 ]

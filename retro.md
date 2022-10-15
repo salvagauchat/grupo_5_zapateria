@@ -1,6 +1,6 @@
 Sprint 1 (Retro):
  - Que hicimos bien: 
-    * Nos supimos dividir las tareas
+    * No supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajo de forma eficiente
@@ -19,7 +19,7 @@ Sprint 1 (Retro):
 
 Sprint 2 (Retro):
 - Que hicimos bien:
-    * Nos supimos dividir las tareas
+    * No supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
@@ -37,7 +37,7 @@ Sprint 2 (Retro):
 
 Sprint 3 (Retro):
 - Que hicimos bien:
-    * Nos supimos dividir las tareas
+    * No supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
@@ -55,7 +55,7 @@ Sprint 3 (Retro):
 
 Sprint 4 (Retro):
 - Que hicimos bien:
-    * Nos supimos dividir las tareas
+    * No supimos dividir las tareas
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
 
@@ -74,19 +74,17 @@ Sprint 4 (Retro):
 
     Sprint 5 (Retro):
 - Que hicimos bien:
-    * Nos supimos dividir las tareas
     * Hubo participación de todos los integrantes del grupo
     * Se utilizaron nuevas herramientas y funciones, adelantando trabajo de proximos Sprint
 
 - Que hicimos mal:
     * No poder trabajar en las ceremonias
-    * Falto comunicación y cordinacion 
+    * No poder establecer un dia y horario semanal para reunirnos 
     * No supimos ministrarnos bien con el tiempo
 
 - Que deberiamos empezar a hacer:
-    * Deberiamos ser mas comprometidos a la hora de reunirse
     * Deberiamos comenzar a tener dailys
     * Deberiamos trabajar usando trello para organizar tareas
 
 - Que deberiamos dejar de hacer:
-    * Debemos dejar de confiarnos con el tiempo
+    * Demorar mucho en la resolucion de problemas
