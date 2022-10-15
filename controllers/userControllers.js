@@ -53,6 +53,7 @@ let userController = {
     login: (req, res) => {
         console.log(req.cookies.testing)
         res.render('./users/login')
+        
     },
     processLogin: (req, res) => {
         let resultValidation = validationResult(req);
