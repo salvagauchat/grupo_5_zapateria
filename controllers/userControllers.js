@@ -40,7 +40,8 @@ let userController = {
            
         let userToCreate = {
                 ...req.body,
-                password: bcryptjs.hashSync(req.body.password, 10) 
+                password: bcryptjs.hashSync(req.body.password, 10),
+                avatar: req.file.filename
                 
             }
        
