@@ -1,6 +1,6 @@
 Sprint 1 (Retro):
  - Que hicimos bien: 
-    * No supimos dividir las tareas
+    * Nos supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajo de forma eficiente
@@ -19,7 +19,7 @@ Sprint 1 (Retro):
 
 Sprint 2 (Retro):
 - Que hicimos bien:
-    * No supimos dividir las tareas
+    * Nos supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
@@ -37,7 +37,7 @@ Sprint 2 (Retro):
 
 Sprint 3 (Retro):
 - Que hicimos bien:
-    * No supimos dividir las tareas
+    * Nos supimos dividir las tareas
     * Tuvimos muy buena comunicación
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
@@ -55,7 +55,7 @@ Sprint 3 (Retro):
 
 Sprint 4 (Retro):
 - Que hicimos bien:
-    * No supimos dividir las tareas
+    * Nos supimos dividir las tareas
     * Hubo participación de todos los integrantes del grupo
     * Se trabajaron nuevas ideas para el proyecto
 
@@ -74,6 +74,7 @@ Sprint 4 (Retro):
 
     Sprint 5 (Retro):
 - Que hicimos bien:
+    * Nos supimos dividir las tareas
     * Hubo participación de todos los integrantes del grupo
     * Se utilizaron nuevas herramientas y funciones, adelantando trabajo de proximos Sprint
 
