@@ -105,6 +105,11 @@
                     <li>Marca: Nike</li>
                 </ul>
             </nav>
+            <div>
+                <% if (locals.isLogged) { %>
+                <a href="/product-edit/<%= product.id %>"><button type="submit" class="boton-carrito">Editar Producto</button></a>
+                <% } %>
+            </div>
         </div>
 
     </main>

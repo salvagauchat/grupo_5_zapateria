@@ -108,6 +108,7 @@ let userController = {
         const id = req.params.id;
         let userId = Number(id);
 
+
         let usuarioEditado = {
             id: userId,
             name: req.body.name,

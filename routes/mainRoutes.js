@@ -8,6 +8,8 @@ const path = require('path');
 
 const validations = require('../middlewares/validations.js');
 
+const authMiddleware = require('../middlewares/authMiddleware');
+
 const multer = require('multer');
 const { throws } = require('assert');
 
@@ -32,7 +34,7 @@ router.get('/product-detail/:id', mainController.productDetail);
 router.get('/product-admin', mainController.productAdmin);
 router.post('/product-admin', [upload.array('photos', 10), ...validations.validationProduct], mainController.productAdminProducto);
 
-router.get('/product-edit/:id', mainController.productEdit);
+router.get('/product-edit/:id', authMiddleware, mainController.productEdit);
 router.put('/product-edit/:id',mainController.edit);
 
 router.get('/product-delete/:id',mainController.productDelete);
