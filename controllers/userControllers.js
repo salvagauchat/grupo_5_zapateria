@@ -107,7 +107,7 @@ let userController = {
 
         const id = req.params.id;
         let userId = Number(id);
-
+        
 
         let usuarioEditado = {
             id: userId,
@@ -115,7 +115,7 @@ let userController = {
             nameUser: req.body.nameUser,
             email: req.body.email,
             domic: req.body.domic,
-            password: req.body.password, 
+            password: req.body.password
         }
 
         users.forEach(usuarioActual => {
@@ -124,7 +124,7 @@ let userController = {
                 usuarioActual.nameUser = usuarioEditado.nameUser,
                 usuarioActual.domic = usuarioEditado.domic,
                 usuarioActual.email = usuarioEditado.email,
-                usuarioActual.password = usuarioEditado.password
+                usuarioActual.password = bcryptjs.hashSync(req.body.password, 10)
             }
         });
         

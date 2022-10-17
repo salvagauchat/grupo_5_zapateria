@@ -53,9 +53,15 @@
                 </div>
                 <div class="control-form">
                     <label for="password" class="titulos-form">Contraseña:</label>
-                    <input type="password" name="password" id="nombre" class="control" value="<%= editUser.password %>">
+                    <input type="password" name="password" id="nombre" class="control"
+                        placeholder="Colocar nueva contraseña">
                 </div>
-
+                
+                <!-- <div class="control-form">
+                    <label for="avatar"></label>
+                    <input type="file" name="avatar" id="avatar" class="control" value="<%= editUser.avatar %> ">
+                </div>
+ -->
                 <div class="botones">
                     <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Editar
                         usuario</button>
@@ -64,11 +70,11 @@
 
             <form id="formulario" action="/perfil/<%=editUser.id%>?_method=DELETE" method="POST"
                 class="creacion-formulario">
-                    <div class="botones">
-                        <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Borrar
-                            usuario</button>
-                    </div>
-            </form> 
+                <div class="botones">
+                    <button type="submit" class="boton-formulario" style="margin-right: 10px;" id="boton">Borrar
+                        usuario</button>
+                </div>
+            </form>
 
         </main>
 

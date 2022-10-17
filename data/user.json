@@ -37,7 +37,7 @@
   "nameUser": "Stefano",
   "domic": "123123",
   "email": "usuario@deprueba.com",
-  "password": "$2a$10$.nNg4bDgn0M7mg7TfMIT8.8M.eX2gdvk3OiYXLL8yHuCLczInTO7C",
+  "password": "$2a$10$6N1C2Pxo88zhYUlT8YK0i.Mw7kcNQ0XX7o.FxvDT.4enDgicAv1xO",
   "avatar": "avatar_1665840938671.jpeg"
  },
  {
@@ -48,5 +48,14 @@
   "email": "12@hola.com",
   "password": "$2a$10$.nNg4bDgn0M7mg7TfMIT8.8M.eX2gdvk3OiYXLL8yHuCLczInTO7C",
   "avatar": "avatar_1665871586057.jpeg"
+ },
+ {
+  "id": 7,
+  "name": "Admin",
+  "nameUser": "admin",
+  "domic": "123",
+  "email": "admin@admin.com",
+  "password": "$2a$10$3VHEPM2xlYc7LTTB6IcVM.Y4zD3VEkAfgm0UDYxG37IYm0IPAtrJW",
+  "avatar": "avatar_1666045855223.jpg"
  }
 ]
