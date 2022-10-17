@@ -54,7 +54,7 @@
                 <% productos.forEach(function (productoActual) { %>
                     <% if (productoActual.category==="oferta" ) { %>
                         <article class="producto">
-                            <a class="imagen-producto" href="/product-detail"><img
+                            <a class="imagen-producto" href="/product-detail/<%= productoActual.id %>"><img
                                     src="/<%= productoActual.image %>"></a>
                             <div class="info-producto">
                                 <i class="fas fa-truck"></i>
@@ -73,69 +73,6 @@
                         <% } %>
                             <% }) %>
             </section>
-
-            <!-- <section>
-                                <article class="producto">
-                                    <a class="imagen-producto" href="/product-detail"><img
-                                            src="/images/hombre/nike-court-vision-mid-1.jpg"></a>
-                                    <div class="info-producto">
-                                        <i class="fas fa-truck"></i>
-                                        <div class="descripcion">
-                                            <h4>Nike Court Vision Mid</h4>
-                                        </div>
-                                        <div class="pago">
-                                            <p class="precio">$12.230</p>
-                                            <p class="descuento">10% off</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="producto">
-                                    <a class="imagen-producto" href="/product-detail"><img
-                                            src="/images/mujer/adidas-60s-1.jpg"></a>
-                                    <div class="info-producto">
-                                        <i class="fas fa-truck"></i>
-                                        <div class="descripcion">
-                                            <h4>Adidas 60S 2.0</h4>
-                                        </div>
-                                        <div class="pago">
-                                            <p class="precio">$9.200</p>
-                                            <p class="descuento">20% off</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="producto">
-                                    <a class="imagen-producto" href="/product-detail"><img
-                                            src="/images/niña/adidas-racer-tr21-1.jpg"></a>
-                                    <div class="info-producto">
-                                        <i class="fas fa-truck"></i>
-                                        <div class="descripcion">
-                                            <h4>Adidas Racer TR21 Niña</h4>
-                                        </div>
-                                        <div class="pago">
-                                            <p class="precio">$6.662</p>
-                                            <p class="descuento">20% off</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="producto">
-                                    <a class="imagen-producto" href="/product-detail"><img
-                                            src="/images/niño/adidas-velcro-advantage-1.jpg"></a>
-                                    <div class="info-producto">
-                                        <i class="fas fa-truck"></i>
-                                        <div class="descripcion">
-                                            <h4>Adidas Velcro Niño</h4>
-                                        </div>
-                                        <div class="pago">
-                                            <p class="precio">$7.662</p>
-                                            <p class="descuento">10% off</p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                            </section> -->
         </main>
 
         <!-- ********** FOOTER *********** -->
