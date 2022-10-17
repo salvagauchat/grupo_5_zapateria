@@ -1,1 +1,0 @@
-* Proxima daily: 18/10 - Horario a convenir

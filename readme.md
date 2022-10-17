@@ -42,3 +42,6 @@ COLORES A UTILIZAR:
 
 TIPOGRAFIA: 
  - POPPINS
+
+DISEÑO DE LA DB:
+ - El diseño de la DB se encuentra en un PDF adjunto en la carpeta de "wireframes"
