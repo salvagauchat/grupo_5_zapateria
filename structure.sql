@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-10-2022 a las 21:23:08
+-- Tiempo de generación: 01-11-2022 a las 21:04:46
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -39,6 +39,7 @@ CREATE TABLE `brands` (
 --
 
 CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,
   `user_id` varchar(36) NOT NULL,
   `product_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL
@@ -80,8 +81,46 @@ CREATE TABLE `products` (
   `name` varchar(300) NOT NULL,
   `price` int(11) NOT NULL,
   `discount` int(11) NOT NULL,
-  `talle` int(11) NOT NULL,
-  `stock` int(11) NOT NULL
+  `size_id` int(11) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `product_cart`
+--
+
+CREATE TABLE `product_cart` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `cart_id` int(11) NOT NULL,
+  `price` decimal(11,0) NOT NULL,
+  `quantity` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `product_size`
+--
+
+CREATE TABLE `product_size` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `size_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `size`
+--
+
+CREATE TABLE `size` (
+  `id` int(11) NOT NULL,
+  `name` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -111,6 +150,12 @@ ALTER TABLE `brands`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `categories`
 --
 ALTER TABLE `categories`
@@ -120,6 +165,24 @@ ALTER TABLE `categories`
 -- Indices de la tabla `products`
 --
 ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `product_cart`
+--
+ALTER TABLE `product_cart`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `product_size`
+--
+ALTER TABLE `product_size`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `size`
+--
+ALTER TABLE `size`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -140,6 +203,12 @@ ALTER TABLE `brands`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
@@ -149,6 +218,24 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `product_cart`
+--
+ALTER TABLE `product_cart`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `product_size`
+--
+ALTER TABLE `product_size`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `size`
+--
+ALTER TABLE `size`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
