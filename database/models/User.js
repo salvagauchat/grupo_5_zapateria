@@ -3,9 +3,9 @@ module.exports = function (sequelize, DataTypes) {
 
     let cols = {
         id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
             primaryKey: true,
-            autoIncrement: true
         },
         name: {
             type: DataTypes.STRING, 
