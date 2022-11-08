@@ -22,7 +22,7 @@ body {
     text-align: center;
     display: none;
 	color: white;
-	background-color: #4678f4;
+	background-color: #DEF3EB;
 }
 
 .header-container {
@@ -94,7 +94,7 @@ ul {
 /* main */
 
 .box-main {
-    background: linear-gradient(350deg, rgba(117,194,233,1) 26%, rgba(131,204,241,1) 37%, rgba(83,166,243,1) 49%);
+    background-color: #DEF3EB;  
     padding: 40px;
     
 }
@@ -105,7 +105,6 @@ ul {
     border-radius: 15px;
     width: 250px;
     margin: auto;
-    box-shadow: 8px 8px 20px rgb(39, 39, 39);
 }
 
 .form-container {
@@ -145,17 +144,27 @@ input {
 }
 
 .button-style {
-    background-color: #386082;
     padding: 5px 25px;
-    color: rgb(250, 250, 250);
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+   border: unset;
+   border-radius: 5px;
+   color: #212121;
+   z-index: 1;
+   background: #e8e8e8;
+   position: relative;
+   font-weight: 700; 
+   font-size: 17px;
+   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   transition: all 500ms;
+   overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 10px;
 }
 
 .button-style:hover{
-    background-color: #53a6f3;
-}
+    color: #e8e8e8;
+    background-color: #156C4A;
+} 
 
 .remind-me {
     display: flex;

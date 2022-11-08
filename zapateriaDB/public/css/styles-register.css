@@ -23,7 +23,7 @@ body {
     text-align: center;
     display: none;
     color: rgb(255, 255, 255);
-    background-color: #4678f4;
+    background-color: #DEF3EB;
 }
 
 .header-container {
@@ -31,7 +31,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-bottom:solid #4678f4 2px;
+    border-bottom:solid #DEF3EB 2px;
 }
 
 .burger-and-search {
@@ -99,7 +99,7 @@ ul {
     margin-left: 0px;
 }
 .main-form {
-    background: linear-gradient(350deg, rgba(117,194,233,1) 26%, rgba(131,204,241,1) 37%, rgba(83,166,243,1) 49%);
+    background: #DEF3EB;
     padding: 20px;
 }
 
@@ -108,7 +108,6 @@ ul {
     border: solid 1px #000000;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.87);
 }
 
 .main-navbar {
@@ -199,12 +198,12 @@ display: flex;
 display:inline-block;
 padding:0.3em 1.2em;
 margin:0 0.1em 0.1em 0;
-border:0.16em solid #4678f4;
+border:0.16em solid #156C4A;
 border-radius:2em;
 box-sizing: border-box;
 text-decoration:none;
 font-weight:300;
-color:#4678f4;
+color:#156C4A;
 text-align:center;
 transition: all 0.2s;
 display: block;
@@ -218,19 +217,6 @@ margin-top: 10px;
     padding: 0px 15px;
 }
 
-.whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size: 48px;
-    
-  }
 
 /* footer */
 
@@ -287,6 +273,33 @@ margin-top: 10px;
     align-items: center;
     font-size: 25px;
     color: white
+}
+.button-style {
+    padding: 5px 25px;
+   border: unset;
+   border-radius: 5px;
+   color: #212121;
+   z-index: 1;
+   background: #e8e8e8;
+   position: relative;
+   font-weight: 700; 
+   font-size: 17px;
+   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+   transition: all 500ms;
+   overflow: hidden;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+.button-style:hover{
+    color: #e8e8e8;
+    background-color: #156C4A;
+} 
+
+
+.titulo-register {
+    text-align: center;
 }
 
 /*Mobile*/

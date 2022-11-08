@@ -20,7 +20,10 @@ ul {
 	color: rgb(255, 255, 255);
 	background-color: #24262b;
 }
-
+.nada {
+    color:rgb(255, 255, 255);
+    font-weight: lighter;
+}
 .div-search-header-768{
     display: none;
 }
@@ -102,6 +105,8 @@ ul {
 
 .link-logout-register{
     display: none;
+    color:rgb(255, 255, 255);
+    
 }
 
 .link-logout-fontawesome{
@@ -121,6 +126,31 @@ ul {
     left:50%;
     transform: translate(-50%, -50%) scale(6); */
     cursor: pointer;
+    color: #ffff;
+}
+.cart-logout i{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.17em;
+}
+
+.cart-logout {
+    display: flex;
+    font-size: 1.17em;
+    align-items: center;
+}
+
+.icons-header i{
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.17em;
+    display: none;
+}
+
+.icons-header {   
+    display: flex;
+    font-size: 1.17em;
+    align-items: center;
 }
 
 .burger-menu-header span{
@@ -131,6 +161,7 @@ ul {
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 400ms;
+    background-color: #ffffff; 
 }
 
 .activespan1-burger{
@@ -211,6 +242,12 @@ ul {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .icons-header i{
+        display: flex;
+    }
+}
     
     /*Ipad*/
     
@@ -235,7 +272,7 @@ ul {
     }
 
     .links-users-header:hover{
-        color: #53a6f3;
+        color: #156C4A;
     }
 
     .isotipo-header{
@@ -346,6 +383,7 @@ ul {
         .link-logout-fontawesome{
             display: none;
         }
+        
     }
 
     @media (min-width:1920px){
