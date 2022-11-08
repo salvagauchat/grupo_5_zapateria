@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <%- include("../partials/head.ejs", {
+    pageTitle: "Login",
+    cssTag: "<link rel='stylesheet' href='/css/styles-login.css'> "}) %>
+
+<body>
+  <%- include("../partials/header.ejs") %>
+    <main class="box-main">
+      <div class="all-login">
+        <div class="welcome">
+        <h2>Bienvenid@ <i class="fas fa-sign-in-alt"></i></h2>
+        </div>
+
+        <form id="loginForm" action="/user/login" method="post">
+          <div class="form-container">
+
+              <div class="input-user">
+                <div class="email-span">
+                  <input id="emailLogin" type="text" name="email" placeholder="Email">
+                  <span class="span-msg"></span>
+                </div>
+                <% if (locals.errors && errors.email) { %>
+                <div class="text-danger"> <%= errors.email.msg %> </div>
+                <% } %>
+              </div>
+
+              <div class="input-password">
+                <div class="password-span">
+                  <input id="passwordLogin" type="password" name="password" placeholder="Contraseña">
+                  <span class="span-msg"></span>
+                </div>
+              </div>
+
+              
+              <div class="remind-me">
+                <input type="checkbox" name="recordar_usuario" value="recordarme" id="remindMe">
+                <label class="remind-text" for="remindMe">Recordarme</label>
+              <div>
+                
+              <button id="buttonLogin" class="button-style" type="submit">Login</button>
+
+          </div>
+        </form>
+
+        <div class="questions-of-users">
+        <h3><a href="">¿No recuerdas tu contraseña?</a></h3>
+        <h3><a href="/user/register">¿No tienes cuenta? Regístrate</a></h3>
+        </div>
+      </div>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+    <script src="/js/validationsLoginFront.js"></script>
+    <script src="/js/burgerMenu.js"></script>
+</body>
+</html>

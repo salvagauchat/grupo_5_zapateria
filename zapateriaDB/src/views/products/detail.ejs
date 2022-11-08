@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs", {
+        pageTitle: "Detalle del producto Prueba",
+        cssTag: "<link rel='stylesheet' href='/css/styles-detail.css'> <link rel='stylesheet' href='/css/styles-header.css'> <link rel='stylesheet' href='/css/normalize.css'> <link rel='stylesheet' type='text/css' href='/css/slick.css'> <link rel='stylesheet' type='text/css' href='/css/slick-theme.css'>"}) %>
+<body>
+    <%- include("../partials/header.ejs") %>
+
+    <main>
+        <div class="detail-container-box">
+            <div class="detail-main">
+                <div class="img-detail">
+                    <img id="img-Storage" src="/img/products/<%= product.image%>" alt="">
+                </div>
+
+                <!-- Botones de editar y borrar -->
+                <% if (locals.userLogged && locals.userLogged.id === product.userId) { %>
+                    <form class="form-edit-and-delete" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                        <a href="/products/edit/<%= product.id %>" class="button-style edit-a">EDITAR</a>
+                        <button type="submit" class="button-style">BORRAR</button>
+                    </form>
+                <% } %>
+
+                <div class="details-of-product-Mobile">
+                    <h1 id="titleStorage" class="h1-title"><%= product.name %></h1>
+
+
+                    <p>Opiniones(poner logo con estrellas de favoritismo)</p>
+
+                    <div class="price-title">
+                        <h2 id="priceStorage">$ <%= product.price %></h2>
+                    </div>
+
+                    <div class="color-container">
+                        <% if (product.colors.length > 0) { %>
+                            <h2>Colores disponibles:</h2>
+                            <p class="color-style-p"><% product.colors.forEach(color=> { %>
+                                <%= color.name %>
+                              <% }) %></p>
+                        <% } %>
+                    </div>
+
+                    <div class="size-container">
+                        <% if (product.sizes.length > 0) { %>
+                            <h2>Talles</h2>
+                            <select class="size-style" name="" id="">
+                                <option value="">Elegí un talle</option>
+                                <% product.sizes.forEach(size=> { %>
+                                    <option value=""><%= size.name %></option>
+                                <% }) %>
+                            </select>
+                        <% } %>
+                    </div>
+
+                    <p>Cantidad (agregar funcionalidad)</p>
+                    
+                    <div class="buttons-container">
+                    <% if (locals.userLogged) { %>
+                        <form class="addCart" action="/products/addCart/<%= product.id %>" method="post">
+                            <button class="button-style">Agregar al carrito</button>
+                        </form>
+                    <% } else { %>
+                        <button class="button-style">Comprar ahora</button>
+                        <button id="button-storage" class="button-style">Agregar al carrito</button>
+                        
+                        <a href="/user/login" class="login-new">Para mejor experiencia de Usuario inicie sesión</a>
+                    <% } %>
+                    </div>
+
+                    <!-- <div class="buttons-container">
+                        <button class="button-style">Comprar ahora</button>
+                        <button class="button-style">Agregar al carrito</button>
+                        <button id="button-storage" class="button-style">Agregar al carrito(localS)</button>
+                    </div> -->
+                </div>
+
+                <div class="sizes-map">
+                    <h2>Guía de talles</h2>
+                    
+                    <span class="span-sizes">Ver guía de talles</span>
+                    
+                    <table class="table-sizes hidden">
+                        <thead>
+                            <tr>
+                                <th>Talle</th>
+                                <th>EUR</th>
+                                <th>UK</th>
+                                <th>US</th>
+                                <th>Largo del pie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>35</th>
+                                <td>36</td>
+                                <td>3</td>
+                                <td>5,5</td>
+                                <td>22,5 cm</td>
+                            </tr>
+                            <tr>
+                                <th>36</th>
+                                <td>37</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>23 cm</td>
+                            </tr>
+                            <tr>
+                                <th>38</th>
+                                <td>38</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>24 cm</td>
+                            </tr>
+                            <tr>
+                                <th>39</th>
+                                <td>40</td>
+                                <td>6</td>
+                                <td>8,5</td>
+                                <td>25,5 cm</td>
+                            </tr>
+                            <tr>
+                                <th>40</th>
+                                <td>41</td>
+                                <td>6,5</td>
+                                <td>9</td>
+                                <td>26 cm</td>
+                            </tr>
+                            <tr>
+                                <th>41</th>
+                                <td>42</td>
+                                <td>7</td>
+                                <td>10</td>
+                                <td>26,5 cm</td>
+                            </tr>
+                            <tr>
+                                <th>42</th>
+                                <td>43</td>
+                                <td>8</td>
+                                <td>10,5</td>
+                                <td>27 cm</td>
+                            </tr>
+                            <tr>
+                                <th>43</th>
+                                <td>44</td>
+                                <td>9</td>
+                                <td>11</td>
+                                <td>27,5 cm</td>
+                            </tr>
+                            <tr>
+                                <th>44</th>
+                                <td>45</td>
+                                <td>10</td>
+                                <td>11,5</td>
+                                <td>28 cm</td>
+                            </tr>
+                            <tr>
+                                <th>45</th>
+                                <td>46</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>28,5 cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="overlay hidden"></div>
+                </div>
+
+                <div class="size-container sizes-768px">
+                    <% if (product.sizes.length > 0) { %>
+                        <h2>Talles</h2>
+                        <select class="size-style" name="" id="">
+                            <option value="">Elegí un talle</option>
+                            <% product.sizes.forEach(size=> { %>
+                                <option value=""><%= size.name %></option>
+                            <% }) %>
+                        </select>
+                    <% } %>
+                </div>
+
+                <div class="features">
+                    <h2>Características del producto</h2>
+
+                    <table class="features-table">
+                        <tbody>
+                            <tr>
+                                <th class="th-styles-features">Marca</th>
+                                <td class="td-styles-features"><%= product.brands.name %></td>
+                            </tr>
+                            <tr>
+                                <th class="th-styles">Género</th>
+                                <td class="td-styles-features"><%= product.gender.name %></td>
+                            </tr>
+                            <tr>
+                                <% if (product.categories.length > 0) { %>
+                                    <th class="th-styles">Categoría</th>
+                                    <% product.categories.forEach(category=> { %>
+                                        <td class="td-styles-features"><%= category.name %></td>
+                                    <% }) %>
+                                <% } %>
+                            </tr>
+                            <tr>
+                                <th class="th-styles">Edad</th>
+                                <td class="td-styles-features">Adultos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="description-box">
+                    <h2>Descripción</h2>
+                    <p><%= product.description %></p>
+                </div>
+
+                <div class="interested-people">
+                    <h2>Personas interesadas en este producto también vieron:</h2>
+
+                    <!-- CARRUSEL -->
+
+                    <div class="responsive">
+                        <% for( let i = 0; i < allProducts.length; i++ ) { %>
+                            <div class="carrusel-container">
+                                <i class="far fa-heart fav-heart"></i>
+                                
+                                <a href="/products/detail/<%= allProducts[i].id %>"><img class="img-carrusel" src="/img/products/<%= allProducts[i].image %> " alt=""></a>
+                                
+                                <div class="info-carrusel">
+
+                                    <h2><%= allProducts[i].name %></h2>
+
+                                    <div class="price-carrusel">
+                                        <p>$ <%= allProducts[i].price %></p>
+                                    </div>
+
+                                    <% if (allProducts[i].price > 6000) { %>
+                                        <div class="envio">
+                                            <span>Envío gratis</span>     
+                                        </div>                                    
+                                    <% } %>
+
+                                    <div class="description-carrusel">
+                                        <% if (allProducts[i].description.length > 0 && allProducts[i].description.length < 50) { %>
+                                            <p><%= allProducts[i].description %></p>              
+                                        <% } else { %>
+                                            <a href="/products/detail/<%= allProducts[i].id %>"><p>Leer sobre este producto</p></a>
+                                        <% } %> 
+                                    </div>
+                                    
+                                </div>
+                                
+                                <!-- <i class="fas fa-cart-arrow-down cart-carrusel"></i> -->
+                            </div>
+                        <% } %>
+                    </div>
+                    <!-- FIN CARRUSEL -->
+
+                </div>
+
+            </div>
+
+            <div class="detail-info">
+                <div class="details-of-product-PC">
+                    <h1 id="titleStorage" class="h1-title"><%= product.name %></h1>
+
+                    <p>Opiniones (poner logo con estrellas de favoritismo)</p>
+
+                    <div class="price-title">
+                        <h3 id="priceStorage" class="price-768px">$ <%= product.price %></h3>
+                    </div>
+
+                    <div class="color-container">
+                        <% if (product.colors.length > 0) { %>
+                            <h3>Colores disponibles:</h3>
+                            <p class="color-style-p"><% product.colors.forEach(color=> { %>
+                                <%= color.name %>
+                              <% }) %></p>
+                        <% } %>
+                    </div>
+                    
+                    <p>Cantidad</p>
+                    <div class="buttons-container">
+                        <button class="button-style">Comprar ahora</button>
+                        <% if (locals.userLogged) { %>
+                            <form class="addCart" action="/products/addCart/<%= product.id %>" method="post">
+                                <button class="button-style">Agregar al carrito</button>
+                            </form>
+                        <% } else { %>
+                            
+                            <button id="button-storage" class="button-style">Agregar al carrito(localS)</button>
+                            
+                            <a href="/user/login">Para mejor experiencia de Usuario inicie sesión</a>
+                        <% } %>
+                    </div>
+
+                </div>
+
+                <div class="devolucion-garantia-mediosDePago">
+                    <div class="free-devolution">
+                        <h3>Devolución gratis</h3>
+                        <div class="devolution-p">
+                            <p class="devolution-1">Tenés 30 días desde que recibís el producto para devolverlo.</p>
+                            <p>¡No importa el motivo!</p>
+                        </div>
+                    </div>
+
+                    <div class="guarantee">
+                        <h3>Garantía</h3>
+                        <p class="guarantee-p">Recibí el producto que esperabas o te devolvemos tu dinero.</p>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h3>Medios de pago</h3>
+                        <div class="payment-p">
+                            <p>Tarjetas de crédito <i class="fa-regular fa-credit-card"></i></p>
+                            <div class="credit-container">
+                                <img class="visa" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-visa-medium_v_f633100619.png" alt="">
+                                <img class="mastercard" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-master-medium_v_f633100619.png" alt="">
+                                <img class="naranja" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-naranja-medium_v_f633100619.png" alt="">
+                            </div>
+
+                            <p>Tarjetas de débito <i class="fa-solid fa-credit-card"></i></p>
+                            <div class="debit-container">
+                                <img class="visa-debito" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-debvisa-medium_v_f633100619.png" alt="">
+                                <img class="mastercard-debito" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-debmaster-medium_v_f633100619.png" alt="">
+                                <img class="cabal" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-debcabal-medium_v_f633100619.png" alt="">
+                            </div>
+                            
+                            <p>Efectivo <i class="fa-solid fa-money-bill-1-wave"></i></p>
+                            <div class="cash-container">
+                                <img class="rapipago" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-rapipago-medium_v_f633100619.png" alt="">
+                                <img class="pagoFacil" src="https://http2.mlstatic.com/secure/payment-logos/v2/payment-logo-mla-pagofacil-medium_v_f633100619.png" alt="">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
+
+    <!-- slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+        $('.responsive').slick();
+        });
+    </script> -->
+
+    <script src="/js/carrusel.js"></script>
+
+    <!-- Funcionalidades -->
+    <script src="/js/burgerMenu.js"></script>
+    <script src="/js/profileMenu.js"></script>
+    <script src="/js/sizesMap.js"></script>
+    <script src="/js/cartStorage.js"></script>
+</body>
+</html>

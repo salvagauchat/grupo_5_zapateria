@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs", {
+        pageTitle:"product-create",
+        cssTag: "<link rel='stylesheet' href='/css/styles-create.css'> <link rel='stylesheet' href='/css/styles-index.css'>"}) %>
+<body>
+    <%- include("../partials/header.ejs") %>
+    
+    <main>
+        
+        <h1 id="h1-create">Crear Producto</h1>
+
+        <form class="form-container-create" action="/products/create" method="POST" enctype="multipart/form-data" id="createform">
+            
+                <label id="label-title-first" for="productName">Nombre del producto:</label>
+                <input
+                    class="field-style"
+                    type="text" 
+                    id="productName" 
+                    name="name" 
+                    placeholder="Ej: zapatilla nike air force" 
+                    value="<%= locals.oldData ? oldData.name : null %>"
+                >
+                <span></span>
+
+                <% if (locals.errors && errors.name) { %>
+                    <div class="text-danger">
+                      <%= errors.name.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title" for="price">Precio:</label>
+                <input class="field-style" type="text" id="price" name="price" placeholder="Escriba el precio" value="<%= locals.oldData ? oldData.price : null %>">
+                <span></span>
+
+                <% if (locals.errors && errors.name) { %>
+                    <div class="text-danger">
+                      <%= errors.price.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title" for="gender">Género del producto:</label>
+                <select class="field-style" id="gender" name="productGender">
+                    <option>Selecciona una opción</option>
+                    <% for( let i = 0; i < genders.length; i++ ) { %>
+                        <option value="<%= genders[i].id %>">
+                            <%= genders[i].name %>  
+                        </option>
+                    <% } %>    
+                </select>
+                <span></span>
+
+                <% if (locals.errors && errors.productGender) { %>
+                    <div class="text-danger">
+                      <%= errors.productGender.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title" for="brand">Marca del producto:</label>
+                <select class="field-style" name="productBrand" id="brand">
+                    <option>Selecciona una opción</option>
+                    <% for( let i = 0; i < brands.length; i++ ) { %>
+                        <option value="<%= brands[i].id %>">
+                            <%= brands[i].name %> 
+                        </option>
+                    <% } %>
+                </select>
+                <span></span>
+
+                <% if (locals.errors && errors.productBrand) { %>
+                    <div class="text-danger">
+                      <%= errors.productBrand.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title">Talle del producto:</label>
+                
+                <div class="scroll-checkbox">
+                    <% for( let i = 0; i < sizes.length; i++ ) { %>
+                    <div class="productCheckbox">
+                        <p><%= sizes[i].name %></p><input type="checkbox" name="productSize" value="<%= sizes[i].id %>">
+                    </div>
+                    <% } %>
+                </div>
+                <span></span>
+                
+                <% if (locals.errors && errors.productSize) { %>
+                    <div class="text-danger">
+                      <%= errors.productSize.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title">Color del producto:</label>
+                
+                <div class="scroll-checkbox">
+                    <% for( let i = 0; i < colors.length; i++ ) { %>
+                        <div class="productCheckbox">
+                            <p><%= colors[i].name %> </p> <input type="checkbox" name="productColor" value="<%= colors[i].id %>">
+                        </div>
+                    <% } %>
+                </div>
+                <span></span>
+
+                <% if (locals.errors && errors.productColor) { %>
+                    <div class="text-danger">
+                      <%= errors.productColor.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title">Categoría del producto:</label>
+                
+                <div class="scroll-checkbox">
+                    <% for( let i = 0; i < categories.length; i++ ) { %>
+                        <div class="productCheckbox">
+                           <p> <%= categories[i].name %> </p> <input type="checkbox" name="productCategory" value="<%= categories[i].id %>">
+                        </div>
+                    <% } %>
+                </div>
+                <span></span>
+
+                <% if (locals.errors && errors.productCategory) { %>
+                    <div class="text-danger">
+                      <%= errors.productCategory.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title" for="image">Imagen del producto:</label>
+                <input class="field-img-style" type="file" id="image" name="image">
+
+                <% if (locals.errors && errors.image) { %>
+                    <div class="text-danger">
+                      <%= errors.image.msg %> 
+                    </div>
+                <% } %>
+
+                <label class="label-title" for="description">Descripción del producto:</label>
+                <textarea class="textarea-style" name="description" id="description" cols="30" rows="10" value="<%= locals.oldData ? oldData.description : null %>">Detalle aún más el producto a publicar...</textarea>
+                <span></span>
+                <% if (locals.errors && errors.description) { %>
+                    <div class="text-danger">
+                      <%= errors.description.msg %> 
+                    </div>
+                <% } %>
+
+                <button class="button-style" type="submit">Cargar producto</button>
+            
+        </form>
+    </main>
+
+    <%- include("../partials/footer.ejs") %>
+
+    <script src="/js/burgerMenu.js"></script>
+    <script src="/js/profileMenu.js"></script>
+    <script src="/js/validationsProductCreate.js"></script>
+    
+</body>
+</html>
