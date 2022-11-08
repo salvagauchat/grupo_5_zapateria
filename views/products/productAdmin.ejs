@@ -41,12 +41,20 @@
 
                 <div class="control-form">
                     <label for=""></label>
-                    <input type="text" name="marca" id="marca" class="control" placeholder="Marca" value="<%= locals.oldData ? oldData.marca : null  %>" >
+
+                    <select class="control" name="marca" id="marca" value="<%= locals.oldData ? oldData.marca : null  %>">
+                        <option>Selecciona una opción</option>
+                        <% for( let i = 0; i < marca.length; i++ ) { %>
+                            <option value="<%= marca[i].id %>">
+                                <%= marca[i].name %> 
+                            </option>
+                        <% } %>
+                    </select>
                     <% if (locals.errors && errors.marca) { %>
                         <div class="errores">
                             <%= errors.marca.msg %>
                         </div>
-                        <% } %>
+                    <% } %>
                 </div>
 
                 <div class="control-form">
@@ -61,11 +69,21 @@
 
                 <div class="control-form">
                     <label for="category" class="titulos-form">Categoria:</label>
-                    <select name="category" id="category" class="control">
+
+                    <select class="control" name="category" id="category">
+                        <option>Selecciona una opción</option>
+                        <% for( let i = 0; i < category.length; i++ ) { %>
+                            <option value="<%= category[i].id %>">
+                                <%= category[i].name %> 
+                            </option>
+                        <% } %>
+                    </select>
+
+                    <!-- <select name="category" id="category" class="control">
                         <option value="" selected>Ninguna</option>
                         <option value="destacado">Destacado</option>
                         <option value="oferta">Oferta</option>
-                    </select>
+                    </select> -->
                 </div>
 
                 <div class="control-form">
@@ -170,6 +188,16 @@
                            <%= errors.price.msg %> 
                         </div>
                        <% } %>
+                </div>
+
+                <div class="control-form">
+                    <label for="stock"></label>
+                    <input type="number" name="stock" id="stock" class="control" placeholder="Stock" value="<%= locals.oldData ? oldData.stock : null  %>" >
+                        <% if (locals.errors && errors.stock) { %>
+                            <div class="errores">
+                               <%= errors.stock.msg %> 
+                            </div>
+                           <% } %>
                 </div>
 
                 <div class="control-form">

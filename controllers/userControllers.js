@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path');
-const User = require('../models/User')
+const User = require('../models/User');
 const bcryptjs = require('bcryptjs');
 
 const pathDataBase = path.join(__dirname, '../data/user.json');
@@ -42,7 +42,6 @@ let userController = {
                 ...req.body,
                 password: bcryptjs.hashSync(req.body.password, 10),
                 avatar: req.file.filename
-                
             }
        
        let userCreated = User.create(userToCreate);

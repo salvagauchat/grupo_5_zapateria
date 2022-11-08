@@ -13,8 +13,8 @@ module.exports = function (sequelize, DataTypes) {
     }
 
     let config = {
-        tableName:"sizes",
-        timestamps: true,
+        tableName:"size",
+        timestamps: false,
     }
 
     let Size = sequelize.define(alias, cols, config);

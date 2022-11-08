@@ -11,6 +11,8 @@ const validations = {
 
         body('price').notEmpty().withMessage('Falta colocar el precio'),
 
+        body('pstock').notEmpty().withMessage('Falta colocar el stock')
+
         /* body('image').custom((value, {req})=>{
     
              let acceptedExtensions = ['jpg, jpeg'];
