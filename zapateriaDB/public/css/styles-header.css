@@ -358,3 +358,100 @@ ul {
     }
     /* fin header prueba */
 }
+
+/********** FOOTER **********/
+
+footer {
+    background-color: #24262b;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.atencion-clientes {
+    margin: auto;
+    text-align: center;
+    margin: 10px;
+}
+
+.ayuda-clientes {
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+footer h3 {
+    color: #ffffff;
+    background-color: #156C4A;
+    border-radius: 10px;
+}
+
+.flecha-div {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 10px;
+}
+
+.flecha-inicio {
+    color: #156C4A;
+    text-align: center;
+    font-size: 30px;
+    border:none;
+    background-color: transparent;
+}
+
+
+.contactos {
+    display: none;
+}
+
+
+/*++++++++++++++ MEDIAS ++++++++++++++*/
+
+@media (min-width: 570px) {
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 20px 5%;
+    }
+    .ayuda-clientes{
+        width: 30%;
+        margin: 0;
+    }
+    .ayuda-clientes i{
+        display: none;
+    }
+
+    .contactos {
+        display: block;
+    }
+    .contactos i{
+        display: inline;
+    }
+
+
+    .contactos li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .contactos li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+    }
+}

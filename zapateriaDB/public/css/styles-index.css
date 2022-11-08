@@ -334,7 +334,7 @@ ul {
 
 main {
     background-color: #DEF3EB;
-    padding: 20px 0px;
+    padding: 20px 6%;
     margin: auto
 }
 
@@ -347,7 +347,7 @@ main {
 }
 
 .title-news {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;
@@ -355,7 +355,7 @@ main {
 }
 
 .title-news-first {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
     margin-top: 50px;

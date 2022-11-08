@@ -17,7 +17,8 @@
     <br>
     <br>
     <br>
-    <h3 class="title-news-first">Nuevos lanzamientos</h3>
+    <h3 class="title-news-first">Ofertas relámpago <i class="fa-solid fa-bolt" style="color:#d5d834;" ></i></h3>
+    
 
     <div class="responsive">
       <% for( let i = 0; i < productsDB.length; i++ ) { %>
@@ -134,8 +135,7 @@
 
 
     </section> -->
-
-    <h2 class="title-news">Los más buscados</h2>
+    <h3 class="title-news">Lo mas vendido <i class="fa-solid fa-fire" style="color: red;"></i></h3>
 
     <div class="responsive">
       <% for( let i = 0; i < productsDB.length; i++ ) { %>
@@ -174,48 +174,11 @@
     </div>
   <!-- FIN CARRUSEL -->
 
-
-      <h2 class="title-news">Elegí tus favoritas</h2>
-
-      <div class="responsive">
-        <% for( let i = 0; i < productsDB.length; i++ ) { %>
-            <div class="carrusel-container">
-                <i class="far fa-heart fav-heart"></i>
-                
-                <a href="/products/detail/<%= productsDB[i].id %>"><img class="img-carrusel" src="/img/products/<%= productsDB[i].image %> " alt="<%= productsDB[i].name %>"></a>
-                
-                <div class="info-carrusel">
-  
-                    <h2><%= productsDB[i].name %></h2>
-  
-                    <div class="price-carrusel">
-                        <p>$ <%= productsDB[i].price %></p>
-                    </div>
-  
-                    <% if (productsDB[i].price > 6000) { %>
-                        <div class="envio">
-                            <span>Envío gratis</span>     
-                        </div>                                    
-                    <% } %>
-  
-                    <div class="description-carrusel">
-                        <% if (productsDB[i].description.length > 0 && productsDB[i].description.length < 20) { %>
-                            <p><%= productsDB[i].description %></p>              
-                        <% } else { %>
-                            <a href="/products/detail/<%= productsDB[i].id %>"><p>Leer sobre este producto</p></a>
-                        <% } %> 
-                    </div>
-                    
-                </div>
-                
-                <!-- <i class="fas fa-cart-arrow-down cart-carrusel"></i> -->
-            </div>
-        <% } %>
+      
+      
     </div>
     <!-- FIN CARRUSEL -->
 
-      <a href="https://wa.me/5491127682598?text=Me%20gustar%C3%ADa%20contactar%20con%20un%20asesor%20comercial"
-        class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i></a>
 
   </main>
   <%- include("./partials/footer.ejs") %>
