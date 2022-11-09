@@ -59,8 +59,8 @@ const userRoutedb = require("./src/routes/routesdb/userRoutedb")
 app.use("/user", userRoutedb);
 
 //RUTAS DE APIS PARA EL DASHBOARD
-const apiRoutes = require ("./src/routes/apiRoutes/apiRoutes");
-app.use("/api", apiRoutes);
+/* const apiRoutes = require ("./src/routes/apiRoutes/apiRoutes");
+app.use("/api", apiRoutes); */
 
 const mainRoutedb = require ("./src/routes/routesdb/mainRoutedb")
 app.use ("/", mainRoutedb);
