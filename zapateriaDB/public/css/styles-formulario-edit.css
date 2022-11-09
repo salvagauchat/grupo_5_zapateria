@@ -21,7 +21,7 @@ body {
 
 /* PROBANDO ESTILOS */
 main{
-    background: linear-gradient(350deg, rgba(117,194,233,1) 26%, rgba(131,204,241,1) 37%, rgba(83,166,243,1) 49%);
+    background: #DEF3EB;
     padding: 20px 0px;
 }
 
@@ -39,8 +39,6 @@ main{
     background-color: white;
     padding: 40px;
     border-radius: 15px;
-    border: 5px solid black;
-    box-shadow: 8px 8px 20px rgb(39, 39, 39);
     margin-bottom: 60px;
 }
 
@@ -85,16 +83,14 @@ main{
     margin-top: 10px;
     padding: 5px;
     align-self: center;
-    background-color: #53a6f3;
+    background-color: #156C4A;
     color: white;
-    border: 3px solid rgb(46, 83, 131);
     border-radius: 10px;
     text-align: center;
 }
 
 .button-style:hover {
-    background-color: rgb(46, 83, 131);
-    border: 3px solid rgb(46, 83, 131);
+    background-color: #24262b;
     color: white;
 }
 

@@ -625,15 +625,6 @@ margin-top: 10px;
         display: none;
        }
     }
-
-    .bannerazul {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: -10px;
-        background-color: #4678f4;
-        margin: auto;
-        color: #f2f2f2;
-    }
     
     /*Ipad*/
     
@@ -643,14 +634,6 @@ margin-top: 10px;
         }
     }
 
-    .bannerazul {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: -10px;
-        background-color: #4678f4;
-        margin: auto;
-        color: #f2f2f2;
-    }
 
 @media (min-width:768px) {
     /* Header prueba */
@@ -791,9 +774,6 @@ margin-top: 10px;
 
     /* Fin carrusel */
 
-    .banner {
-        margin-top: 115px;
-    }
 
     .title-news-first {
         color: #24262b;
