@@ -711,7 +711,7 @@ margin-top: 10px;
     .subMenu-header .menu-link{
         background: white;
         padding-left: 40px;
-        color: #24262b;
+        color: #ffff;
     }
 
     .container-submenu:hover .subMenu-header {
