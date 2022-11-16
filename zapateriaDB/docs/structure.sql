@@ -389,13 +389,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `cartId`, `createdAt`, `updatedAt`, `deletedAt`) VALUES
-(1, 'Joaquin', 'goku@gmail.com', '$2a$10$pu1wiGNJwthdsUJ73dqowu8JCaQ4FTMGAewcqdtzs3T9Y.Cf7LtX6', '1647389062287_img.jpeg', NULL, '2022-03-16 00:04:22', '2022-03-16 00:04:22', NULL),
-(2, 'Joaquin', 'joaquincaggiano@gmail.com', '$2a$10$RkePEl0IzVGCDXiHJMXav.odCQhHPGJOHkK7lqCgahjEmRPrrjGbO', '1647469836086_img.jpeg', NULL, '2022-03-16 22:30:36', '2022-03-16 22:30:36', NULL),
-(3, 'Joaquin Serra', 'krilin@gmail.com', '$2a$10$Qb01ipC1Ny6mMD15rDqLsuTD2xTI2fVXQeYCSa9JyqscGQ0kUQAEK', '1647471827806_img.jpeg', NULL, '2022-03-16 23:03:47', '2022-03-16 23:03:47', NULL),
+(1, 'Hola', 'goku@gmail.com', '$2a$10$pu1wiGNJwthdsUJ73dqowu8JCaQ4FTMGAewcqdtzs3T9Y.Cf7LtX6', '1647389062287_img.jpeg', NULL, '2022-03-16 00:04:22', '2022-03-16 00:04:22', NULL),
+(2, 'Hola', 'joaquincaggiano@gmail.com', '$2a$10$RkePEl0IzVGCDXiHJMXav.odCQhHPGJOHkK7lqCgahjEmRPrrjGbO', '1647469836086_img.jpeg', NULL, '2022-03-16 22:30:36', '2022-03-16 22:30:36', NULL),
+(3, 'Hola', 'krilin@gmail.com', '$2a$10$Qb01ipC1Ny6mMD15rDqLsuTD2xTI2fVXQeYCSa9JyqscGQ0kUQAEK', '1647471827806_img.jpeg', NULL, '2022-03-16 23:03:47', '2022-03-16 23:03:47', NULL),
 (4, 'Facu Mayuri', 'facumayuri@gmail.com', '$2a$10$t/KLwRHPnDi65IuKyF1CNOMJ4wzoinY4KGU0R1tsn3i1HlALqNwv2', '1647483135338_img.jpeg', NULL, '2022-03-17 02:12:15', '2022-03-17 02:12:15', NULL),
-(5, 'juanki', 'juanki@gmail.com', '$2a$10$jHZR5ZgB06kd98bqoXn4aun.F5TFzGkWDWEPwWLR0u2R1b9RbKEsu', '1647483315921_img.jpeg', NULL, '2022-03-17 02:15:16', '2022-03-17 02:15:16', NULL),
-(6, 'Tom caggiano', 'tomcaggiano@gmail.com', '$2a$10$8ygRqhF5yTeOc2ffkEHgX.47FyK23dp9yWuSNcU6SpSyDogO7yS/G', '1647886922356_img.jpeg', NULL, '2022-03-21 18:22:02', '2022-03-21 18:22:02', NULL),
-(7, 'Juan Muñoz', 'juanmunoz9393@gmail.com', '$2a$10$rO/NdhixR5924wtIRkDQnef2.pPyWgYpitIDVOcWuMjr6vJbUe3xO', '1647962024371_img.jpg', NULL, '2022-03-22 15:13:44', '2022-03-22 15:13:44', NULL);
 
 --
 -- Indexes for dumped tables
