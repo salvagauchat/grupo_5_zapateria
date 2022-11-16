@@ -392,7 +392,6 @@ INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `cartId`, `crea
 (1, 'Hola', 'goku@gmail.com', '$2a$10$pu1wiGNJwthdsUJ73dqowu8JCaQ4FTMGAewcqdtzs3T9Y.Cf7LtX6', '1647389062287_img.jpeg', NULL, '2022-03-16 00:04:22', '2022-03-16 00:04:22', NULL),
 (2, 'Hola', 'joaquincaggiano@gmail.com', '$2a$10$RkePEl0IzVGCDXiHJMXav.odCQhHPGJOHkK7lqCgahjEmRPrrjGbO', '1647469836086_img.jpeg', NULL, '2022-03-16 22:30:36', '2022-03-16 22:30:36', NULL),
 (3, 'Hola', 'krilin@gmail.com', '$2a$10$Qb01ipC1Ny6mMD15rDqLsuTD2xTI2fVXQeYCSa9JyqscGQ0kUQAEK', '1647471827806_img.jpeg', NULL, '2022-03-16 23:03:47', '2022-03-16 23:03:47', NULL),
-(4, 'Facu Mayuri', 'facumayuri@gmail.com', '$2a$10$t/KLwRHPnDi65IuKyF1CNOMJ4wzoinY4KGU0R1tsn3i1HlALqNwv2', '1647483135338_img.jpeg', NULL, '2022-03-17 02:12:15', '2022-03-17 02:12:15', NULL),
 
 --
 -- Indexes for dumped tables
