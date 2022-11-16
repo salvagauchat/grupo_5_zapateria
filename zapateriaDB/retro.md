@@ -89,3 +89,19 @@ Sprint 4 (Retro):
 
 - Que deberiamos dejar de hacer:
     * Demorar mucho en la resolucion de problemas
+
+
+    Sprint 6 (Retro):
+- Que hicimos bien:
+    * Nos supimos dividir las tareas
+    * Dividimos las tareas de manera eficiente de modo que pudimos trabajar una parte con DB, y el resto del equipo se pudo enfocar en mejorar el diseño de la web, aplicando nuevos estilos y herramientas que nos permitan avanzar en proximos sprints
+    * Buscar proyectos similares como base en la organización de nuestra DB
+    * Comenzamos a trabajar en ramas
+
+- Que hicimos mal:
+
+- Que deberiamos empezar a hacer:
+    * Deberiamos comenzar a tener dailys
+
+- Que deberiamos dejar de hacer:
+    
