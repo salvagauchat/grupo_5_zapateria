@@ -26,7 +26,10 @@ ul {
 }
 .div-search-header-768{
     display: none;
+    border-radius: 15px;
+
 }
+
 
 .burger-and-logos-header{
     display: flex;
@@ -34,6 +37,7 @@ ul {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
 
 /* .div-logos-header{
@@ -67,6 +71,22 @@ ul {
 .input-search-header{
     width: 91%;
     padding: 6px;
+}
+.input-search-header-768{
+    border-radius: 15px;
+    width: 150%;
+    top: 20%
+    
+    
+}
+.button-search {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 60%;
+    top: 39%;
+    
+
 }
 
 .profile-image-header{
