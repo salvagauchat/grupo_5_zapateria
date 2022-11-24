@@ -30,7 +30,7 @@
           <button type="submit" class="button-search">
             <span><i class="fas fa-search"></i></span>
           </button>
-          <input class="input-search-header-768" type="text" name="search" placeholder="Buscar productos..." />
+          <input class="input-search-header-768" type="text" name="search" placeholder=" Buscar productos..." />
         </div>
       </form>
     </div>
@@ -40,7 +40,7 @@
       <% if (locals.isLogged) { %>
         <div class="profile-container">
           <a href="/user/profile">
-            <h3 class="nada">Hola, <%= locals.userLogged.name %>
+            <h3 class="nada"><%= locals.userLogged.name %>
             </h3>
           </a>
           <div>
