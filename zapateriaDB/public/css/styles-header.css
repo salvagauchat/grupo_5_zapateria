@@ -69,8 +69,9 @@ ul {
 }
 
 .input-search-header{
-    width: 91%;
+    width: 100%;
     padding: 6px;
+    border-radius: 15px;
 }
 .input-search-header-768{
     border-radius: 15px;
