@@ -25,7 +25,7 @@
                     <h1 id="titleStorage" class="h1-title"><%= product.name %></h1>
 
 
-                    <p>Opiniones(poner logo con estrellas de favoritismo)</p>
+                    <p>Opiniones</p>
 
                     <div class="price-title">
                         <h2 id="priceStorage">$ <%= product.price %></h2>
@@ -52,7 +52,7 @@
                         <% } %>
                     </div>
 
-                    <p>Cantidad (agregar funcionalidad)</p>
+                    <p>Cantidad</p>
                     
                     <div class="buttons-container">
                     <% if (locals.userLogged) { %>
@@ -63,7 +63,7 @@
                         <button class="button-style">Comprar ahora</button>
                         <button id="button-storage" class="button-style">Agregar al carrito</button>
                         
-                        <a href="/user/login" class="login-new">Para mejor experiencia de Usuario inicie sesión</a>
+                        <a href="/user/login" class="login-new">Favor de iniciar sesión para poder agregar el producto al carrito de compras</a>
                     <% } %>
                     </div>
 
@@ -262,7 +262,7 @@
                 <div class="details-of-product-PC">
                     <h1 id="titleStorage" class="h1-title"><%= product.name %></h1>
 
-                    <p>Opiniones (poner logo con estrellas de favoritismo)</p>
+                    <p>Opiniones</p>
 
                     <div class="price-title">
                         <h3 id="priceStorage" class="price-768px">$ <%= product.price %></h3>
@@ -286,9 +286,9 @@
                             </form>
                         <% } else { %>
                             
-                            <button id="button-storage" class="button-style">Agregar al carrito(localS)</button>
+                            <button id="button-storage" class="button-style">Agregar al carrito</button>
                             
-                            <a href="/user/login">Para mejor experiencia de Usuario inicie sesión</a>
+                            <a href="/user/login">Favor de iniciar sesión para poder agregar el producto al carrito de compras</a>
                         <% } %>
                     </div>
 
