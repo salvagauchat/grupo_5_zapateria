@@ -7,8 +7,10 @@ const session = require("express-session")
 const cookie = require('cookie-parser');
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 const editAndDeleteOwnProduct = require("./middlewares/editAndDeleteOwnProduct")
+const cors = require('cors')
 
 /* app.listen (3003, () => console.log ("Servidor corriendo en puerto 3003")); */
+app.use(cors())
 app.use (express.static (path.resolve (__dirname, "./public")))
 
 
@@ -58,6 +60,13 @@ app.use("/products", productRoutedb);
 const userRoutedb = require("./src/routes/routesdb/userRoutedb")
 app.use("/user", userRoutedb);
 
+// api users
+const apiRouterUsers = require('./routes/apiRoutes/apiRoutesUsers')
+app.use('/api/users', apiRouterUsers)
+
+// api products
+const apiRouterProducts = require('./routes/apiRoutes/apiRoutesProducts')
+app.use('/api/products', apiRouterProducts)
 
 const mainRoutedb = require ("./src/routes/routesdb/mainRoutedb")
 app.use ("/", mainRoutedb);
