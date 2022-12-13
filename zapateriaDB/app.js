@@ -60,12 +60,12 @@ app.use("/products", productRoutedb);
 const userRoutedb = require("./src/routes/routesdb/userRoutedb")
 app.use("/user", userRoutedb);
 
-// api users
-const apiRouterUsers = require('./routes/apiRoutes/apiRoutesUsers')
+/************* API USER *************/
+const apiRouterUsers = require('./src/routes/apiRoutes/apiRoutesUser')
 app.use('/api/users', apiRouterUsers)
 
-// api products
-const apiRouterProducts = require('./routes/apiRoutes/apiRoutesProducts')
+/************* API PRODUCT *************/
+const apiRouterProducts = require('./src/routes/apiRoutes/apiRoutesProducts')
 app.use('/api/products', apiRouterProducts)
 
 const mainRoutedb = require ("./src/routes/routesdb/mainRoutedb")
