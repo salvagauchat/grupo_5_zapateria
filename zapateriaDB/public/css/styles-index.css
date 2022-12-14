@@ -618,6 +618,13 @@ margin-top: 10px;
     color: #f2f2f2;
 }
 
+.banner-seleccion {
+    height: 100%;
+    /* width: 100%; */
+    align-items: center;
+    margin: auto;
+}
+
 /*Mobile*/
 
 @media (max-width:479px) {
@@ -996,5 +1003,11 @@ margin-top: 10px;
     }
     .box-footer form {
         max-width: 350px;
+    }
+}
+
+@media (max-width: 479px) {
+    .banner-seleccion {
+        display: none;
     }
 }

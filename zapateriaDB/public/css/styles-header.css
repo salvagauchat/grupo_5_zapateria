@@ -69,12 +69,13 @@ ul {
 }
 
 .input-search-header{
-    width: 91%;
+    width: 90%;
     padding: 6px;
+    border-radius: 15px;
 }
 .input-search-header-768{
     border-radius: 15px;
-    width: 115%;
+    width: 130%;
     top: 20%;
     display: flex;
     

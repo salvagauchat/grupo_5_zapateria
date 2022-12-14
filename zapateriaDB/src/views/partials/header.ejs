@@ -1,9 +1,8 @@
 <link rel="stylesheet" href="/css/styles-header.css">
 <header class="main-header">
-  <!-- <h4 class="bannerazul">Envío gratis a todo el país en compras mayores a $6500</h4> -->
   <div class="burger-and-logos-header">
     <div class="burger-menu-header">
-      <!-- <i class="fas fa-bars "></i> -->
+
       <span class="span1-burger"></span>
       <span class="span2-burger"></span>
       <span class="span3-burger"></span>
@@ -28,10 +27,10 @@
     <div class="div-search-header-768">
       <form action="/products/search" method="POST">
         <div class="button-and-input-search-header-768">
-          <button  type="submit" class="button-search">
+          <button type="submit" class="button-search">
             <span><i class="fas fa-search"></i></span>
           </button>
-          <input class="input-search-header-768" type="text" name="search" placeholder="Buscar productos..." />
+          <input class="input-search-header-768" type="text" name="search" placeholder=" Buscar productos..." />
         </div>
       </form>
     </div>
@@ -41,7 +40,7 @@
       <% if (locals.isLogged) { %>
         <div class="profile-container">
           <a href="/user/profile">
-            <h3 class="nada">Hola, <%= locals.userLogged.name %>
+            <h3 class="nada"><%= locals.userLogged.name %>
             </h3>
           </a>
           <div>
@@ -58,10 +57,11 @@
           </div>
           <div class="cart-logout">
             <a href="/products/cart" style="color: #156C4A;"><i class="fas fa-shopping-cart"></i></a>
-          <a class="link-logout-register" href="/user/logout">Cerrar sesión</a>
-          <a class="link-logout-fontawesome" href="/user/logout"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <a class="link-logout-register" href="/user/logout">Cerrar sesión</a>
+            <a class="link-logout-fontawesome" href="/user/logout"><i
+                class="fa-solid fa-arrow-right-to-bracket"></i></a>
+          </div>
         </div>
-      </div>
 
         <% } else { %>
           <div class="icons-header">
@@ -99,10 +99,10 @@
           <ul class="subMenu-header">
             <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/1">Nike</a></li>
             <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/2">Adidas</a></li>
-            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/3">Puma</a></li>
-            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/4">Topper</a></li>
-            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/5">Fila</a></li>
-            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/6">Kappa</a></li>
+            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/3">Topper</a></li>
+            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/4">Puma</a></li>
+            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/5">Aesic</a></li>
+            <li class="menu-item"><a class="menu-link style-link" href="/products/listbybrand/6">Reebok</a></li>
           </ul>
         </li>
         <li class="menu-item"><a class="menu-link" href="/products/listbygender/1">Hombre</a></li>
