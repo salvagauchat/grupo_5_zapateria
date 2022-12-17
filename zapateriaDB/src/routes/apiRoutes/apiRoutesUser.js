@@ -5,8 +5,8 @@ const controllerUser = require ("../../controllers/controllersAPI/userController
 
 
 //Rutas de APIs de Usuario
-router.get("/users", controllerUser.showUsers);
-router.get("/users/:id", controllerUser.detailUsers);
+/* router.get("/users", controllerUser.showUsers);
+router.get("/users/:id", controllerUser.detailUsers); */
 
 
 

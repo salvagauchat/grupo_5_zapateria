@@ -1,6 +1,31 @@
-const db = require("../../database/models");
+const { Op } = require("sequelize");
+const db = require('../../database/models')
 
-const controllerProduct = {
+
+
+module.exports = {
+    show: async(req,res) => {
+        const products = await db.Product.findAll({
+            raw: true,
+            include: ['gender', 'brands'],
+            nest: true
+        })
+        
+        console.log(products)
+        
+        return res.json({
+			total: products.length,
+            products
+			
+		})
+    }
+}
+
+
+
+
+
+/*const controllerProduct = {
     showProducts: (req, res) => {
         db.Product.findAll()
         .then(async products => {
@@ -72,4 +97,4 @@ const controllerProduct = {
     }
 }
 
-module.exports = controllerProduct;
+module.exports = controllerProduct */
