@@ -6,21 +6,29 @@ const db = require('../../database/models')
 
 module.exports = {
     show: async(req,res) => {
-        const products = await db.Product.findAll({
+        let products = await db.Product.findAll({
             raw: true,
             include: ['gender', 'brands'],
             nest: true
         })
         
         console.log(products)
+        products = await products.map(product => ({
+            ...product, 
+            image: 'http://localhost:3001/img/products/' + product.image
+        }))
         
         return res.json({
 			total: products.length,
             products
 			
 		})
-    }
+    },
+
+    
+    
 }
+
 
 
 
