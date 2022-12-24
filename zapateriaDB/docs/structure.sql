@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2022 a las 01:00:04
+-- Tiempo de generación: 24-12-2022 a las 14:58:28
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -65,7 +65,9 @@ CREATE TABLE `carts` (
 --
 
 INSERT INTO `carts` (`id`, `name`, `userId`, `createdAt`, `updatedAt`) VALUES
-(1, '', 8, '2022-11-08 21:12:53', '2022-11-08 21:12:53');
+(1, '', 8, '2022-11-08 21:12:53', '2022-11-08 21:12:53'),
+(2, '', 8, '2022-11-18 17:36:10', '2022-11-18 17:36:10'),
+(3, '', 9, '2022-11-30 14:52:54', '2022-11-30 14:52:54');
 
 -- --------------------------------------------------------
 
@@ -162,7 +164,11 @@ CREATE TABLE `productcart` (
 --
 
 INSERT INTO `productcart` (`id`, `productId`, `cartId`, `productPrice`, `quantity`, `createdAt`, `updatedAt`) VALUES
-(1, 18, 1, NULL, NULL, '2022-11-08 21:12:53', '2022-11-08 21:12:53');
+(1, 18, 1, NULL, NULL, '2022-11-08 21:12:53', '2022-11-08 21:12:53'),
+(2, 18, 2, NULL, NULL, '2022-11-18 17:36:10', '2022-11-18 17:36:10'),
+(3, 19, 2, NULL, NULL, '2022-11-18 17:36:19', '2022-11-18 17:36:19'),
+(4, 17, 3, NULL, NULL, '2022-11-30 14:52:54', '2022-11-30 14:52:54'),
+(5, 21, 3, NULL, NULL, '2022-11-30 14:53:14', '2022-11-30 14:53:14');
 
 -- --------------------------------------------------------
 
@@ -393,16 +399,18 @@ CREATE TABLE `users` (
   `cartId` int(10) UNSIGNED DEFAULT NULL,
   `createdAt` timestamp NULL DEFAULT NULL,
   `updatedAt` timestamp NULL DEFAULT NULL,
-  `deletedAt` timestamp NULL DEFAULT NULL
+  `deletedAt` timestamp NULL DEFAULT NULL,
+  `admin` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `cartId`, `createdAt`, `updatedAt`, `deletedAt`) VALUES
-
-(1, 'Stefano', 'stefano@gmail.com', '$2a$10$kOpZvjgrJrrBvjkXFG5BI.MoO2g6J2dExXkZ777E84YsOPkgfKAva', '1667937678568_img.png', NULL, '2022-11-08 20:01:18', '2022-11-08 20:01:18', NULL);
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `image`, `cartId`, `createdAt`, `updatedAt`, `deletedAt`, `admin`) VALUES
+(8, 'Stefano', 'stefano@gmail.com', '$2a$10$kOpZvjgrJrrBvjkXFG5BI.MoO2g6J2dExXkZ777E84YsOPkgfKAva', '1667937678568_img.png', NULL, '2022-11-08 20:01:18', '2022-11-08 20:01:18', NULL, NULL),
+(9, 'Stefano', 'stefano@stefano.com', '$2a$10$ukyaAYYd6vSc5lN04J30F.FynCAP9U9KbHfDYzI91dGwivLx70vTW', '1669804905101_img.jpg', NULL, '2022-11-30 10:41:45', '2022-11-30 10:41:45', NULL, NULL),
+(10, 'Admin', 'admin@admin.com', '$2a$10$9eqyTJdl0ZPnDxIxoZ4rye0tjUm5yy0upKnB7WrDdG2kpNRUBa8Qm', '1671890203912_img.jpeg', NULL, '2022-12-24 13:56:44', '2022-12-24 13:56:44', NULL, 1);
 
 --
 -- Índices para tablas volcadas
@@ -506,7 +514,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT de la tabla `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `categories`
@@ -530,7 +538,7 @@ ALTER TABLE `gender`
 -- AUTO_INCREMENT de la tabla `productcart`
 --
 ALTER TABLE `productcart`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `productcategory`
@@ -566,7 +574,7 @@ ALTER TABLE `sizes`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
