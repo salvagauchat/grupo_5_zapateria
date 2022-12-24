@@ -49,8 +49,9 @@
               <nav class="navbar-menu-profile">
                 <ul>
                   <li><a class="links-of-profile" href="/user/profile">Ver perfil</a></li>
+                  <% if (locals.userLogged.id == 10) { %>
                   <li><a class="links-of-profile" href="/products/create">Crear producto</a></li>
-                  <!-- <li><a class="links-of-profile" href="">Mis productos</a></li> -->
+                  <% } %>
                 </ul>
               </nav>
             </aside>

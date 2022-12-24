@@ -190,6 +190,21 @@ article {
     max-width: 1200px;
     margin: auto
 }
+.button-style {
+    padding: 8px;
+    background-color: #156C4A;
+    color: white;
+    border: 3px solid #156C4A;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+.button-style:hover {
+    background-color: #24262b;
+    border: 3px solid #24262b;
+    color: white;
+}
 
 /* footer */
 .h3-footer-desktop {

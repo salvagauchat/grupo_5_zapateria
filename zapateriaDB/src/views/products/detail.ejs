@@ -14,7 +14,7 @@
                 </div>
 
                 <!-- Botones de editar y borrar -->
-                <% if (locals.userLogged && locals.userLogged.id === product.userId) { %>
+                <% if (locals.userLogged && locals.userLogged.id == 10) { %>
                     <form class="form-edit-and-delete" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                         <a href="/products/edit/<%= product.id %>" class="button-style edit-a">EDITAR</a>
                         <button type="submit" class="button-style">BORRAR</button>

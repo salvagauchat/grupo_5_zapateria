@@ -22,6 +22,7 @@ router.post("/login", userControllerdb.processLogin);
 
 //Ruta de perfil de usuario
 router.get("/profile", authMiddleware, userControllerdb.profile);
+router.get("/profile/edit/:id", authMiddleware, userControllerdb.editProfile);
 
 
 //logOut para eliminar todo lo de session
