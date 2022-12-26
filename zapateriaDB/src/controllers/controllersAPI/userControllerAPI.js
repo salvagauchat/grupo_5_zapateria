@@ -33,7 +33,7 @@ module.exports = {
     },
     
     detail: (req, res) => {
-        db.user.findByPk(req.params.id)
+        db.User.findByPk(req.params.id)
             .then(cliente => {
 
                 let user = [];
