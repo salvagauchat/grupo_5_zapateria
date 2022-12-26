@@ -1,4 +1,3 @@
-
 const path = require('path');
 const db = require('../../database/models');
 const sequelize = db.sequelize;
@@ -7,12 +6,11 @@ const { Op } = require("sequelize");
 module.exports = {
 
     list: (req, res) => {
-        db.user.findAll()
-        .then(clientes => {
-
+        db.User.findAll()
+        .then(clientes=> {
             let userDetail = [];
 
-            clientes.forEach(user => {
+            clientes.forEach(user=> {
                 userDetail.push({
                     id: user.id,
                     name: user.name,
@@ -27,7 +25,7 @@ module.exports = {
                     count: clientes.length,
                     url: '/api/users'
                 },
-                users: userDetail
+                users: userDetail,
                 
             }
                 res.json(respuesta);
