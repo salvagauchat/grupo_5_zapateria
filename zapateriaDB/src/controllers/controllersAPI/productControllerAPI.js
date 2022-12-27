@@ -18,9 +18,28 @@ module.exports = {
             image: 'http://localhost:3001/img/products/' + product.image
         }))
         
+        const brands = await db.Brand.findAll({include: ["products"]});
+
+            let productsByBrand = {};
+            let brandById = {};
+
+            for (let i = 0; i < brands.length; i++) {
+                productsByBrand[brands[i].name] = brands[i].products.length;
+                brandById[brands[i].id] = brands[i].dataValues.name;
+            }
+
+        
+        let brandName = await db.Brand.findAll({
+                raw: true,
+                nest: true
+            })
+
         return res.json({
 			total: products.length,
-            products
+            products,
+            countByBrand: {...productsByBrand},
+            
+
 			
 		})
     },

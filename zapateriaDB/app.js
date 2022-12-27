@@ -63,6 +63,9 @@ app.use("/user", userRoutedb);
 const apiRouterUsers = require('./src/routes/apiRoutes/apiRoutesUser')
 app.use('/api/users', apiRouterUsers)
 
+const apiRouterBrands = require('./src/routes/apiRoutes/apiRoutesBrands')
+app.use('/api/brand', apiRouterBrands)
+
 /************* API PRODUCT *************/
 const apiRouterProducts = require('./src/routes/apiRoutes/apiRoutesProducts')
 app.use('/api/products', apiRouterProducts)
