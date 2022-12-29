@@ -1,6 +1,8 @@
 
+const path = require('path');
+const db = require('../../database/models');
+const sequelize = db.sequelize;
 const { Op } = require("sequelize");
-const db = require('../../database/models')
 
 
 
@@ -43,10 +45,37 @@ module.exports = {
 			
 		})
     },
+    
+        
+    detail: (req, res) => {
+        db.Product.findByPk(req.params.id)
+            .then(product=> {
 
-    
-    
-}
+                let user = [];
+
+                user.push({
+                    id: product.id,
+                    name: product.name,
+                    brand: product.brand,
+                    gender: product.gender, 
+                    img: 'http://localhost:3001/img/products/' + product.image
+                    
+                })
+
+                let respuesta = {
+                    meta: {
+                        status: 200,
+                        url: `/api/products/${product.id}`
+                    },
+                    data: product
+                }
+                console.log
+                res.json(respuesta);
+               
+            });
+    }
+}    
+
 
 
 
