@@ -17,7 +17,8 @@ module.exports = {
         console.log(products)
         products = await products.map(product => ({
             ...product, 
-            image: 'http://localhost:3001/img/products/' + product.image
+            image: 'http://localhost:3001/img/products/' + product.image,
+            idDetalle: 'http://localhost:3001/api/products/'+product.id
         }))
         
         const brands = await db.Brand.findAll({include: ["products"]});
