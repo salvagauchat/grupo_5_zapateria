@@ -57,9 +57,9 @@ module.exports = {
                 user.push({
                     id: product.id,
                     name: product.name,
-                    brand: product.brand,
-                    gender: product.gender, 
-                    img: 'http://localhost:3001/img/products/' + product.image
+                    brand: product.brandId,
+                    gender: product.genderId, 
+                    img: 'http://localhost:3001/img/products/' + product.image,
                     
                 })
 
@@ -68,7 +68,7 @@ module.exports = {
                         status: 200,
                         url: `/api/products/${product.id}`
                     },
-                    data: product
+                    data: user
                 }
                 console.log
                 res.json(respuesta);
