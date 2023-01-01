@@ -104,4 +104,16 @@ Sprint 4 (Retro):
     * Deberiamos comenzar a tener dailys
 
 - Que deberiamos dejar de hacer:
+
+Sprint 8 (Retro):
+- Que hicimos bien:
+    * Nos supimos dividir las tareas
+    * Trabajamos de manera conjunta y colaborativa
+    * Supimos resolver los problemas de manera rápida y eficiente
+
+- Que hicimos mal:
+
+- Que deberiamos empezar a hacer:
+
+- Que deberiamos dejar de hacer:
     

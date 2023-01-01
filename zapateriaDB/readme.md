@@ -34,6 +34,10 @@ REFERENTES DEL MERCADO (inspiraciones):
 LINK TRELLO:
 - https://trello.com/b/MIQlSChx/grupo-5
 
+LINKS REPOS:
+- https://github.com/salvagauchat/grupo_5_zapateria (Proyecto)
+- https://github.com/salvagauchat/dashboard-zapateria-5 (Dashboard React) 
+
 COLORES A UTILIZAR:
 - #156C4A
 - #000000
