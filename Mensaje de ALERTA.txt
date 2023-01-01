@@ -1,0 +1,12 @@
+<script>
+        // Agarramos el formulario por su id, y lo guardamos dentro de la variable formulario
+        const formulario = document.getElementById('formulario');
+        // Agregamos un escucha de eventos al formulario, que ejecute una función cuando el evento sea ejecutado
+        formulario.addEventListener('submit', function(e){
+            e.preventDefault();
+            console.log(formulario.nombre.value)
+            if(formulario.nombre.value.length < 2){
+                alert('No se ingresó un nombre válido!')
+            }
+        });
+    </script>

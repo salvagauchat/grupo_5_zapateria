@@ -1,0 +1,30 @@
+-Npm init
+-Instalamos dependencias(express, dotenv, etc)
+-Creamos app.js(entry point)
+-Requerimos express
+-Inicializamos express
+-Seteamos el puerto con app.listen
+-Creamos el archivo .env
+-Crear carpeta routes
+-Crear archivo router
+-Requerir router en app
+-Utilizarlo con app.use
+-Creamos los scripts en package.json
+-Crear carpeta controllers
+-Crear archivo controller
+-Requerir módulo path
+-Importar controller en router
+-Utilizar el controlador como segundo parámetro.
+-Crear carpeta views
+-Crear el archivo de vista
+-Volver al controller y crear la función que envía el archivo de vista.
+-Instalar ejs
+-Setear ejs como motor de vistas en el entry point
+	app.set(‘view engine’, ‘ejs’);
+-Si la vista estaba creada en html, convertir el archivo a ejs.
+-En controller utilizar res.render(‘nombreVista’)
+-Además, podemos pasarle un objeto como segundo parámetro.
+-Utilizar los datos del objeto en el archivo ejs correspondiente.(Utilizar etiquetas específicas de ejs)
+	<%= %> para imprimir un dato
+	<% %> para una operación lógica
+-Instalar extensión EJS language support.

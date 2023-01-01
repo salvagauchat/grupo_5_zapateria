@@ -1,0 +1,12 @@
+{
+  "name": "bostat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon src/app.js ;e ejs js json mjs"
+  },
+  "keywords": [],
+  "author": "Angel Daniel Fuentes",
+  "license": "ISC"
+}

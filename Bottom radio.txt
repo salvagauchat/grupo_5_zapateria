@@ -1,0 +1,20 @@
+constructor () {
+    super ()
+    this.state = {
+        genresList: []
+    }
+};
+
+
+componentDidMount(){
+    fetch ('http://localhost:3000/api/genres')
+    .then (response => response.json ())
+    .then (data => this.setState(data.data))
+    .catch (error => console.log (error))  
+}                                          
+                                          
+                                            
+//proxy: "http://localhost.3001"
+// o instalar por consola npm i cors
+//const cors = require (cors)
+//app.use(cors())

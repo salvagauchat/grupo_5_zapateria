@@ -1,0 +1,33 @@
+{
+  "name": "isporty",
+  "version": "1.0.0",
+  "description": "![alt text](https://github.com/heysocialgeek/isporty/blob/ea8198a808d476d779aa9244d57aa1a460adde4c/design/logotipo-isporty.png?raw=true)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heysocialgeek/isporty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heysocialgeek/isporty/issues"
+  },
+  "homepage": "https://github.com/heysocialgeek/isporty#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "jquery": "^3.6.0",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1"
+  }
+}
